@@ -9,6 +9,7 @@ Vue.use(HighchartsVue)
 
 Vue.component('example-component', require('./components/ExampleComponent.vue').default);
 Vue.component('line-chart', require('./components/LineChart.vue').default);
+Vue.component('line-chart-alt', require('./components/LineChartAlt.vue').default);
 Vue.component('column-chart', require('./components/ColumnChart.vue').default);
 Vue.component('pie-chart', require('./components/PieChart.vue').default);
 Vue.component('combo-chart', require('./components/ComboChart.vue').default);
