@@ -7,7 +7,7 @@ Route::get('/', function () {
 });
 
 Route::get('/export', function () {
-    return view('export-chart');
+    return view('export-chart2');
 });
 
 // Route::get('/', function () {

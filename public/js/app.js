@@ -2057,6 +2057,13 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+// import Highcharts from 'highcharts';
+// import Exporting from 'highcharts/modules/exporting';
+// Exporting(Highcharts);
+// // Generate the chart
+// Highcharts.chart('container', {
+//   // options - see https://api.highcharts.com/highcharts
+// });
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   props: ['values', 'title'],
   data: function data() {

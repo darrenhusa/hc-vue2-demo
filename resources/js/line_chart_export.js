@@ -1,20 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Highcharts Export Test Demo</title>
-    <script src="https://code.highcharts.com/highcharts.js"></script>
-    <script src="https://code.highcharts.com/modules/exporting.js"></script>
-</head>
-<body>
-    <h1>Hello</h1>
-
-    <div id="container" style="height: 300px; margin-top: 1em"></div>
-    <button id="button">Export chart</button>            
-
-<script>
+import Highcharts from 'highcharts';
+import Exporting from 'highcharts/modules/exporting';
+Exporting(Highcharts);
 
 const chart = Highcharts.chart('container', {
     title: {
@@ -44,7 +30,3 @@ document.getElementById('button').addEventListener('click', () => {
         filename: 'chart-name'
     });
 });
-
-</script>
-</body>
-</html>

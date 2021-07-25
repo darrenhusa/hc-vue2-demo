@@ -7,7 +7,15 @@
 </template>
 
 <script>
-import 
+// import Highcharts from 'highcharts';
+// import Exporting from 'highcharts/modules/exporting';
+// Exporting(Highcharts);
+
+// // Generate the chart
+// Highcharts.chart('container', {
+//   // options - see https://api.highcharts.com/highcharts
+// });
+
  export default {
     props: ['values', 'title'],
 
