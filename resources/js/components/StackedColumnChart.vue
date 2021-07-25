@@ -6,7 +6,6 @@
 
 <script>
  export default {
-    // props: ['values', 'title'],
 
     data() {
         return {
@@ -36,22 +35,7 @@
                         }
                     }
                 },
-                legend: {
-                    align: 'right',
-                    x: -30,
-                    verticalAlign: 'top',
-                    y: 25,
-                    floating: true,
-                    backgroundColor:
-                        Highcharts.defaultOptions.legend.backgroundColor || 'white',
-                    borderColor: '#CCC',
-                    borderWidth: 1,
-                    shadow: false
-                },
-                tooltip: {
-                    headerFormat: '<b>{point.x}</b><br/>',
-                    pointFormat: '{series.name}: {point.y}<br/>Total: {point.stackTotal}'
-                },
+                
                 plotOptions: {
                     column: {
                         stacking: 'normal',
