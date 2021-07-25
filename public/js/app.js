@@ -2055,6 +2055,8 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   props: ['values', 'title'],
   data: function data() {
@@ -2069,8 +2071,19 @@ __webpack_require__.r(__webpack_exports__);
       }
     };
   },
+  methods: {
+    exportChart: function exportChart() {
+      alert('export chart!');
+    }
+  },
   mounted: function mounted() {
     console.log('Component mounted.');
+    document.getElementById('button').addEventListener('click', function () {
+      chart.exportChart({
+        type: 'application/pdf',
+        filename: 'my-pdf'
+      });
+    });
   }
 });
 
@@ -38956,7 +38969,15 @@ var render = function() {
   return _c(
     "div",
     { staticClass: "container" },
-    [_c("highcharts", { attrs: { options: _vm.chartOptions } })],
+    [
+      _c("highcharts", { attrs: { options: _vm.chartOptions } }),
+      _vm._v(" "),
+      _c(
+        "button",
+        { staticClass: "bg-gray-200 p-2", attrs: { id: "button" } },
+        [_vm._v("Export chart")]
+      )
+    ],
     1
   )
 }
