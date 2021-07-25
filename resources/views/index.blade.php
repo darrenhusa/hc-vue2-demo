@@ -13,17 +13,22 @@
     <div id="app">
         <example-component></example-component>
         
-        <!-- <100%-stacked-column-chart></100%-stacked-column-chart> -->
-        <!-- <stacked-column-chart></stacked-column-chart> -->
+        <line-chart title="Line Chart - Constant" :values="[5, 5, 5]"></line-chart>
+
+        <!-- Are the stacked charts supported in the wrapper?? -->
+        <100%-stacked-column-chart></100%-stacked-column-chart>
+        <stacked-column-chart></stacked-column-chart>
+        
+        <combo-chart></combo-chart>
         <pie-chart></pie-chart>
         <column-chart></column-chart>
         <line-chart title="Line Chart 1" :values="[3, 2, 1]"></line-chart>
         
         <line-chart :values="[10, 15, 5]"></line-chart>
         
-        <!-- <chart-demo title="My Title"
+        <chart-demo title="My Title"
                     :values="[10, 0, 8, 2, 6, 4, 5, 5]">
-        </chart-demo> -->
+        </chart-demo>
         <!-- <highcharts :options="chartOptions"></highcharts> -->
     </div>
     <script src="/js/app.js"></script>
