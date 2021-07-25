@@ -18,7 +18,6 @@
 
         <h2>Stacked Percentage Column</h2>
         <stacked-percentage-column-chart></stacked-percentage-column-chart>
-        <stacked-percentage-column-chart></stacked-percentage-column-chart>
         
         <h2>Stacked Column</h2>
         <stacked-column-chart></stacked-column-chart>
@@ -29,6 +28,9 @@
         <h2>Column</h2>
         <column-chart></column-chart>
         
+        <h2>Combo</h2>
+        <combo-chart></combo-chart>
+
         <h2>More Lines</h2>
         <line-chart title="Line Chart 1" :values="[3, 2, 1]"></line-chart>
         
