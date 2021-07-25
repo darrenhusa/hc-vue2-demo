@@ -2113,12 +2113,7 @@ __webpack_require__.r(__webpack_exports__);
             text: 'Total fruit consumption'
           },
           stackLabels: {
-            enabled: true,
-            style: {
-              fontWeight: 'bold',
-              color: // theme
-              Highcharts.defaultOptions.title.style && Highcharts.defaultOptions.title.style.color || 'gray'
-            }
+            enabled: true
           }
         },
         plotOptions: {
