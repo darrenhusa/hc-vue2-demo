@@ -10,6 +10,9 @@ Vue.use(HighchartsVue)
 Vue.component('example-component', require('./components/ExampleComponent.vue').default);
 Vue.component('line-chart', require('./components/LineChart.vue').default);
 Vue.component('column-chart', require('./components/ColumnChart.vue').default);
+Vue.component('pie-chart', require('./components/PieChart.vue').default);
+Vue.component('stacked-column-chart', require('./components/StackedColumnChart.vue').default);
+Vue.component('100%-stacked-column-chart', require('./components/100PercentStackedColumnChart.vue').default);
 
 Vue.component('chart-demo', require('./components/ChartDemo.vue').default);
 
