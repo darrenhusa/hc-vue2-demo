@@ -45,7 +45,7 @@
         <column-chart></column-chart>
         
         <h2>Stacked Column</h2>
-        <stacked-column-chart></stacked-column-chart>
+        <stacked-column-chart :series='@json($series)'></stacked-column-chart>
 
         <h2>Stacked Percentage Column</h2>
         <stacked-percentage-column-chart></stacked-percentage-column-chart>
