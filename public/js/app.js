@@ -2300,6 +2300,10 @@ highcharts_modules_exporting__WEBPACK_IMPORTED_MODULE_1___default()((highcharts_
       // type: Array,
       type: Object,
       required: true
+    },
+    showDataTable: {
+      type: Boolean,
+      "default": false
     }
   },
   data: function data() {
@@ -2308,10 +2312,89 @@ highcharts_modules_exporting__WEBPACK_IMPORTED_MODULE_1___default()((highcharts_
       target: undefined
     };
   },
+  // var vm = this;
+  methods: {
+    // NOT WORKING!!!!!!
+    drawDataTable: function drawDataTable() {
+      if (this.showDataTable) {
+        (highcharts__WEBPACK_IMPORTED_MODULE_0___default().drawTable);
+      }
+    }
+  },
   mounted: function mounted() {
-    // console.log(this.series);
+    (highcharts__WEBPACK_IMPORTED_MODULE_0___default().drawTable) = function () {
+      // user options
+      var tableTop = 310,
+          colWidth = 100,
+          tableLeft = 20,
+          rowHeight = 20,
+          cellPadding = 2.5,
+          valueDecimals = 1,
+          valueSuffix = ' °C'; // internal variables
+
+      var chart = this,
+          series = chart.series,
+          renderer = chart.renderer,
+          cellLeft = tableLeft; // draw category labels
+
+      chart.xAxis[0].categories.forEach(function (name, i) {
+        renderer.text(name, cellLeft + cellPadding, tableTop + (i + 2) * rowHeight - cellPadding).css({
+          fontWeight: 'bold'
+        }).add();
+      });
+      series.forEach(function (serie, i) {
+        cellLeft += colWidth; // Apply the cell text
+
+        renderer.text(serie.name, cellLeft - cellPadding + colWidth, tableTop + rowHeight - cellPadding).attr({
+          align: 'right'
+        }).css({
+          fontWeight: 'bold'
+        }).add();
+        serie.data.forEach(function (point, row) {
+          // Apply the cell text
+          renderer.text(highcharts__WEBPACK_IMPORTED_MODULE_0___default().numberFormat(point.y, valueDecimals) + valueSuffix, cellLeft + colWidth - cellPadding, tableTop + (row + 2) * rowHeight - cellPadding).attr({
+            align: 'right'
+          }).add(); // horizontal lines
+
+          if (row === 0) {
+            highcharts__WEBPACK_IMPORTED_MODULE_0___default().tableLine( // top
+            renderer, tableLeft, tableTop + cellPadding, cellLeft + colWidth, tableTop + cellPadding);
+            highcharts__WEBPACK_IMPORTED_MODULE_0___default().tableLine( // bottom
+            renderer, tableLeft, tableTop + (serie.data.length + 1) * rowHeight + cellPadding, cellLeft + colWidth, tableTop + (serie.data.length + 1) * rowHeight + cellPadding);
+          } // horizontal line
+
+
+          highcharts__WEBPACK_IMPORTED_MODULE_0___default().tableLine(renderer, tableLeft, tableTop + row * rowHeight + rowHeight + cellPadding, cellLeft + colWidth, tableTop + row * rowHeight + rowHeight + cellPadding);
+        }); // vertical lines
+
+        if (i === 0) {
+          // left table border
+          highcharts__WEBPACK_IMPORTED_MODULE_0___default().tableLine(renderer, tableLeft, tableTop + cellPadding, tableLeft, tableTop + (serie.data.length + 1) * rowHeight + cellPadding);
+        }
+
+        highcharts__WEBPACK_IMPORTED_MODULE_0___default().tableLine(renderer, cellLeft, tableTop + cellPadding, cellLeft, tableTop + (serie.data.length + 1) * rowHeight + cellPadding);
+
+        if (i === series.length - 1) {
+          // right table border
+          highcharts__WEBPACK_IMPORTED_MODULE_0___default().tableLine(renderer, cellLeft + colWidth, tableTop + cellPadding, cellLeft + colWidth, tableTop + (serie.data.length + 1) * rowHeight + cellPadding);
+        }
+      });
+    };
+    /**
+     * Draw a single line in the table
+     */
+
+
+    (highcharts__WEBPACK_IMPORTED_MODULE_0___default().tableLine) = function (renderer, x1, y1, x2, y2) {
+      renderer.path(['M', x1, y1, 'L', x2, y2]).attr({
+        stroke: 'silver',
+        'stroke-width': 1
+      }).add();
+    }; // console.log(this.series);
     // console.log(this.series.title);
     // see https://stackoverflow.com/questions/50144557/how-to-add-data-to-chart-js-with-a-for-loop/50144700
+
+
     var seriesTemp = [];
     var number = this.series.data.length;
 
@@ -2326,7 +2409,13 @@ highcharts_modules_exporting__WEBPACK_IMPORTED_MODULE_1___default()((highcharts_
 
     this.target = highcharts__WEBPACK_IMPORTED_MODULE_0___default().chart(this.$el, {
       chart: {
-        type: 'column'
+        type: 'column',
+        events: {
+          load: this.drawDataTable()
+        } // borderWidth: 2,
+        // width: 600,
+        // height: 600
+
       },
       title: {
         text: this.series.title
