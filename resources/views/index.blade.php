@@ -70,6 +70,9 @@
         <h2>Column</h2>
         <column-chart :series='@json($series)'></column-chart>
         
+        <!-- <h2>Column with data table</h2>
+        <column-chart showTable="True" :series='@json($series)'></column-chart>
+         -->
         <h2>Stacked Column</h2>
         <stacked-column-chart :series='@json($series2)'></stacked-column-chart>
 

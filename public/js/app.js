@@ -1974,6 +1974,10 @@ highcharts_modules_exporting__WEBPACK_IMPORTED_MODULE_1___default()((highcharts_
       // type: Array,
       type: Object,
       required: true
+    },
+    showTable: {
+      type: Boolean,
+      "default": true
     }
   },
   data: function data() {
@@ -2034,6 +2038,9 @@ highcharts_modules_exporting__WEBPACK_IMPORTED_MODULE_1___default()((highcharts_
       series: seriesTemp,
       credits: {
         enabled: false
+      },
+      exporting: {
+        showTable: this.showTable
       }
     });
   } // end mounted()

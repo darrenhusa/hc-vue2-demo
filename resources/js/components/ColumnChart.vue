@@ -17,6 +17,11 @@ export default {
         // type: Array,
         type: Object,
         required: true
+      },
+
+      showTable : {
+        type: Boolean,
+        default: true
       }
 	  },
   	
@@ -83,6 +88,10 @@ export default {
         credits: {
           enabled: false
         },
+
+        exporting: {
+          showTable: this.showTable
+        }
       });        
     } // end mounted()
 //   beforeDestroy: function() {
