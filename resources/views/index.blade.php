@@ -42,7 +42,7 @@
         <!-- <line-chart-alt :series="[10, 20, 30, 40, 50, 40, 30, 20, 10, 15, 15, 30]"></line-chart-alt> -->
 
         <h2>Column</h2>
-        <column-chart></column-chart>
+        <column-chart :series='@json($series)'></column-chart>
         
         <h2>Stacked Column</h2>
         <stacked-column-chart :series='@json($series)'></stacked-column-chart>
