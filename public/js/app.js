@@ -2356,6 +2356,118 @@ highcharts_modules_exporting__WEBPACK_IMPORTED_MODULE_1___default()((highcharts_
 
 /***/ }),
 
+/***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/Treemap.vue?vue&type=script&lang=js&":
+/*!**************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/Treemap.vue?vue&type=script&lang=js& ***!
+  \**************************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var highcharts__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! highcharts */ "./node_modules/highcharts/highcharts.js");
+/* harmony import */ var highcharts__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(highcharts__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var highcharts_modules_heatmap__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! highcharts/modules/heatmap */ "./node_modules/highcharts/modules/heatmap.js");
+/* harmony import */ var highcharts_modules_heatmap__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(highcharts_modules_heatmap__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var highcharts_modules_treemap__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! highcharts/modules/treemap */ "./node_modules/highcharts/modules/treemap.js");
+/* harmony import */ var highcharts_modules_treemap__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(highcharts_modules_treemap__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var highcharts_modules_exporting__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! highcharts/modules/exporting */ "./node_modules/highcharts/modules/exporting.js");
+/* harmony import */ var highcharts_modules_exporting__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(highcharts_modules_exporting__WEBPACK_IMPORTED_MODULE_3__);
+//
+//
+//
+//
+//
+//
+// var Highcharts = require('highcharts');
+
+
+
+
+highcharts_modules_exporting__WEBPACK_IMPORTED_MODULE_3___default()((highcharts__WEBPACK_IMPORTED_MODULE_0___default()));
+highcharts_modules_heatmap__WEBPACK_IMPORTED_MODULE_1___default()((highcharts__WEBPACK_IMPORTED_MODULE_0___default()));
+highcharts_modules_treemap__WEBPACK_IMPORTED_MODULE_2___default()((highcharts__WEBPACK_IMPORTED_MODULE_0___default()));
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+  name: "Treemap",
+  //   props : {
+  //     series : {
+  //       // type: Array,
+  //       type: Object,
+  //       required: true
+  //     }
+  // },
+  data: function data() {
+    return {
+      // target: 'container'
+      target: undefined
+    };
+  },
+  mounted: function mounted() {
+    // console.log(this.series);
+    // console.log(this.series.title);
+    // see https://stackoverflow.com/questions/50144557/how-to-add-data-to-chart-js-with-a-for-loop/50144700
+    // const seriesTemp = [];
+    // const number = this.series.data.length
+    // for(let i=0; i<number; i++){
+    //   seriesTemp.push({
+    //       name: this.series.data[i].label,
+    //       data: this.series.data[i].values
+    //   });
+    // }
+    // alert(seriesTemp);
+    // console.log(seriesTemp);
+    this.target = highcharts__WEBPACK_IMPORTED_MODULE_0___default().chart(this.$el, {
+      colorAxis: {
+        minColor: '#FFFFFF',
+        maxColor: highcharts__WEBPACK_IMPORTED_MODULE_0___default().getOptions().colors[0]
+      },
+      series: [{
+        type: 'treemap',
+        layoutAlgorithm: 'squarified',
+        data: [{
+          name: 'A',
+          value: 6,
+          colorValue: 1
+        }, {
+          name: 'B',
+          value: 6,
+          colorValue: 2
+        }, {
+          name: 'C',
+          value: 4,
+          colorValue: 3
+        }, {
+          name: 'D',
+          value: 3,
+          colorValue: 4
+        }, {
+          name: 'E',
+          value: 2,
+          colorValue: 5
+        }, {
+          name: 'F',
+          value: 2,
+          colorValue: 6
+        }, {
+          name: 'G',
+          value: 1,
+          colorValue: 7
+        }]
+      }],
+      title: {
+        text: 'Highcharts Treemap'
+      }
+    });
+  } //   beforeDestroy: function() {
+  //     this.target.destroy();
+  //   },
+
+}); // end export default
+
+/***/ }),
+
 /***/ "./resources/js/bootstrap.js":
 /*!***********************************!*\
   !*** ./resources/js/bootstrap.js ***!
@@ -7505,6 +7617,61 @@ G(c,function(b){a.addButton(b)}),a.isDirtyExporting=!1)};x(c,"init",function(){v
 
 /***/ }),
 
+/***/ "./node_modules/highcharts/modules/heatmap.js":
+/*!****************************************************!*\
+  !*** ./node_modules/highcharts/modules/heatmap.js ***!
+  \****************************************************/
+/***/ ((module, exports, __webpack_require__) => {
+
+"use strict";
+var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*
+ Highmaps JS v9.1.2 (2021-06-16)
+
+ (c) 2009-2021 Torstein Honsi
+
+ License: www.highcharts.com/license
+*/
+(function(a){ true&&module.exports?(a["default"]=a,module.exports=a): true?!(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__(/*! highcharts */ "./node_modules/highcharts/highcharts.js")], __WEBPACK_AMD_DEFINE_RESULT__ = (function(u){a(u);a.Highcharts=u;return a}).apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__),
+		__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__)):0})(function(a){function u(a,c,l,r){a.hasOwnProperty(c)||(a[c]=r.apply(null,l))}a=a?a._modules:{};u(a,"Mixins/ColorSeries.js",[],function(){return{colorPointMixin:{setVisible:function(a){var c=this,l=a?"show":"hide";
+c.visible=c.options.visible=!!a;["graphic","dataLabel"].forEach(function(a){if(c[a])c[a][l]()});this.series.buildKDTree()}},colorSeriesMixin:{optionalAxis:"colorAxis",colorAxis:0,translateColors:function(){var a=this,c=this.options.nullColor,l=this.colorAxis,r=this.colorKey;(this.data.length?this.data:this.points).forEach(function(m){var n=m.getNestedProperty(r);(n=m.options.color||(m.isNull||null===m.value?c:l&&"undefined"!==typeof n?l.toColor(n,m):m.color||a.color))&&m.color!==n&&(m.color=n,"point"===
+a.options.legendType&&m.legendItem&&a.chart.legend.colorizeItem(m,m.visible))})}}}});u(a,"Core/Axis/ColorAxis.js",[a["Core/Axis/Axis.js"],a["Core/Chart/Chart.js"],a["Core/Color/Color.js"],a["Mixins/ColorSeries.js"],a["Core/Animation/Fx.js"],a["Core/Globals.js"],a["Core/Legend.js"],a["Mixins/LegendSymbol.js"],a["Core/Color/Palette.js"],a["Core/Series/Point.js"],a["Core/Series/Series.js"],a["Core/Utilities.js"]],function(a,c,l,r,m,n,w,H,C,h,k,A){var G=this&&this.__extends||function(){var f=function(b,
+e){f=Object.setPrototypeOf||{__proto__:[]}instanceof Array&&function(e,q){e.__proto__=q}||function(e,q){for(var d in q)q.hasOwnProperty(d)&&(e[d]=q[d])};return f(b,e)};return function(b,e){function g(){this.constructor=b}f(b,e);b.prototype=null===e?Object.create(e):(g.prototype=e.prototype,new g)}}(),p=l.parse;l=r.colorPointMixin;r=r.colorSeriesMixin;var D=n.noop,v=A.addEvent,y=A.extend,t=A.isNumber,E=A.merge,B=A.pick,z=A.splat;"";y(k.prototype,r);y(h.prototype,l);c.prototype.collectionsWithUpdate.push("colorAxis");
+c.prototype.collectionsWithInit.colorAxis=[c.prototype.addColorAxis];var b=function(f){function b(e,b){var g=f.call(this,e,b)||this;g.beforePadding=!1;g.chart=void 0;g.coll="colorAxis";g.dataClasses=void 0;g.legendItem=void 0;g.legendItems=void 0;g.name="";g.options=void 0;g.stops=void 0;g.visible=!0;g.init(e,b);return g}G(b,f);b.prototype.init=function(e,g){var q=e.options.legend||{},d=g.layout?"vertical"!==g.layout:"vertical"!==q.layout;q=E(b.defaultColorAxisOptions,g,{showEmpty:!1,title:null,visible:q.enabled&&
+(g?!1!==g.visible:!0)});this.coll="colorAxis";this.side=g.side||d?2:1;this.reversed=g.reversed||!d;this.opposite=!d;f.prototype.init.call(this,e,q);g.dataClasses&&this.initDataClasses(g);this.initStops();this.horiz=d;this.zoomEnabled=!1};b.prototype.initDataClasses=function(e){var b=this.chart,q,d=0,f=b.options.chart.colorCount,a=this.options,h=e.dataClasses.length;this.dataClasses=q=[];this.legendItems=[];e.dataClasses.forEach(function(e,g){e=E(e);q.push(e);if(b.styledMode||!e.color)"category"===
+a.dataClassColor?(b.styledMode||(g=b.options.colors,f=g.length,e.color=g[d]),e.colorIndex=d,d++,d===f&&(d=0)):e.color=p(a.minColor).tweenTo(p(a.maxColor),2>h?.5:g/(h-1))})};b.prototype.hasData=function(){return!!(this.tickPositions||[]).length};b.prototype.setTickPositions=function(){if(!this.dataClasses)return f.prototype.setTickPositions.call(this)};b.prototype.initStops=function(){this.stops=this.options.stops||[[0,this.options.minColor],[1,this.options.maxColor]];this.stops.forEach(function(e){e.color=
+p(e[1])})};b.prototype.setOptions=function(e){f.prototype.setOptions.call(this,e);this.options.crosshair=this.options.marker};b.prototype.setAxisSize=function(){var e=this.legendSymbol,g=this.chart,f=g.options.legend||{},d,a;e?(this.left=f=e.attr("x"),this.top=d=e.attr("y"),this.width=a=e.attr("width"),this.height=e=e.attr("height"),this.right=g.chartWidth-f-a,this.bottom=g.chartHeight-d-e,this.len=this.horiz?a:e,this.pos=this.horiz?f:d):this.len=(this.horiz?f.symbolWidth:f.symbolHeight)||b.defaultLegendLength};
+b.prototype.normalizedValue=function(e){this.logarithmic&&(e=this.logarithmic.log2lin(e));return 1-(this.max-e)/(this.max-this.min||1)};b.prototype.toColor=function(e,b){var g=this.dataClasses,d=this.stops,f;if(g)for(f=g.length;f--;){var a=g[f];var h=a.from;d=a.to;if(("undefined"===typeof h||e>=h)&&("undefined"===typeof d||e<=d)){var k=a.color;b&&(b.dataClass=f,b.colorIndex=a.colorIndex);break}}else{e=this.normalizedValue(e);for(f=d.length;f--&&!(e>d[f][0]););h=d[f]||d[f+1];d=d[f+1]||h;e=1-(d[0]-
+e)/(d[0]-h[0]||1);k=h.color.tweenTo(d.color,e)}return k};b.prototype.getOffset=function(){var e=this.legendGroup,b=this.chart.axisOffset[this.side];e&&(this.axisParent=e,f.prototype.getOffset.call(this),this.added||(this.added=!0,this.labelLeft=0,this.labelRight=this.width),this.chart.axisOffset[this.side]=b)};b.prototype.setLegendColor=function(){var b=this.reversed,g=b?1:0;b=b?0:1;g=this.horiz?[g,0,b,0]:[0,b,0,g];this.legendColor={linearGradient:{x1:g[0],y1:g[1],x2:g[2],y2:g[3]},stops:this.stops}};
+b.prototype.drawLegendSymbol=function(e,g){var f=e.padding,d=e.options,a=this.horiz,h=B(d.symbolWidth,a?b.defaultLegendLength:12),k=B(d.symbolHeight,a?12:b.defaultLegendLength),x=B(d.labelPadding,a?16:30);d=B(d.itemDistance,10);this.setLegendColor();g.legendSymbol=this.chart.renderer.rect(0,e.baseline-11,h,k).attr({zIndex:1}).add(g.legendGroup);this.legendItemWidth=h+f+(a?d:x);this.legendItemHeight=k+f+(a?x:0)};b.prototype.setState=function(b){this.series.forEach(function(e){e.setState(b)})};b.prototype.setVisible=
+function(){};b.prototype.getSeriesExtremes=function(){var b=this.series,g=b.length,f;this.dataMin=Infinity;for(this.dataMax=-Infinity;g--;){var d=b[g];var a=d.colorKey=B(d.options.colorKey,d.colorKey,d.pointValKey,d.zoneAxis,"y");var h=d.pointArrayMap;var x=d[a+"Min"]&&d[a+"Max"];if(d[a+"Data"])var c=d[a+"Data"];else if(h){c=[];h=h.indexOf(a);var z=d.yData;if(0<=h&&z)for(f=0;f<z.length;f++)c.push(B(z[f][h],z[f]))}else c=d.yData;x?(d.minColorValue=d[a+"Min"],d.maxColorValue=d[a+"Max"]):(c=k.prototype.getExtremes.call(d,
+c),d.minColorValue=c.dataMin,d.maxColorValue=c.dataMax);"undefined"!==typeof d.minColorValue&&(this.dataMin=Math.min(this.dataMin,d.minColorValue),this.dataMax=Math.max(this.dataMax,d.maxColorValue));x||k.prototype.applyExtremes.call(d)}};b.prototype.drawCrosshair=function(b,g){var e=g&&g.plotX,d=g&&g.plotY,a=this.pos,h=this.len;if(g){var k=this.toPixels(g.getNestedProperty(g.series.colorKey));k<a?k=a-2:k>a+h&&(k=a+h+2);g.plotX=k;g.plotY=this.len-k;f.prototype.drawCrosshair.call(this,b,g);g.plotX=
+e;g.plotY=d;this.cross&&!this.cross.addedToColorAxis&&this.legendGroup&&(this.cross.addClass("highcharts-coloraxis-marker").add(this.legendGroup),this.cross.addedToColorAxis=!0,this.chart.styledMode||"object"!==typeof this.crosshair||this.cross.attr({fill:this.crosshair.color}))}};b.prototype.getPlotLinePath=function(b){var e=this.left,a=b.translatedValue,d=this.top;return t(a)?this.horiz?[["M",a-4,d-6],["L",a+4,d-6],["L",a,d],["Z"]]:[["M",e,a],["L",e-6,a+6],["L",e-6,a-6],["Z"]]:f.prototype.getPlotLinePath.call(this,
+b)};b.prototype.update=function(b,g){var e=this.chart.legend;this.series.forEach(function(b){b.isDirtyData=!0});(b.dataClasses&&e.allItems||this.dataClasses)&&this.destroyItems();f.prototype.update.call(this,b,g);this.legendItem&&(this.setLegendColor(),e.colorizeItem(this,!0))};b.prototype.destroyItems=function(){var b=this.chart;this.legendItem?b.legend.destroyItem(this):this.legendItems&&this.legendItems.forEach(function(e){b.legend.destroyItem(e)});b.isDirtyLegend=!0};b.prototype.destroy=function(){this.chart.isDirtyLegend=
+!0;this.destroyItems();f.prototype.destroy.apply(this,[].slice.call(arguments))};b.prototype.remove=function(b){this.destroyItems();f.prototype.remove.call(this,b)};b.prototype.getDataClassLegendSymbols=function(){var b=this,f=b.chart,a=b.legendItems,d=f.options.legend,h=d.valueDecimals,k=d.valueSuffix||"",c;a.length||b.dataClasses.forEach(function(d,e){var g=!0,q=d.from,x=d.to,z=f.numberFormatter;c="";"undefined"===typeof q?c="< ":"undefined"===typeof x&&(c="> ");"undefined"!==typeof q&&(c+=z(q,
+h)+k);"undefined"!==typeof q&&"undefined"!==typeof x&&(c+=" - ");"undefined"!==typeof x&&(c+=z(x,h)+k);a.push(y({chart:f,name:c,options:{},drawLegendSymbol:H.drawRectangle,visible:!0,setState:D,isDataClass:!0,setVisible:function(){g=b.visible=!g;b.series.forEach(function(b){b.points.forEach(function(b){b.dataClass===e&&b.setVisible(g)})});f.legend.colorizeItem(this,g)}},d))});return a};b.defaultLegendLength=200;b.defaultColorAxisOptions={lineWidth:0,minPadding:0,maxPadding:0,gridLineWidth:1,tickPixelInterval:72,
+startOnTick:!0,endOnTick:!0,offset:0,marker:{animation:{duration:50},width:.01,color:C.neutralColor40},labels:{overflow:"justify",rotation:0},minColor:C.highlightColor10,maxColor:C.highlightColor100,tickLength:5,showInLegend:!0};b.keepProps=["legendGroup","legendItemHeight","legendItemWidth","legendItem","legendSymbol"];return b}(a);Array.prototype.push.apply(a.keepProps,b.keepProps);n.ColorAxis=b;["fill","stroke"].forEach(function(b){m.prototype[b+"Setter"]=function(){this.elem.attr(b,p(this.start).tweenTo(p(this.end),
+this.pos),null,!0)}});v(c,"afterGetAxes",function(){var f=this,a=f.options;this.colorAxis=[];a.colorAxis&&(a.colorAxis=z(a.colorAxis),a.colorAxis.forEach(function(a,g){a.index=g;new b(f,a)}))});v(k,"bindAxes",function(){var b=this.axisTypes;b?-1===b.indexOf("colorAxis")&&b.push("colorAxis"):this.axisTypes=["colorAxis"]});v(w,"afterGetAllItems",function(b){var a=this,e=[],f,h,d=function(f){f=b.allItems.indexOf(f);-1!==f&&(a.destroyItem(b.allItems[f]),b.allItems.splice(f,1))};(this.chart.colorAxis||
+[]).forEach(function(b){(f=b.options)&&f.showInLegend&&(f.dataClasses&&f.visible?e=e.concat(b.getDataClassLegendSymbols()):f.visible&&e.push(b),b.series.forEach(function(b){if(!b.options.showInLegend||f.dataClasses)"point"===b.options.legendType?b.points.forEach(function(b){d(b)}):d(b)}))});for(h=e.length;h--;)b.allItems.unshift(e[h])});v(w,"afterColorizeItem",function(b){b.visible&&b.item.legendColor&&b.item.legendSymbol.attr({fill:b.item.legendColor})});v(w,"afterUpdate",function(){var b=this.chart.colorAxis;
+b&&b.forEach(function(b,a,f){b.update({},f)})});v(k,"afterTranslate",function(){(this.chart.colorAxis&&this.chart.colorAxis.length||this.colorAttribs)&&this.translateColors()});return b});u(a,"Mixins/ColorMapSeries.js",[a["Core/Globals.js"],a["Core/Series/Point.js"],a["Core/Utilities.js"]],function(a,c,l){var r=l.defined;l=l.addEvent;var m=a.noop;a=a.seriesTypes;l(c,"afterSetState",function(a){this.moveToTopOnHover&&this.graphic&&this.graphic.attr({zIndex:a&&"hover"===a.state?1:0})});return{colorMapPointMixin:{dataLabelOnNull:!0,
+moveToTopOnHover:!0,isValid:function(){return null!==this.value&&Infinity!==this.value&&-Infinity!==this.value}},colorMapSeriesMixin:{pointArrayMap:["value"],axisTypes:["xAxis","yAxis","colorAxis"],trackerGroups:["group","markerGroup","dataLabelsGroup"],getSymbol:m,parallelArrays:["x","y","value"],colorKey:"value",pointAttribs:a.column.prototype.pointAttribs,colorAttribs:function(a){var c={};!r(a.color)||a.state&&"normal"!==a.state||(c[this.colorProp||"fill"]=a.color);return c}}}});u(a,"Series/Heatmap/HeatmapPoint.js",
+[a["Mixins/ColorMapSeries.js"],a["Core/Series/SeriesRegistry.js"],a["Core/Utilities.js"]],function(a,c,l){var r=this&&this.__extends||function(){var a=function(c,h){a=Object.setPrototypeOf||{__proto__:[]}instanceof Array&&function(a,h){a.__proto__=h}||function(a,h){for(var c in h)h.hasOwnProperty(c)&&(a[c]=h[c])};return a(c,h)};return function(c,h){function k(){this.constructor=c}a(c,h);c.prototype=null===h?Object.create(h):(k.prototype=h.prototype,new k)}}();a=a.colorMapPointMixin;var m=l.clamp,
+n=l.extend,w=l.pick;c=function(a){function c(){var h=null!==a&&a.apply(this,arguments)||this;h.options=void 0;h.series=void 0;h.value=void 0;h.x=void 0;h.y=void 0;return h}r(c,a);c.prototype.applyOptions=function(h,c){h=a.prototype.applyOptions.call(this,h,c);h.formatPrefix=h.isNull||null===h.value?"null":"point";return h};c.prototype.getCellAttributes=function(){var a=this.series,c=a.options,l=(c.colsize||1)/2,r=(c.rowsize||1)/2,p=a.xAxis,n=a.yAxis,v=this.options.marker||a.options.marker;a=a.pointPlacementToXValue();
+var y=w(this.pointPadding,c.pointPadding,0),t={x1:m(Math.round(p.len-(p.translate(this.x-l,!1,!0,!1,!0,-a)||0)),-p.len,2*p.len),x2:m(Math.round(p.len-(p.translate(this.x+l,!1,!0,!1,!0,-a)||0)),-p.len,2*p.len),y1:m(Math.round(n.translate(this.y-r,!1,!0,!1,!0)||0),-n.len,2*n.len),y2:m(Math.round(n.translate(this.y+r,!1,!0,!1,!0)||0),-n.len,2*n.len)};[["width","x"],["height","y"]].forEach(function(a){var h=a[0];a=a[1];var c=a+"1",b=a+"2",f=Math.abs(t[c]-t[b]),k=v&&v.lineWidth||0,e=Math.abs(t[c]+t[b])/
+2;v[h]&&v[h]<f&&(t[c]=e-v[h]/2-k/2,t[b]=e+v[h]/2+k/2);y&&("y"===a&&(c=b,b=a+"1"),t[c]+=y,t[b]-=y)});return t};c.prototype.haloPath=function(a){if(!a)return[];var c=this.shapeArgs;return["M",c.x-a,c.y-a,"L",c.x-a,c.y+c.height+a,c.x+c.width+a,c.y+c.height+a,c.x+c.width+a,c.y-a,"Z"]};c.prototype.isValid=function(){return Infinity!==this.value&&-Infinity!==this.value};return c}(c.seriesTypes.scatter.prototype.pointClass);n(c.prototype,{dataLabelOnNull:a.dataLabelOnNull,moveToTopOnHover:a.moveToTopOnHover});
+return c});u(a,"Series/Heatmap/HeatmapSeries.js",[a["Core/Color/Color.js"],a["Mixins/ColorMapSeries.js"],a["Series/Heatmap/HeatmapPoint.js"],a["Mixins/LegendSymbol.js"],a["Core/Color/Palette.js"],a["Core/Series/SeriesRegistry.js"],a["Core/Renderer/SVG/SVGRenderer.js"],a["Core/Utilities.js"]],function(a,c,l,r,m,n,w,u){var C=this&&this.__extends||function(){var a=function(c,b){a=Object.setPrototypeOf||{__proto__:[]}instanceof Array&&function(b,a){b.__proto__=a}||function(b,a){for(var f in a)a.hasOwnProperty(f)&&
+(b[f]=a[f])};return a(c,b)};return function(c,b){function f(){this.constructor=c}a(c,b);c.prototype=null===b?Object.create(b):(f.prototype=b.prototype,new f)}}();c=c.colorMapSeriesMixin;var h=n.series,k=n.seriesTypes,A=k.column,F=k.scatter,p=w.prototype.symbols,D=u.extend,v=u.fireEvent,y=u.isNumber,t=u.merge,E=u.pick;w=function(c){function k(){var b=null!==c&&c.apply(this,arguments)||this;b.colorAxis=void 0;b.data=void 0;b.options=void 0;b.points=void 0;b.valueMax=NaN;b.valueMin=NaN;return b}C(k,
+c);k.prototype.drawPoints=function(){var b=this;if((this.options.marker||{}).enabled||this._hasPointMarkers)h.prototype.drawPoints.call(this),this.points.forEach(function(a){a.graphic&&(a.graphic[b.chart.styledMode?"css":"animate"](b.colorAttribs(a)),b.options.borderRadius&&a.graphic.attr({r:b.options.borderRadius}),null===a.value&&a.graphic.addClass("highcharts-null-point"))})};k.prototype.getExtremes=function(){var b=h.prototype.getExtremes.call(this,this.valueData),a=b.dataMin;b=b.dataMax;y(a)&&
+(this.valueMin=a);y(b)&&(this.valueMax=b);return h.prototype.getExtremes.call(this)};k.prototype.getValidPoints=function(b,a){return h.prototype.getValidPoints.call(this,b,a,!0)};k.prototype.hasData=function(){return!!this.processedXData.length};k.prototype.init=function(){h.prototype.init.apply(this,arguments);var b=this.options;b.pointRange=E(b.pointRange,b.colsize||1);this.yAxis.axisPointRange=b.rowsize||1;p.ellipse=p.circle};k.prototype.markerAttribs=function(b,a){var c=b.marker||{},e=this.options.marker||
+{},f=b.shapeArgs||{},h={};if(b.hasImage)return{x:b.plotX,y:b.plotY};if(a){var d=e.states[a]||{};var k=c.states&&c.states[a]||{};[["width","x"],["height","y"]].forEach(function(a){h[a[0]]=(k[a[0]]||d[a[0]]||f[a[0]])+(k[a[0]+"Plus"]||d[a[0]+"Plus"]||0);h[a[1]]=f[a[1]]+(f[a[0]]-h[a[0]])/2})}return a?h:f};k.prototype.pointAttribs=function(b,c){var f=h.prototype.pointAttribs.call(this,b,c),e=this.options||{},g=this.chart.options.plotOptions||{},k=g.series||{},d=g.heatmap||{};g=e.borderColor||d.borderColor||
+k.borderColor;k=e.borderWidth||d.borderWidth||k.borderWidth||f["stroke-width"];f.stroke=b&&b.marker&&b.marker.lineColor||e.marker&&e.marker.lineColor||g||this.color;f["stroke-width"]=k;c&&(b=t(e.states[c],e.marker&&e.marker.states[c],b&&b.options.states&&b.options.states[c]||{}),c=b.brightness,f.fill=b.color||a.parse(f.fill).brighten(c||0).get(),f.stroke=b.lineColor);return f};k.prototype.setClip=function(a){var b=this.chart;h.prototype.setClip.apply(this,arguments);(!1!==this.options.clip||a)&&this.markerGroup.clip((a||
+this.clipBox)&&this.sharedClipKey?b.sharedClips[this.sharedClipKey]:b.clipRect)};k.prototype.translate=function(){var a=this.options,c=a.marker&&a.marker.symbol||"rect",h=p[c]?c:"rect",e=-1!==["circle","square"].indexOf(h);this.generatePoints();this.points.forEach(function(a){var b=a.getCellAttributes(),d={};d.x=Math.min(b.x1,b.x2);d.y=Math.min(b.y1,b.y2);d.width=Math.max(Math.abs(b.x2-b.x1),0);d.height=Math.max(Math.abs(b.y2-b.y1),0);var f=a.hasImage=0===(a.marker&&a.marker.symbol||c||"").indexOf("url");
+if(e){var g=Math.abs(d.width-d.height);d.x=Math.min(b.x1,b.x2)+(d.width<d.height?0:g/2);d.y=Math.min(b.y1,b.y2)+(d.width<d.height?g/2:0);d.width=d.height=Math.min(d.width,d.height)}g={plotX:(b.x1+b.x2)/2,plotY:(b.y1+b.y2)/2,clientX:(b.x1+b.x2)/2,shapeType:"path",shapeArgs:t(!0,d,{d:p[h](d.x,d.y,d.width,d.height)})};f&&(a.marker={width:d.width,height:d.height});D(a,g)});v(this,"afterTranslate")};k.defaultOptions=t(F.defaultOptions,{animation:!1,borderRadius:0,borderWidth:0,nullColor:m.neutralColor3,
+dataLabels:{formatter:function(){return this.point.value},inside:!0,verticalAlign:"middle",crop:!1,overflow:!1,padding:0},marker:{symbol:"rect",radius:0,lineColor:void 0,states:{hover:{lineWidthPlus:0},select:{}}},clip:!0,pointRange:null,tooltip:{pointFormat:"{point.x}, {point.y}: {point.value}<br/>"},states:{hover:{halo:!1,brightness:.2}}});return k}(F);D(w.prototype,{alignDataLabel:A.prototype.alignDataLabel,axisTypes:c.axisTypes,colorAttribs:c.colorAttribs,colorKey:c.colorKey,directTouch:!0,drawLegendSymbol:r.drawRectangle,
+getExtremesFromAll:!0,getSymbol:h.prototype.getSymbol,parallelArrays:c.parallelArrays,pointArrayMap:["y","value"],pointClass:l,trackerGroups:c.trackerGroups});n.registerSeriesType("heatmap",w);"";"";return w});u(a,"masters/modules/heatmap.src.js",[],function(){})});
+//# sourceMappingURL=heatmap.js.map
+
+/***/ }),
+
 /***/ "./node_modules/highcharts/modules/sankey.js":
 /*!***************************************************!*\
   !*** ./node_modules/highcharts/modules/sankey.js ***!
@@ -7551,6 +7718,66 @@ k=d.plotSizeY-b-l,m=a.options.height||f.height||c,n=a.options.width||f.width||l)
 nodeFormat:void 0,nodeFormatter:function(){return this.point.name},format:void 0,formatter:function(){},inside:!0},inactiveOtherPoints:!0,linkOpacity:.5,minLinkWidth:0,nodeWidth:20,nodePadding:10,showInLegend:!1,states:{hover:{linkOpacity:1},inactive:{linkOpacity:.1,opacity:.1,animation:{duration:50}}},tooltip:{followPointer:!0,headerFormat:'<span style="font-size: 10px">{series.name}</span><br/>',pointFormat:"{point.fromNode.name} \u2192 {point.toNode.name}: <b>{point.weight}</b><br/>",nodeFormat:"{point.name}: <b>{point.sum}</b><br/>"}});
 return e}(b);g(e.prototype,{animate:d.prototype.animate,createNode:h.createNode,destroy:h.destroy,forceDL:!0,invertible:!0,isCartesian:!1,orderNodes:!0,pointArrayMap:["from","to"],pointClass:k,searchPoint:f.noop,setData:h.setData});p.registerSeriesType("sankey",e);"";"";return e});q(c,"masters/modules/sankey.src.js",[],function(){})});
 //# sourceMappingURL=sankey.js.map
+
+/***/ }),
+
+/***/ "./node_modules/highcharts/modules/treemap.js":
+/*!****************************************************!*\
+  !*** ./node_modules/highcharts/modules/treemap.js ***!
+  \****************************************************/
+/***/ ((module, exports, __webpack_require__) => {
+
+"use strict";
+var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*
+ Highcharts JS v9.1.2 (2021-06-16)
+
+ (c) 2014-2021 Highsoft AS
+ Authors: Jon Arild Nygard / Oystein Moseng
+
+ License: www.highcharts.com/license
+*/
+(function(a){ true&&module.exports?(a["default"]=a,module.exports=a): true?!(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__(/*! highcharts */ "./node_modules/highcharts/highcharts.js")], __WEBPACK_AMD_DEFINE_RESULT__ = (function(n){a(n);a.Highcharts=n;return a}).apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__),
+		__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__)):0})(function(a){function n(a,e,c,t){a.hasOwnProperty(e)||(a[e]=t.apply(null,c))}a=a?a._modules:{};n(a,"Mixins/ColorMapSeries.js",[a["Core/Globals.js"],a["Core/Series/Point.js"],a["Core/Utilities.js"]],function(a,e,c){var t=
+c.defined;c=c.addEvent;var g=a.noop;a=a.seriesTypes;c(e,"afterSetState",function(a){this.moveToTopOnHover&&this.graphic&&this.graphic.attr({zIndex:a&&"hover"===a.state?1:0})});return{colorMapPointMixin:{dataLabelOnNull:!0,moveToTopOnHover:!0,isValid:function(){return null!==this.value&&Infinity!==this.value&&-Infinity!==this.value}},colorMapSeriesMixin:{pointArrayMap:["value"],axisTypes:["xAxis","yAxis","colorAxis"],trackerGroups:["group","markerGroup","dataLabelsGroup"],getSymbol:g,parallelArrays:["x",
+"y","value"],colorKey:"value",pointAttribs:a.column.prototype.pointAttribs,colorAttribs:function(a){var c={};!t(a.color)||a.state&&"normal"!==a.state||(c[this.colorProp||"fill"]=a.color);return c}}}});n(a,"Series/Treemap/TreemapAlgorithmGroup.js",[],function(){return function(){function a(a,c,t,g){this.height=a;this.width=c;this.plot=g;this.startDirection=this.direction=t;this.lH=this.nH=this.lW=this.nW=this.total=0;this.elArr=[];this.lP={total:0,lH:0,nH:0,lW:0,nW:0,nR:0,lR:0,aspectRatio:function(a,
+c){return Math.max(a/c,c/a)}}}a.prototype.addElement=function(a){this.lP.total=this.elArr[this.elArr.length-1];this.total+=a;0===this.direction?(this.lW=this.nW,this.lP.lH=this.lP.total/this.lW,this.lP.lR=this.lP.aspectRatio(this.lW,this.lP.lH),this.nW=this.total/this.height,this.lP.nH=this.lP.total/this.nW,this.lP.nR=this.lP.aspectRatio(this.nW,this.lP.nH)):(this.lH=this.nH,this.lP.lW=this.lP.total/this.lH,this.lP.lR=this.lP.aspectRatio(this.lP.lW,this.lH),this.nH=this.total/this.width,this.lP.nW=
+this.lP.total/this.nH,this.lP.nR=this.lP.aspectRatio(this.lP.nW,this.nH));this.elArr.push(a)};a.prototype.reset=function(){this.lW=this.nW=0;this.elArr=[];this.total=0};return a}()});n(a,"Mixins/DrawPoint.js",[],function(){var a=function(a){return"function"===typeof a},e=function(c){var e=this,g=c.animatableAttribs,k=c.onComplete,r=c.css,l=c.renderer,m=this.series&&this.series.chart.hasRendered?void 0:this.series&&this.series.options.animation,b=this.graphic;if(this.shouldDraw())b||(this.graphic=
+b=l[c.shapeType](c.shapeArgs).add(c.group)),b.css(r).attr(c.attribs).animate(g,c.isNew?!1:m,k);else if(b){var f=function(){e.graphic=b=b&&b.destroy();a(k)&&k()};Object.keys(g).length?b.animate(g,void 0,function(){f()}):f()}};return{draw:e,drawPoint:function(a){(a.attribs=a.attribs||{})["class"]=this.getClassName();e.call(this,a)},isFn:a}});n(a,"Series/Treemap/TreemapPoint.js",[a["Mixins/DrawPoint.js"],a["Core/Series/SeriesRegistry.js"],a["Core/Utilities.js"]],function(a,e,c){var t=this&&this.__extends||
+function(){var a=function(b,c){a=Object.setPrototypeOf||{__proto__:[]}instanceof Array&&function(a,b){a.__proto__=b}||function(a,b){for(var f in b)b.hasOwnProperty(f)&&(a[f]=b[f])};return a(b,c)};return function(b,c){function f(){this.constructor=b}a(b,c);b.prototype=null===c?Object.create(c):(f.prototype=c.prototype,new f)}}(),g=e.series.prototype.pointClass,k=e.seriesTypes;e=k.pie.prototype.pointClass;var r=c.extend,l=c.isNumber,m=c.pick;c=function(a){function b(){var b=null!==a&&a.apply(this,arguments)||
+this;b.name=void 0;b.node=void 0;b.options=void 0;b.series=void 0;b.value=void 0;return b}t(b,a);b.prototype.getClassName=function(){var a=g.prototype.getClassName.call(this),b=this.series,c=b.options;this.node.level<=b.nodeMap[b.rootNode].level?a+=" highcharts-above-level":this.node.isLeaf||m(c.interactByLeaf,!c.allowTraversingTree)?this.node.isLeaf||(a+=" highcharts-internal-node"):a+=" highcharts-internal-node-interactive";return a};b.prototype.isValid=function(){return!(!this.id&&!l(this.value))};
+b.prototype.setState=function(a){g.prototype.setState.call(this,a);this.graphic&&this.graphic.attr({zIndex:"hover"===a?1:0})};b.prototype.shouldDraw=function(){return l(this.plotY)&&null!==this.y};return b}(k.scatter.prototype.pointClass);r(c.prototype,{draw:a.drawPoint,setVisible:e.prototype.setVisible});return c});n(a,"Series/Treemap/TreemapUtilities.js",[a["Core/Utilities.js"]],function(a){var e=a.objectEach,c;(function(a){function c(a,e,l){void 0===l&&(l=this);a=e.call(l,a);!1!==a&&c(a,e,l)}a.AXIS_MAX=
+100;a.isBoolean=function(a){return"boolean"===typeof a};a.eachObject=function(a,c,l){l=l||this;e(a,function(m,b){c.call(l,m,b,a)})};a.recursive=c})(c||(c={}));return c});n(a,"Mixins/TreeSeries.js",[a["Core/Color/Color.js"],a["Core/Utilities.js"]],function(a,e){var c=e.extend,t=e.isArray,g=e.isNumber,k=e.isObject,r=e.merge,l=e.pick;return{getColor:function(c,b){var f=b.index,e=b.mapOptionsToLevel,m=b.parentColor,k=b.parentColorIndex,g=b.series,y=b.colors,t=b.siblings,q=g.points,r=g.chart.options.chart,
+w;if(c){q=q[c.i];c=e[c.level]||{};if(e=q&&c.colorByPoint){var n=q.index%(y?y.length:r.colorCount);var D=y&&y[n]}if(!g.chart.styledMode){y=q&&q.options.color;r=c&&c.color;if(w=m)w=(w=c&&c.colorVariation)&&"brightness"===w.key?a.parse(m).brighten(f/t*w.to).get():m;w=l(y,r,D,w,g.color)}var F=l(q&&q.options.colorIndex,c&&c.colorIndex,n,k,b.colorIndex)}return{color:w,colorIndex:F}},getLevelOptions:function(a){var b=null;if(k(a)){b={};var f=g(a.from)?a.from:1;var e=a.levels;var l={};var m=k(a.defaults)?
+a.defaults:{};t(e)&&(l=e.reduce(function(a,b){if(k(b)&&g(b.level)){var e=r({},b);var l="boolean"===typeof e.levelIsConstant?e.levelIsConstant:m.levelIsConstant;delete e.levelIsConstant;delete e.level;b=b.level+(l?0:f-1);k(a[b])?c(a[b],e):a[b]=e}return a},{}));e=g(a.to)?a.to:1;for(a=0;a<=e;a++)b[a]=r({},m,k(l[a])?l[a]:{})}return b},setTreeValues:function M(a,e){var b=e.before,f=e.idRoot,g=e.mapIdToNode[f],k=e.points[a.i],r=k&&k.options||{},q=0,n=[];a.levelDynamic=a.level-(("boolean"===typeof e.levelIsConstant?
+e.levelIsConstant:1)?0:g.level);a.name=l(k&&k.name,"");a.visible=f===a.id||("boolean"===typeof e.visible?e.visible:!1);"function"===typeof b&&(a=b(a,e));a.children.forEach(function(b,f){var l=c({},e);c(l,{index:f,siblings:a.children.length,visible:a.visible});b=M(b,l);n.push(b);b.visible&&(q+=b.val)});a.visible=0<q||a.visible;b=l(r.value,q);a.children=n;a.childrenTotal=q;a.isLeaf=a.visible&&!q;a.val=b;return a},updateRootId:function(a){if(k(a)){var b=k(a.options)?a.options:{};b=l(a.rootNode,b.rootId,
+"");k(a.userOptions)&&(a.userOptions.rootId=b);a.rootNode=b}return b}}});n(a,"Series/Treemap/TreemapComposition.js",[a["Core/Series/SeriesRegistry.js"],a["Series/Treemap/TreemapUtilities.js"],a["Core/Utilities.js"]],function(a,e,c){var n=c.addEvent,g=c.extend,k=!1;n(a.series,"afterBindAxes",function(){var a=this.xAxis,c=this.yAxis;if(a&&c)if(this.is("treemap")){var m={endOnTick:!1,gridLineWidth:0,lineWidth:0,min:0,minPadding:0,max:e.AXIS_MAX,maxPadding:0,startOnTick:!1,title:void 0,tickPositions:[]};
+g(c.options,m);g(a.options,m);k=!0}else k&&(c.setOptions(c.userOptions),a.setOptions(a.userOptions),k=!1)})});n(a,"Series/Treemap/TreemapSeries.js",[a["Core/Color/Color.js"],a["Mixins/ColorMapSeries.js"],a["Core/Globals.js"],a["Mixins/LegendSymbol.js"],a["Core/Color/Palette.js"],a["Core/Series/SeriesRegistry.js"],a["Series/Treemap/TreemapAlgorithmGroup.js"],a["Series/Treemap/TreemapPoint.js"],a["Series/Treemap/TreemapUtilities.js"],a["Mixins/TreeSeries.js"],a["Core/Utilities.js"]],function(a,e,c,
+n,g,k,r,l,m,b,f){var t=this&&this.__extends||function(){var a=function(b,d){a=Object.setPrototypeOf||{__proto__:[]}instanceof Array&&function(d,a){d.__proto__=a}||function(d,a){for(var h in a)a.hasOwnProperty(h)&&(d[h]=a[h])};return a(b,d)};return function(b,d){function h(){this.constructor=b}a(b,d);b.prototype=null===d?Object.create(d):(h.prototype=d.prototype,new h)}}(),I=a.parse,J=e.colorMapSeriesMixin;a=c.noop;var B=k.series;e=k.seriesTypes;var y=e.column,F=e.heatmap,q=e.scatter,N=b.getColor,
+w=b.getLevelOptions,O=b.updateRootId,D=f.addEvent,P=f.correctFloat,C=f.defined,Q=f.error,E=f.extend,R=f.fireEvent,K=f.isArray,S=f.isObject,G=f.isString,A=f.merge,x=f.pick,T=f.stableSort;b=function(a){function b(){var d=null!==a&&a.apply(this,arguments)||this;d.axisRatio=void 0;d.data=void 0;d.mapOptionsToLevel=void 0;d.nodeMap=void 0;d.options=void 0;d.points=void 0;d.rootNode=void 0;d.tree=void 0;return d}t(b,a);b.prototype.algorithmCalcPoints=function(d,a,b,c){var h,u,p,e,H=b.lW,v=b.lH,f=b.plot,
+k=0,l=b.elArr.length-1;if(a)H=b.nW,v=b.nH;else var g=b.elArr[b.elArr.length-1];b.elArr.forEach(function(d){if(a||k<l)0===b.direction?(h=f.x,u=f.y,p=H,e=d/p):(h=f.x,u=f.y,e=v,p=d/e),c.push({x:h,y:u,width:p,height:P(e)}),0===b.direction?f.y+=e:f.x+=p;k+=1});b.reset();0===b.direction?b.width-=H:b.height-=v;f.y=f.parent.y+(f.parent.height-b.height);f.x=f.parent.x+(f.parent.width-b.width);d&&(b.direction=1-b.direction);a||b.addElement(g)};b.prototype.algorithmFill=function(d,a,b){var h=[],z,c=a.direction,
+p=a.x,e=a.y,f=a.width,v=a.height,k,l,g,m;b.forEach(function(b){z=b.val/a.val*a.height*a.width;k=p;l=e;0===c?(m=v,g=z/m,f-=g,p+=g):(g=f,m=z/g,v-=m,e+=m);h.push({x:k,y:l,width:g,height:m});d&&(c=1-c)});return h};b.prototype.algorithmLowAspectRatio=function(a,b,c){var d=[],h=this,p,e={x:b.x,y:b.y,parent:b},f=0,g=c.length-1,v=new r(b.height,b.width,b.direction,e);c.forEach(function(c){p=c.val/b.val*b.height*b.width;v.addElement(p);v.lP.nR>v.lP.lR&&h.algorithmCalcPoints(a,!1,v,d,e);f===g&&h.algorithmCalcPoints(a,
+!0,v,d,e);f+=1});return d};b.prototype.alignDataLabel=function(a,b,c){var d=c.style;d&&!C(d.textOverflow)&&b.text&&b.getBBox().width>b.text.textWidth&&b.css({textOverflow:"ellipsis",width:d.width+="px"});y.prototype.alignDataLabel.apply(this,arguments);a.dataLabel&&a.dataLabel.attr({zIndex:(a.node.zIndex||0)+1})};b.prototype.buildNode=function(a,b,c,e,z){var d=this,h=[],p=d.points[b],u=0,f;(e[a]||[]).forEach(function(b){f=d.buildNode(d.points[b].id,b,c+1,e,a);u=Math.max(f.height+1,u);h.push(f)});
+b={id:a,i:b,children:h,height:u,level:c,parent:z,visible:!1};d.nodeMap[b.id]=b;p&&(p.node=b);return b};b.prototype.calculateChildrenAreas=function(a,b){var d=this,h=d.options,c=d.mapOptionsToLevel[a.level+1],e=x(d[c&&c.layoutAlgorithm]&&c.layoutAlgorithm,h.layoutAlgorithm),f=h.alternateStartingDirection,g=[];a=a.children.filter(function(a){return!a.ignore});c&&c.layoutStartingDirection&&(b.direction="vertical"===c.layoutStartingDirection?0:1);g=d[e](b,a);a.forEach(function(a,h){h=g[h];a.values=A(h,
+{val:a.childrenTotal,direction:f?1-b.direction:b.direction});a.pointValues=A(h,{x:h.x/d.axisRatio,y:m.AXIS_MAX-h.y-h.height,width:h.width/d.axisRatio});a.children.length&&d.calculateChildrenAreas(a,a.values)})};b.prototype.drawDataLabels=function(){var a=this,b=a.mapOptionsToLevel,c,e;a.points.filter(function(a){return a.node.visible}).forEach(function(d){e=b[d.node.level];c={style:{}};d.node.isLeaf||(c.enabled=!1);e&&e.dataLabels&&(c=A(c,e.dataLabels),a._hasPointLabels=!0);d.shapeArgs&&(c.style.width=
+d.shapeArgs.width,d.dataLabel&&d.dataLabel.css({width:d.shapeArgs.width+"px"}));d.dlOptions=A(c,d.options.dataLabels)});B.prototype.drawDataLabels.call(this)};b.prototype.drawPoints=function(){var a=this,b=a.chart,c=b.renderer,e=b.styledMode,f=a.options,U=e?{}:f.shadow,g=f.borderRadius,k=b.pointCount<f.animationLimit,l=f.allowTraversingTree;a.points.forEach(function(d){var b=d.node.levelDynamic,h={},p={},z={},u="level-group-"+d.node.level,L=!!d.graphic,m=k&&L,n=d.shapeArgs;d.shouldDraw()&&(d.isInside=
+!0,g&&(p.r=g),A(!0,m?h:p,L?n:{},e?{}:a.pointAttribs(d,d.selected?"select":void 0)),a.colorAttribs&&e&&E(z,a.colorAttribs(d)),a[u]||(a[u]=c.g(u).attr({zIndex:1E3-(b||0)}).add(a.group),a[u].survive=!0));d.draw({animatableAttribs:h,attribs:p,css:z,group:a[u],renderer:c,shadow:U,shapeArgs:n,shapeType:"rect"});l&&d.graphic&&(d.drillId=f.interactByLeaf?a.drillToByLeaf(d):a.drillToByGroup(d))})};b.prototype.drillToByGroup=function(a){var d=!1;1!==a.node.level-this.nodeMap[this.rootNode].level||a.node.isLeaf||
+(d=a.id);return d};b.prototype.drillToByLeaf=function(a){var d=!1;if(a.node.parent!==this.rootNode&&a.node.isLeaf)for(a=a.node;!d;)a=this.nodeMap[a.parent],a.parent===this.rootNode&&(d=a.id);return d};b.prototype.drillToNode=function(a,b){Q(32,!1,void 0,{"treemap.drillToNode":"use treemap.setRootNode"});this.setRootNode(a,b)};b.prototype.drillUp=function(){var a=this.nodeMap[this.rootNode];a&&G(a.parent)&&this.setRootNode(a.parent,!0,{trigger:"traverseUpButton"})};b.prototype.getExtremes=function(){var a=
+B.prototype.getExtremes.call(this,this.colorValueData),b=a.dataMax;this.valueMin=a.dataMin;this.valueMax=b;return B.prototype.getExtremes.call(this)};b.prototype.getListOfParents=function(a,b){a=K(a)?a:[];var d=K(b)?b:[];b=a.reduce(function(a,b,d){b=x(b.parent,"");"undefined"===typeof a[b]&&(a[b]=[]);a[b].push(d);return a},{"":[]});m.eachObject(b,function(a,b,c){""!==b&&-1===d.indexOf(b)&&(a.forEach(function(a){c[""].push(a)}),delete c[b])});return b};b.prototype.getTree=function(){var a=this.data.map(function(a){return a.id});
+a=this.getListOfParents(this.data,a);this.nodeMap={};return this.buildNode("",-1,0,a)};b.prototype.hasData=function(){return!!this.processedXData.length};b.prototype.init=function(a,b){J&&(this.colorAttribs=J.colorAttribs);var d=D(this,"setOptions",function(a){a=a.userOptions;C(a.allowDrillToNode)&&!C(a.allowTraversingTree)&&(a.allowTraversingTree=a.allowDrillToNode,delete a.allowDrillToNode);C(a.drillUpButton)&&!C(a.traverseUpButton)&&(a.traverseUpButton=a.drillUpButton,delete a.drillUpButton)});
+B.prototype.init.call(this,a,b);delete this.opacity;this.eventsToUnbind.push(d);this.options.allowTraversingTree&&this.eventsToUnbind.push(D(this,"click",this.onClickDrillToNode))};b.prototype.onClickDrillToNode=function(a){var b=(a=a.point)&&a.drillId;G(b)&&(a.setState(""),this.setRootNode(b,!0,{trigger:"click"}))};b.prototype.pointAttribs=function(a,b){var d=S(this.mapOptionsToLevel)?this.mapOptionsToLevel:{},c=a&&d[a.node.level]||{};d=this.options;var e=b&&d.states[b]||{},h=a&&a.getClassName()||
+"";a={stroke:a&&a.borderColor||c.borderColor||e.borderColor||d.borderColor,"stroke-width":x(a&&a.borderWidth,c.borderWidth,e.borderWidth,d.borderWidth),dashstyle:a&&a.borderDashStyle||c.borderDashStyle||e.borderDashStyle||d.borderDashStyle,fill:a&&a.color||this.color};-1!==h.indexOf("highcharts-above-level")?(a.fill="none",a["stroke-width"]=0):-1!==h.indexOf("highcharts-internal-node-interactive")?(b=x(e.opacity,d.opacity),a.fill=I(a.fill).setOpacity(b).get(),a.cursor="pointer"):-1!==h.indexOf("highcharts-internal-node")?
+a.fill="none":b&&(a.fill=I(a.fill).brighten(e.brightness).get());return a};b.prototype.renderTraverseUpButton=function(a){var b=this,d=b.options.traverseUpButton,c=x(d.text,b.nodeMap[a].name,"\u25c1 Back");if(""===a||b.is("sunburst")&&1===b.tree.children.length&&a===b.tree.children[0].id)b.drillUpButton&&(b.drillUpButton=b.drillUpButton.destroy());else if(this.drillUpButton)this.drillUpButton.placed=!1,this.drillUpButton.attr({text:c}).align();else{var e=(a=d.theme)&&a.states;this.drillUpButton=this.chart.renderer.button(c,
+0,0,function(){b.drillUp()},a,e&&e.hover,e&&e.select).addClass("highcharts-drillup-button").attr({align:d.position.align,zIndex:7}).add().align(d.position,!1,d.relativeTo||"plotBox")}};b.prototype.setColorRecursive=function(a,b,c,e,f){var d=this,h=d&&d.chart;h=h&&h.options&&h.options.colors;if(a){var g=N(a,{colors:h,index:e,mapOptionsToLevel:d.mapOptionsToLevel,parentColor:b,parentColorIndex:c,series:d,siblings:f});if(b=d.points[a.i])b.color=g.color,b.colorIndex=g.colorIndex;(a.children||[]).forEach(function(b,
+c){d.setColorRecursive(b,g.color,g.colorIndex,c,a.children.length)})}};b.prototype.setPointValues=function(){var a=this,b=a.xAxis,c=a.yAxis,e=a.chart.styledMode;a.points.forEach(function(d){var h=d.node,f=h.pointValues;h=h.visible;if(f&&h){h=f.height;var g=f.width,k=f.x,l=f.y,p=e?0:(a.pointAttribs(d)["stroke-width"]||0)%2/2;f=Math.round(b.toPixels(k,!0))-p;g=Math.round(b.toPixels(k+g,!0))-p;k=Math.round(c.toPixels(l,!0))-p;h=Math.round(c.toPixels(l+h,!0))-p;h={x:Math.min(f,g),y:Math.min(k,h),width:Math.abs(g-
+f),height:Math.abs(h-k)};d.plotX=h.x+h.width/2;d.plotY=h.y+h.height/2;d.shapeArgs=h}else delete d.plotX,delete d.plotY})};b.prototype.setRootNode=function(a,b,c){a=E({newRootId:a,previousRootId:this.rootNode,redraw:x(b,!0),series:this},c);R(this,"setRootNode",a,function(a){var b=a.series;b.idPreviousRoot=a.previousRootId;b.rootNode=a.newRootId;b.isDirty=!0;a.redraw&&b.chart.redraw()})};b.prototype.setState=function(a){this.options.inactiveOtherPoints=!0;B.prototype.setState.call(this,a,!1);this.options.inactiveOtherPoints=
+!1};b.prototype.setTreeValues=function(a){var b=this,d=b.options,c=b.nodeMap[b.rootNode];d=m.isBoolean(d.levelIsConstant)?d.levelIsConstant:!0;var e=0,f=[],g=b.points[a.i];a.children.forEach(function(a){a=b.setTreeValues(a);f.push(a);a.ignore||(e+=a.val)});T(f,function(a,b){return(a.sortIndex||0)-(b.sortIndex||0)});var k=x(g&&g.options.value,e);g&&(g.value=k);E(a,{children:f,childrenTotal:e,ignore:!(x(g&&g.visible,!0)&&0<k),isLeaf:a.visible&&!e,levelDynamic:a.level-(d?0:c.level),name:x(g&&g.name,
+""),sortIndex:x(g&&g.sortIndex,-k),val:k});return a};b.prototype.sliceAndDice=function(a,b){return this.algorithmFill(!0,a,b)};b.prototype.squarified=function(a,b){return this.algorithmLowAspectRatio(!0,a,b)};b.prototype.strip=function(a,b){return this.algorithmLowAspectRatio(!1,a,b)};b.prototype.stripes=function(a,b){return this.algorithmFill(!1,a,b)};b.prototype.translate=function(){var a=this,b=a.options,c=O(a);B.prototype.translate.call(a);var e=a.tree=a.getTree();var f=a.nodeMap[c];""===c||f&&
+f.children.length||(a.setRootNode("",!1),c=a.rootNode,f=a.nodeMap[c]);a.renderTraverseUpButton(c);a.mapOptionsToLevel=w({from:f.level+1,levels:b.levels,to:e.height,defaults:{levelIsConstant:a.options.levelIsConstant,colorByPoint:b.colorByPoint}});m.recursive(a.nodeMap[a.rootNode],function(b){var c=!1,d=b.parent;b.visible=!0;if(d||""===d)c=a.nodeMap[d];return c});m.recursive(a.nodeMap[a.rootNode].children,function(a){var b=!1;a.forEach(function(a){a.visible=!0;a.children.length&&(b=(b||[]).concat(a.children))});
+return b});a.setTreeValues(e);a.axisRatio=a.xAxis.len/a.yAxis.len;a.nodeMap[""].pointValues=c={x:0,y:0,width:m.AXIS_MAX,height:m.AXIS_MAX};a.nodeMap[""].values=c=A(c,{width:c.width*a.axisRatio,direction:"vertical"===b.layoutStartingDirection?0:1,val:e.val});a.calculateChildrenAreas(e,c);a.colorAxis||b.colorByPoint||a.setColorRecursive(a.tree);b.allowTraversingTree&&(b=f.pointValues,a.xAxis.setExtremes(b.x,b.x+b.width,!1),a.yAxis.setExtremes(b.y,b.y+b.height,!1),a.xAxis.setScale(),a.yAxis.setScale());
+a.setPointValues()};b.defaultOptions=A(q.defaultOptions,{allowTraversingTree:!1,animationLimit:250,borderRadius:0,showInLegend:!1,marker:void 0,colorByPoint:!1,dataLabels:{defer:!1,enabled:!0,formatter:function(){var a=this&&this.point?this.point:{};return G(a.name)?a.name:""},inside:!0,verticalAlign:"middle"},tooltip:{headerFormat:"",pointFormat:"<b>{point.name}</b>: {point.value}<br/>"},ignoreHiddenPoint:!0,layoutAlgorithm:"sliceAndDice",layoutStartingDirection:"vertical",alternateStartingDirection:!1,
+levelIsConstant:!0,drillUpButton:{position:{align:"right",x:-10,y:10}},traverseUpButton:{position:{align:"right",x:-10,y:10}},borderColor:g.neutralColor10,borderWidth:1,colorKey:"colorValue",opacity:.15,states:{hover:{borderColor:g.neutralColor40,brightness:F?0:.1,halo:!1,opacity:.75,shadow:!1}}});return b}(q);E(b.prototype,{buildKDTree:a,colorKey:"colorValue",directTouch:!0,drawLegendSymbol:n.drawRectangle,getExtremesFromAll:!0,getSymbol:a,optionalAxis:"colorAxis",parallelArrays:["x","y","value",
+"colorValue"],pointArrayMap:["value"],pointClass:l,trackerGroups:["group","dataLabelsGroup"],utils:{recursive:m.recursive}});k.registerSeriesType("treemap",b);"";return b});n(a,"masters/modules/treemap.src.js",[],function(){})});
+//# sourceMappingURL=treemap.js.map
 
 /***/ }),
 
@@ -38717,6 +38944,45 @@ component.options.__file = "resources/js/components/StackedPercentageColumnChart
 
 /***/ }),
 
+/***/ "./resources/js/components/Treemap.vue":
+/*!*********************************************!*\
+  !*** ./resources/js/components/Treemap.vue ***!
+  \*********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _Treemap_vue_vue_type_template_id_76eec13a___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Treemap.vue?vue&type=template&id=76eec13a& */ "./resources/js/components/Treemap.vue?vue&type=template&id=76eec13a&");
+/* harmony import */ var _Treemap_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Treemap.vue?vue&type=script&lang=js& */ "./resources/js/components/Treemap.vue?vue&type=script&lang=js&");
+/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! !../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+/* normalize component */
+;
+var component = (0,_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__.default)(
+  _Treemap_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__.default,
+  _Treemap_vue_vue_type_template_id_76eec13a___WEBPACK_IMPORTED_MODULE_0__.render,
+  _Treemap_vue_vue_type_template_id_76eec13a___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns,
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "resources/js/components/Treemap.vue"
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (component.exports);
+
+/***/ }),
+
 /***/ "./resources/js/components/BasicLineChart.vue?vue&type=script&lang=js&":
 /*!*****************************************************************************!*\
   !*** ./resources/js/components/BasicLineChart.vue?vue&type=script&lang=js& ***!
@@ -38810,6 +39076,22 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_0_rules_0_use_0_node_modules_vue_loader_lib_index_js_vue_loader_options_StackedPercentageColumnChart_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./StackedPercentageColumnChart.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/StackedPercentageColumnChart.vue?vue&type=script&lang=js&");
  /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_babel_loader_lib_index_js_clonedRuleSet_5_0_rules_0_use_0_node_modules_vue_loader_lib_index_js_vue_loader_options_StackedPercentageColumnChart_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__.default); 
+
+/***/ }),
+
+/***/ "./resources/js/components/Treemap.vue?vue&type=script&lang=js&":
+/*!**********************************************************************!*\
+  !*** ./resources/js/components/Treemap.vue?vue&type=script&lang=js& ***!
+  \**********************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_0_rules_0_use_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Treemap_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./Treemap.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/Treemap.vue?vue&type=script&lang=js&");
+ /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_babel_loader_lib_index_js_clonedRuleSet_5_0_rules_0_use_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Treemap_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__.default); 
 
 /***/ }),
 
@@ -38911,6 +39193,23 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "staticRenderFns": () => (/* reexport safe */ _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_StackedPercentageColumnChart_vue_vue_type_template_id_7e6a2eb2___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns)
 /* harmony export */ });
 /* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_StackedPercentageColumnChart_vue_vue_type_template_id_7e6a2eb2___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./StackedPercentageColumnChart.vue?vue&type=template&id=7e6a2eb2& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/StackedPercentageColumnChart.vue?vue&type=template&id=7e6a2eb2&");
+
+
+/***/ }),
+
+/***/ "./resources/js/components/Treemap.vue?vue&type=template&id=76eec13a&":
+/*!****************************************************************************!*\
+  !*** ./resources/js/components/Treemap.vue?vue&type=template&id=76eec13a& ***!
+  \****************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "render": () => (/* reexport safe */ _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Treemap_vue_vue_type_template_id_76eec13a___WEBPACK_IMPORTED_MODULE_0__.render),
+/* harmony export */   "staticRenderFns": () => (/* reexport safe */ _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Treemap_vue_vue_type_template_id_76eec13a___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns)
+/* harmony export */ });
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Treemap_vue_vue_type_template_id_76eec13a___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./Treemap.vue?vue&type=template&id=76eec13a& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/Treemap.vue?vue&type=template&id=76eec13a&");
 
 
 /***/ }),
@@ -39097,6 +39396,38 @@ render._withStripped = true
 /*!****************************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/StackedPercentageColumnChart.vue?vue&type=template&id=7e6a2eb2& ***!
   \****************************************************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "render": () => (/* binding */ render),
+/* harmony export */   "staticRenderFns": () => (/* binding */ staticRenderFns)
+/* harmony export */ });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _vm._m(0)
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", [_c("div", { staticClass: "container" })])
+  }
+]
+render._withStripped = true
+
+
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/Treemap.vue?vue&type=template&id=76eec13a&":
+/*!*******************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/Treemap.vue?vue&type=template&id=76eec13a& ***!
+  \*******************************************************************************************************************************************************************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -51398,7 +51729,8 @@ vue__WEBPACK_IMPORTED_MODULE_1__.default.component('basic-line-chart', __webpack
 vue__WEBPACK_IMPORTED_MODULE_1__.default.component('column-chart', __webpack_require__(/*! ./components/ColumnChart.vue */ "./resources/js/components/ColumnChart.vue").default);
 vue__WEBPACK_IMPORTED_MODULE_1__.default.component('stacked-column-chart', __webpack_require__(/*! ./components/StackedColumnChart.vue */ "./resources/js/components/StackedColumnChart.vue").default);
 vue__WEBPACK_IMPORTED_MODULE_1__.default.component('stacked-percentage-column-chart', __webpack_require__(/*! ./components/StackedPercentageColumnChart.vue */ "./resources/js/components/StackedPercentageColumnChart.vue").default);
-vue__WEBPACK_IMPORTED_MODULE_1__.default.component('sankey-chart', __webpack_require__(/*! ./components/SankeyChart.vue */ "./resources/js/components/SankeyChart.vue").default); // Vue.component('pie-chart', require('./components/PieChart.vue').default);
+vue__WEBPACK_IMPORTED_MODULE_1__.default.component('sankey-chart', __webpack_require__(/*! ./components/SankeyChart.vue */ "./resources/js/components/SankeyChart.vue").default);
+vue__WEBPACK_IMPORTED_MODULE_1__.default.component('treemap', __webpack_require__(/*! ./components/Treemap.vue */ "./resources/js/components/Treemap.vue").default); // Vue.component('pie-chart', require('./components/PieChart.vue').default);
 // Vue.component('combo-chart', require('./components/ComboChart.vue').default);
 // Vue.component('stacked-column-chart', require('./components/hc-wrapper-versions/StackedColumnChart.vue').default);
 // Vue.component('chart-demo', require('./components/ChartDemo.vue').default);

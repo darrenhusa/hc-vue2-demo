@@ -64,6 +64,9 @@
         <h2>Sankey</h2>
         <sankey-chart></sankey-chart>
         
+        <h2>Treemap</h2>
+        <treemap></treemap>
+        
         <!-- <h2>Line</h2> -->
         <!-- <line-chart title="Line Chart - Constant" :values="[5, 5, 5]"></line-chart> -->
 
