@@ -44,7 +44,7 @@
         'subtitle' => '',
         'y_axis' => 'Total fruit consumption',
         'categories' => ['Apples', 'Oranges', 'Pears', 'Grapes', 'Bananas'],
-        'data' => $data,
+        'data' => $data2,
     ];
 
     @endphp

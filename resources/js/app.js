@@ -12,12 +12,12 @@ Vue.component('example-component', require('./components/ExampleComponent.vue').
 Vue.component('basic-line-chart', require('./components/BasicLineChart.vue').default);
 Vue.component('column-chart', require('./components/ColumnChart.vue').default);
 Vue.component('stacked-column-chart', require('./components/StackedColumnChart.vue').default);
+Vue.component('stacked-percentage-column-chart', require('./components/StackedPercentageColumnChart.vue').default);
 
 // Vue.component('pie-chart', require('./components/PieChart.vue').default);
 // Vue.component('combo-chart', require('./components/ComboChart.vue').default);
 
 // Vue.component('stacked-column-chart', require('./components/hc-wrapper-versions/StackedColumnChart.vue').default);
-Vue.component('stacked-percentage-column-chart', require('./components/hc-wrapper-versions/StackedPercentageColumnChart.vue').default);
 
 // Vue.component('chart-demo', require('./components/ChartDemo.vue').default);
 
