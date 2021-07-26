@@ -2128,7 +2128,8 @@ highcharts_modules_exporting__WEBPACK_IMPORTED_MODULE_1___default()((highcharts_
   name: "LineChartAlt",
   props: {
     series: {
-      type: Array,
+      // type: Array,
+      type: Object,
       required: true
     }
   },
@@ -2141,6 +2142,19 @@ highcharts_modules_exporting__WEBPACK_IMPORTED_MODULE_1___default()((highcharts_
   mounted: function mounted() {
     // console.log(this.series);
     // console.log(this.series.title);
+    // see https://stackoverflow.com/questions/50144557/how-to-add-data-to-chart-js-with-a-for-loop/50144700
+    var seriesTemp = [];
+    var number = this.series.data.length;
+
+    for (var i = 0; i < number; i++) {
+      seriesTemp.push({
+        name: this.series.data[i].label,
+        data: this.series.data[i].values
+      });
+    } // alert(seriesTemp);
+    // console.log(seriesTemp);
+
+
     this.target = highcharts__WEBPACK_IMPORTED_MODULE_0___default().chart(this.$el, {
       title: {
         text: this.series.title,
@@ -2173,19 +2187,25 @@ highcharts_modules_exporting__WEBPACK_IMPORTED_MODULE_1___default()((highcharts_
         verticalAlign: 'middle',
         borderWidth: 0
       },
-      series: [{
-        name: this.series.data[0].label,
-        data: this.series.data[0].values
-      }, {
-        name: this.series.data[1].label,
-        data: this.series.data[1].values
-      }, {
-        name: this.series.data[2].label,
-        data: this.series.data[2].values
-      }, {
-        name: this.series.data[3].label,
-        data: this.series.data[3].values
-      }],
+      series: seriesTemp,
+      // [
+      //   {
+      //     name: this.series.data[0].label,
+      //     data: this.series.data[0].values
+      //   },
+      //   {
+      //     name: this.series.data[1].label,
+      //     data: this.series.data[1].values
+      //   },
+      //   {
+      //     name: this.series.data[2].label,
+      //     data: this.series.data[2].values
+      //   },
+      //   {
+      //     name: this.series.data[3].label,
+      //     data: this.series.data[3].values
+      //   },
+      // ],
       credits: {
         enabled: false
       }
@@ -2194,7 +2214,7 @@ highcharts_modules_exporting__WEBPACK_IMPORTED_MODULE_1___default()((highcharts_
   //     this.target.destroy();
   //   },
 
-});
+}); // end export default
 
 /***/ }),
 
