@@ -2396,6 +2396,11 @@ highcharts_modules_treemap__WEBPACK_IMPORTED_MODULE_2___default()((highcharts__W
       // type: Array,
       type: Object,
       required: true
+    },
+    algorithm: {
+      type: String,
+      // required: true,
+      "default": 'sliceAndDice'
     }
   },
   data: function data() {
@@ -2428,7 +2433,7 @@ highcharts_modules_treemap__WEBPACK_IMPORTED_MODULE_2___default()((highcharts__W
       },
       series: [{
         type: 'treemap',
-        layoutAlgorithm: 'squarified',
+        layoutAlgorithm: this.algorithm,
         data: seriesTemp // [{
         //     name: 'A',
         //     value: 6,

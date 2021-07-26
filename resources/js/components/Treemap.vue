@@ -21,7 +21,13 @@ export default {
         // type: Array,
         type: Object,
         required: true
-      }
+      },
+      algorithm : {
+        type: String,
+        // required: true,
+        default: 'sliceAndDice'
+      },
+
 	},
   	data : function() {
       return {
@@ -55,7 +61,7 @@ export default {
     },
     series: [{
         type: 'treemap',
-        layoutAlgorithm: 'squarified',
+        layoutAlgorithm: this.algorithm,
         data: seriesTemp
         // [{
         //     name: 'A',
