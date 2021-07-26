@@ -27,7 +27,6 @@
     ];
 
     $series = [
-        //'names' => ['Tokyo', 'New York', 'London', 'Berlin'],
         'title' => 'Monthly Average Rainfall',
         'subtitle' => 'Source: WorldClimate.com',
         'y_axis' => 'Rainfall (mm)',
@@ -35,11 +34,23 @@
         'data' => $data,
     ];
 
+    $data2 = [['label' => 'John', 'values' => [5, 3, 4, 7, 2]],
+             ['label' => 'Jane', 'values' => [2, 2, 3, 2, 1]],
+             ['label' => 'Joe',   'values' => [3, 4, 4, 2, 5]],
+    ];
+
+    $series2 = [
+        'title' => 'Stacked percentage column chart',
+        'subtitle' => '',
+        'y_axis' => 'Total fruit consumption',
+        'categories' => ['Apples', 'Oranges', 'Pears', 'Grapes', 'Bananas'],
+        'data' => $data,
+    ];
+
     @endphp
 
         <h2>Basic Line</h2>
         <basic-line-chart :series='@json($series)'></basic-line-chart>
-        <!-- <line-chart-alt :series="[10, 20, 30, 40, 50, 40, 30, 20, 10, 15, 15, 30]"></line-chart-alt> -->
 
         <h2>Column</h2>
         <column-chart :series='@json($series)'></column-chart>
@@ -48,7 +59,7 @@
         <stacked-column-chart :series='@json($series)'></stacked-column-chart>
 
         <h2>Stacked Percentage Column</h2>
-        <stacked-percentage-column-chart></stacked-percentage-column-chart>
+        <stacked-percentage-column-chart :series='@json($series2)'></stacked-percentage-column-chart>
         
         <!-- <h2>Line</h2> -->
         <!-- <line-chart title="Line Chart - Constant" :values="[5, 5, 5]"></line-chart> -->
