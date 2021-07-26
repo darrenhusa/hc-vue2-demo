@@ -2174,17 +2174,17 @@ highcharts_modules_exporting__WEBPACK_IMPORTED_MODULE_1___default()((highcharts_
         borderWidth: 0
       },
       series: [{
-        name: this.series.names[0],
-        data: this.series.data[0]
+        name: this.series.data[0].label,
+        data: this.series.data[0].values
       }, {
-        name: this.series.names[1],
-        data: this.series.data[1]
+        name: this.series.data[1].label,
+        data: this.series.data[1].values
       }, {
-        name: this.series.names[2],
-        data: this.series.data[2]
+        name: this.series.data[2].label,
+        data: this.series.data[2].values
       }, {
-        name: this.series.names[3],
-        data: this.series.data[3]
+        name: this.series.data[3].label,
+        data: this.series.data[3].values
       }],
       credits: {
         enabled: false
