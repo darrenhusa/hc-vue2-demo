@@ -77,7 +77,7 @@
         <stacked-column-chart :series='@json($series2)'></stacked-column-chart>
 
         <h2>Stacked Column with data label percents</h2>
-        <stacked-column-with-data-label-percents-chart :showDataTable="true" :series='@json($series2)'>
+        <stacked-column-with-data-label-percents-chart :show-data-table="true" :series='@json($series2)'>
         </stacked-column-with-data-label-percents-chart>
 
         <h2>Stacked Percentage Column</h2>
