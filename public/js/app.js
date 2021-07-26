@@ -2139,22 +2139,24 @@ highcharts_modules_exporting__WEBPACK_IMPORTED_MODULE_1___default()((highcharts_
     };
   },
   mounted: function mounted() {
+    // console.log(this.series);
+    // console.log(this.series.title);
     this.target = highcharts__WEBPACK_IMPORTED_MODULE_0___default().chart(this.$el, {
       title: {
-        text: 'Monthly Average Temperature',
+        text: this.series.title,
         x: -20 //center
 
       },
       subtitle: {
-        text: 'Source: WorldClimate.com',
+        text: this.series.subtitle,
         x: -20
       },
       xAxis: {
-        categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
+        categories: this.series.categories
       },
       yAxis: {
         title: {
-          text: 'Temperature (°C)'
+          text: this.series.y_axis
         },
         plotLines: [{
           value: 0,
@@ -2172,17 +2174,17 @@ highcharts_modules_exporting__WEBPACK_IMPORTED_MODULE_1___default()((highcharts_
         borderWidth: 0
       },
       series: [{
-        name: 'Tokyo',
-        data: [49.9, 71.5, 106.4, 129.2, 144.0, 176.0, 135.6, 148.5, 216.4, 194.1, 95.6, 54.4]
+        name: this.series.names[0],
+        data: this.series.data[0]
       }, {
-        name: 'New York',
-        data: [83.6, 78.8, 98.5, 93.4, 106.0, 84.5, 105.0, 104.3, 91.2, 83.5, 106.6, 92.3]
+        name: this.series.names[1],
+        data: this.series.data[1]
       }, {
-        name: 'London',
-        data: [48.9, 38.8, 39.3, 41.4, 47.0, 48.3, 59.0, 59.6, 52.4, 65.2, 59.3, 51.2]
+        name: this.series.names[2],
+        data: this.series.data[2]
       }, {
-        name: 'Berlin',
-        data: [42.4, 33.2, 34.5, 39.7, 52.6, 75.5, 57.4, 60.4, 47.6, 39.1, 46.8, 51.1]
+        name: this.series.names[3],
+        data: this.series.data[3]
       }]
     });
   } //   beforeDestroy: function() {

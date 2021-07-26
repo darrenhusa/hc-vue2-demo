@@ -14,7 +14,8 @@
         <example-component></example-component>
 
         <h2>Line Alt</h2>
-        <line-chart-alt :series="[10, 20, 30, 40, 50, 40, 30, 20, 10, 15, 15, 30]"></line-chart-alt>
+        <line-chart-alt :series='@json($series)'></line-chart-alt>
+        <!-- <line-chart-alt :series="[10, 20, 30, 40, 50, 40, 30, 20, 10, 15, 15, 30]"></line-chart-alt> -->
 
         <h2>Line</h2>
         <line-chart title="Line Chart - Constant" :values="[5, 5, 5]"></line-chart>
