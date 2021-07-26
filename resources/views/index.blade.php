@@ -40,7 +40,7 @@
     ];
 
     $series2 = [
-        'title' => 'Stacked percentage column chart',
+        'title' => 'Stacked column chart',
         'subtitle' => '',
         'y_axis' => 'Total fruit consumption',
         'categories' => ['Apples', 'Oranges', 'Pears', 'Grapes', 'Bananas'],
@@ -56,7 +56,7 @@
         <column-chart :series='@json($series)'></column-chart>
         
         <h2>Stacked Column</h2>
-        <stacked-column-chart :series='@json($series)'></stacked-column-chart>
+        <stacked-column-chart :series='@json($series2)'></stacked-column-chart>
 
         <h2>Stacked Percentage Column</h2>
         <stacked-percentage-column-chart :series='@json($series2)'></stacked-percentage-column-chart>
