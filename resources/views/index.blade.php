@@ -61,6 +61,9 @@
         <h2>Stacked Percentage Column</h2>
         <stacked-percentage-column-chart :series='@json($series2)'></stacked-percentage-column-chart>
         
+        <h2>Sankey</h2>
+        <sankey-chart></sankey-chart>
+        
         <!-- <h2>Line</h2> -->
         <!-- <line-chart title="Line Chart - Constant" :values="[5, 5, 5]"></line-chart> -->
 

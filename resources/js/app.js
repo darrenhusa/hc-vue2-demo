@@ -14,6 +14,8 @@ Vue.component('column-chart', require('./components/ColumnChart.vue').default);
 Vue.component('stacked-column-chart', require('./components/StackedColumnChart.vue').default);
 Vue.component('stacked-percentage-column-chart', require('./components/StackedPercentageColumnChart.vue').default);
 
+Vue.component('sankey-chart', require('./components/SankeyChart.vue').default);
+
 // Vue.component('pie-chart', require('./components/PieChart.vue').default);
 // Vue.component('combo-chart', require('./components/ComboChart.vue').default);
 
