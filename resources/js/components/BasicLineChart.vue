@@ -1,9 +1,6 @@
 <template>
     <div>
         <div class="container"></div>
-        <!-- <highcharts :options="chartOptions"></highcharts> -->
-        <!-- <button id="button" v-on:click="exportChart" class="bg-gray-200 p-2">Export chart</button> -->
-        <!-- <button id="button" class="bg-gray-200 p-2">Export chart</button> -->
     </div>
 </template>
 
@@ -14,7 +11,7 @@ import Exporting from 'highcharts/modules/exporting';
 Exporting(Highcharts);
 
 export default {
-    name : "LineChartAlt",
+    name : "BasicLineChart",
     props : {
       series : {
         // type: Array,
@@ -78,24 +75,13 @@ export default {
   	        borderWidth: 0
       },
         series: seriesTemp,
+        // for loop generates code of the form below dynamically!
         // [
         //   {
         //     name: this.series.data[0].label,
         //     data: this.series.data[0].values
         //   },
-        //   {
-        //     name: this.series.data[1].label,
-        //     data: this.series.data[1].values
-        //   },
-        //   {
-        //     name: this.series.data[2].label,
-        //     data: this.series.data[2].values
-        //   },
-        //   {
-        //     name: this.series.data[3].label,
-        //     data: this.series.data[3].values
-        //   },
-        // ],
+        //   etc. etc.
         credits: {
           enabled: false
         },
