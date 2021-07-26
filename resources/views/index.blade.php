@@ -47,6 +47,21 @@
         'data' => $data2,
     ];
 
+    // treemap
+    $data3 = [['name' => 'A', 'value' => 6, 'colorValue' => 1],
+              ['name' => 'B', 'value' => 6, 'colorValue' => 2],
+              ['name' => 'C', 'value' => 4, 'colorValue' => 3],
+              ['name' => 'D', 'value' => 3, 'colorValue' => 4],
+              ['name' => 'E', 'value' => 2, 'colorValue' => 5],
+              ['name' => 'F', 'value' => 2, 'colorValue' => 6],
+              ['name' => 'G', 'value' => 1, 'colorValue' => 7],
+    ];
+
+    $series3 = [
+        'title' => 'Highcharts Treemap',
+        'data' => $data3,
+    ];
+
     @endphp
 
         <h2>Basic Line</h2>
@@ -65,7 +80,7 @@
         <sankey-chart></sankey-chart>
         
         <h2>Treemap</h2>
-        <treemap></treemap>
+        <treemap :series='@json($series3)'></treemap>
         
         <!-- <h2>Line</h2> -->
         <!-- <line-chart title="Line Chart - Constant" :values="[5, 5, 5]"></line-chart> -->

@@ -16,13 +16,13 @@ Treemap(Highcharts);
 
 export default {
     name : "Treemap",
-  //   props : {
-  //     series : {
-  //       // type: Array,
-  //       type: Object,
-  //       required: true
-  //     }
-	// },
+    props : {
+      series : {
+        // type: Array,
+        type: Object,
+        required: true
+      }
+	},
   	data : function() {
       return {
         // target: 'container'
@@ -34,15 +34,16 @@ export default {
       // console.log(this.series.title);
 
       // see https://stackoverflow.com/questions/50144557/how-to-add-data-to-chart-js-with-a-for-loop/50144700
-      // const seriesTemp = [];
-      // const number = this.series.data.length
+      const seriesTemp = [];
+      const number = this.series.data.length
 
-      // for(let i=0; i<number; i++){
-      //   seriesTemp.push({
-      //       name: this.series.data[i].label,
-      //       data: this.series.data[i].values
-      //   });
-      // }
+      for(let i=0; i<number; i++){
+        seriesTemp.push({
+            name: this.series.data[i].name,
+            value: this.series.data[i].value,
+            colorValue: this.series.data[i].colorValue,
+        });
+      }
 
       // alert(seriesTemp);
       // console.log(seriesTemp);
@@ -55,39 +56,45 @@ export default {
     series: [{
         type: 'treemap',
         layoutAlgorithm: 'squarified',
-        data: [{
-            name: 'A',
-            value: 6,
-            colorValue: 1
-        }, {
-            name: 'B',
-            value: 6,
-            colorValue: 2
-        }, {
-            name: 'C',
-            value: 4,
-            colorValue: 3
-        }, {
-            name: 'D',
-            value: 3,
-            colorValue: 4
-        }, {
-            name: 'E',
-            value: 2,
-            colorValue: 5
-        }, {
-            name: 'F',
-            value: 2,
-            colorValue: 6
-        }, {
-            name: 'G',
-            value: 1,
-            colorValue: 7
-        }]
+        data: seriesTemp
+        // [{
+        //     name: 'A',
+        //     value: 6,
+        //     colorValue: 1
+        // }, {
+        //     name: 'B',
+        //     value: 6,
+        //     colorValue: 2
+        // }, {
+        //     name: 'C',
+        //     value: 4,
+        //     colorValue: 3
+        // }, {
+        //     name: 'D',
+        //     value: 3,
+        //     colorValue: 4
+        // }, {
+        //     name: 'E',
+        //     value: 2,
+        //     colorValue: 5
+        // }, {
+        //     name: 'F',
+        //     value: 2,
+        //     colorValue: 6
+        // }, {
+        //     name: 'G',
+        //     value: 1,
+        //     colorValue: 7
+        // 
+      // }]
     }],
     title: {
-        text: 'Highcharts Treemap'
-    }
+        text: this.series.title
+    },
+
+    credits: {
+        enabled: false
+      }
   });
 }
 //   beforeDestroy: function() {
