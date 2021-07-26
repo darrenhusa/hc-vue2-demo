@@ -2185,7 +2185,10 @@ highcharts_modules_exporting__WEBPACK_IMPORTED_MODULE_1___default()((highcharts_
       }, {
         name: this.series.names[3],
         data: this.series.data[3]
-      }]
+      }],
+      credits: {
+        enabled: false
+      }
     });
   } //   beforeDestroy: function() {
   //     this.target.destroy();

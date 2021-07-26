@@ -79,7 +79,10 @@ export default {
           name: this.series.names[3],
           data: this.series.data[3]
         },
-        ]
+        ],
+        credits: {
+          enabled: false
+        },
     });
   },
 //   beforeDestroy: function() {
