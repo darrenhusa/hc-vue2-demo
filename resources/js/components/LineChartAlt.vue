@@ -14,7 +14,7 @@ import Exporting from 'highcharts/modules/exporting';
 Exporting(Highcharts);
 
 export default {
-    name : "Chart",
+    name : "LineChartAlt",
     props : {
       series : {
         type: Array,
