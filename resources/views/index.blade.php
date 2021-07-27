@@ -86,12 +86,15 @@
         <h2>Sankey</h2>
         <sankey-chart></sankey-chart>
         
-        <h2>Treemap - default</h2>
+        <h2>Hierarchical Treemap</h2>
+        <hierarchical-treemap></hierarchical-treemap>
+        
+        <!-- <h2>Treemap - default</h2>
         <treemap :series='@json($series3)'></treemap>
         
         <h2>Treemap - squarified</h2>
         <treemap algorithm="squarified" :series='@json($series3)'></treemap>
-        
+         -->
         <!-- <h2>Line</h2> -->
         <!-- <line-chart title="Line Chart - Constant" :values="[5, 5, 5]"></line-chart> -->
 
