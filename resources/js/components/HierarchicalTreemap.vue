@@ -129,7 +129,11 @@ export default {
         }],
         title: {
             text: 'Fruit consumption'
-        }
+        },
+
+        credits: {
+        enabled: false
+      }
     });
   } // end mounted()
 //   beforeDestroy: function() {
