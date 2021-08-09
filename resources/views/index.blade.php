@@ -107,6 +107,7 @@
         </stacked-percentage-column-chart>
         
         <h2>Sankey</h2>
+        <h3>Fall 2020 to Spring 2021 to Fall 2021 TRAD Retention in Majors Sankey</h3>
         <sankey-chart></sankey-chart>
         
         <h2>Hierarchical Treemap</h2>
