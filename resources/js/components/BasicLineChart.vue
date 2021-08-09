@@ -1,6 +1,6 @@
 <template>
     <div>
-        <div id="container"></div>
+        <div id="container" v-bind:style="styleObject"></div>
     </div>
 </template>
 
@@ -38,10 +38,10 @@ export default {
         target: undefined,
         // width: '300px',
         // height: '300px',
-        // styleObject: {
-        //   width: this.width,
-        //   height: this.height,
-        // },
+        styleObject: {
+          width: this.inputPlotWidth,
+          height: this.inputPlotHeight,
+        },
       }
     },
     mounted : function() {
@@ -137,10 +137,10 @@ export default {
       // console.log(seriesTemp);
 
       this.target = Highcharts.chart(this.$el, {
-        chart: {
-          plotAreaWidth: this.inputPlotWidth,
-          plotAreaHeight: this.inputPlotHeight
-        },
+        // chart: {
+        //   plotAreaWidth: this.inputPlotWidth,
+        //   plotAreaHeight: this.inputPlotHeight
+        // },
         
         title: {
           text: this.series.title,

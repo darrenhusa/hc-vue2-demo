@@ -1883,13 +1883,13 @@ highcharts_modules_exporting__WEBPACK_IMPORTED_MODULE_1___default()((highcharts_
   data: function data() {
     return {
       // target: 'container'
-      target: undefined // width: '300px',
+      target: undefined,
+      // width: '300px',
       // height: '300px',
-      // styleObject: {
-      //   width: this.width,
-      //   height: this.height,
-      // },
-
+      styleObject: {
+        width: this.inputPlotWidth,
+        height: this.inputPlotHeight
+      }
     };
   },
   mounted: function mounted() {
@@ -1980,10 +1980,10 @@ highcharts_modules_exporting__WEBPACK_IMPORTED_MODULE_1___default()((highcharts_
 
 
     this.target = highcharts__WEBPACK_IMPORTED_MODULE_0___default().chart(this.$el, {
-      chart: {
-        plotAreaWidth: this.inputPlotWidth,
-        plotAreaHeight: this.inputPlotHeight
-      },
+      // chart: {
+      //   plotAreaWidth: this.inputPlotWidth,
+      //   plotAreaHeight: this.inputPlotHeight
+      // },
       title: {
         text: this.series.title,
         x: -20 //center
@@ -39546,16 +39546,11 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _vm._m(0)
+  return _c("div", [
+    _c("div", { style: _vm.styleObject, attrs: { id: "container" } })
+  ])
 }
-var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", [_c("div", { attrs: { id: "container" } })])
-  }
-]
+var staticRenderFns = []
 render._withStripped = true
 
 
