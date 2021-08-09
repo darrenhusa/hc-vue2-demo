@@ -1870,12 +1870,26 @@ highcharts_modules_exporting__WEBPACK_IMPORTED_MODULE_1___default()((highcharts_
     showDataLabels: {
       type: Boolean,
       "default": false
+    },
+    width: {
+      type: String,
+      "default": '300px'
+    },
+    height: {
+      type: String,
+      "default": '300px'
     }
   },
   data: function data() {
     return {
       // target: 'container'
-      target: undefined
+      target: undefined,
+      // width: '300px',
+      // height: '300px',
+      styleObject: {
+        width: this.width,
+        height: this.height
+      }
     };
   },
   mounted: function mounted() {
@@ -39457,16 +39471,11 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _vm._m(0)
+  return _c("div", [
+    _c("div", { style: _vm.styleObject, attrs: { id: "container" } })
+  ])
 }
-var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", [_c("div", { staticClass: "container" })])
-  }
-]
+var staticRenderFns = []
 render._withStripped = true
 
 

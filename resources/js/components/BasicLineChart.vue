@@ -1,6 +1,6 @@
 <template>
     <div>
-        <div class="container"></div>
+        <div id="container" v-bind:style="styleObject"></div>
     </div>
 </template>
 
@@ -22,11 +22,27 @@ export default {
         type: Boolean,
         default: false
       },
+     
+      width: {
+        type: String,
+        default: '300px'
+      },
+
+      height: {
+        type: String,
+        default: '300px'
+      }
 	},
   	data : function() {
       return {
         // target: 'container'
-        target: undefined
+        target: undefined,
+        // width: '300px',
+        // height: '300px',
+        styleObject: {
+          width: this.width,
+          height: this.height,
+        },
       }
     },
     mounted : function() {

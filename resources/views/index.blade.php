@@ -65,7 +65,10 @@
     @endphp
 
         <h2>Basic Line</h2>
-        <basic-line-chart :series='@json($series)' :show-data-labels="true"></basic-line-chart>
+        <div class="">
+            <basic-line-chart v-bind:series='@json($series)'
+                              v-bind:show-data-labels="true"></basic-line-chart>
+        </div>
 
         <h2>Column</h2>
         <column-chart :series='@json($series)'></column-chart>
