@@ -65,31 +65,46 @@
     @endphp
 
         <h2>Basic Line</h2>
-        <div class="">
-            <basic-line-chart v-bind:series='@json($series)'
-                              v-bind:chart-width="1200"
-                              v-bind:chart-height="400"
-                              v-bind:show-data-labels="true"></basic-line-chart>
-        </div>
+        <basic-line-chart 
+            v-bind:series='@json($series)'
+            v-bind:chart-width="1200"
+            v-bind:chart-height="400"
+            v-bind:show-data-labels="true">
+        </basic-line-chart>
 
         <h2>Column</h2>
-        <column-chart :series='@json($series)'></column-chart>
+        <column-chart 
+            :series='@json($series)'
+            :chart-width="1200"
+            :chart-height="400">
+        </column-chart>
         
         <!-- <h2>Column with data table</h2>
         <column-chart showTable="True" :series='@json($series)'></column-chart>
          -->
         <h2>Stacked Column</h2>
-        <stacked-column-chart :series='@json($series2)'></stacked-column-chart>
+        <stacked-column-chart 
+            :series='@json($series2)'
+            :chart-width="1200"
+            :chart-height="400">
+        </stacked-column-chart>
 
         <h2>Stacked Column with data label percents</h2>
-        <stacked-column-with-data-label-percents-chart :series='@json($series2)'>
+        <stacked-column-with-data-label-percents-chart 
+            :series='@json($series2)'
+            :chart-width="1200"
+            :chart-height="400">
         </stacked-column-with-data-label-percents-chart>
 
         <!-- <stacked-column-with-data-label-percents-chart :show-data-table="true" :series='@json($series2)'>
         </stacked-column-with-data-label-percents-chart> -->
 
         <h2>Stacked Percentage Column</h2>
-        <stacked-percentage-column-chart :series='@json($series2)'></stacked-percentage-column-chart>
+        <stacked-percentage-column-chart 
+            :series='@json($series2)'
+            :chart-width="1200"
+            :chart-height="400">
+        </stacked-percentage-column-chart>
         
         <h2>Sankey</h2>
         <sankey-chart></sankey-chart>

@@ -2057,8 +2057,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
 // var Highcharts = require('highcharts');
 
 
@@ -2071,15 +2069,28 @@ highcharts_modules_exporting__WEBPACK_IMPORTED_MODULE_1___default()((highcharts_
       type: Object,
       required: true
     },
-    showTable: {
-      type: Boolean,
-      "default": true
-    }
+    chartWidth: {
+      type: Number,
+      "default": 300
+    },
+    chartHeight: {
+      type: Number,
+      "default": 300
+    } // showTable : {
+    //   type: Boolean,
+    //   default: true
+    // }
+
   },
   data: function data() {
     return {
       // target: 'container'
-      target: undefined
+      target: undefined,
+      styleObject: {
+        width: this.chartWidth + 'px',
+        height: this.chartHeight + 'px',
+        border: '1px solid gray'
+      }
     };
   },
   mounted: function mounted() {
@@ -2442,8 +2453,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
 // var Highcharts = require('highcharts');
 
 
@@ -2455,12 +2464,25 @@ highcharts_modules_exporting__WEBPACK_IMPORTED_MODULE_1___default()((highcharts_
       // type: Array,
       type: Object,
       required: true
+    },
+    chartWidth: {
+      type: Number,
+      "default": 300
+    },
+    chartHeight: {
+      type: Number,
+      "default": 300
     }
   },
   data: function data() {
     return {
       // target: 'container'
-      target: undefined
+      target: undefined,
+      styleObject: {
+        width: this.chartWidth + 'px',
+        height: this.chartHeight + 'px',
+        border: '1px solid gray'
+      }
     };
   },
   mounted: function mounted() {
@@ -2538,8 +2560,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
 // var Highcharts = require('highcharts');
 
 
@@ -2551,6 +2571,14 @@ highcharts_modules_exporting__WEBPACK_IMPORTED_MODULE_1___default()((highcharts_
       // type: Array,
       type: Object,
       required: true
+    },
+    chartWidth: {
+      type: Number,
+      "default": 300
+    },
+    chartHeight: {
+      type: Number,
+      "default": 300
     } // showDataTable : {
     //     type: Boolean,
     //     default: false
@@ -2561,7 +2589,12 @@ highcharts_modules_exporting__WEBPACK_IMPORTED_MODULE_1___default()((highcharts_
   data: function data() {
     return {
       // target: 'container'
-      target: undefined
+      target: undefined,
+      styleObject: {
+        width: this.chartWidth + 'px',
+        height: this.chartHeight + 'px',
+        border: '1px solid gray'
+      }
     };
   },
   // var vm = this;
@@ -2685,8 +2718,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
 // var Highcharts = require('highcharts');
 
 
@@ -2698,12 +2729,25 @@ highcharts_modules_exporting__WEBPACK_IMPORTED_MODULE_1___default()((highcharts_
       // type: Array,
       type: Object,
       required: true
+    },
+    chartWidth: {
+      type: Number,
+      "default": 300
+    },
+    chartHeight: {
+      type: Number,
+      "default": 300
     }
   },
   data: function data() {
     return {
       // target: 'container'
-      target: undefined
+      target: undefined,
+      styleObject: {
+        width: this.chartWidth + 'px',
+        height: this.chartHeight + 'px',
+        border: '1px solid gray'
+      }
     };
   },
   mounted: function mounted() {
@@ -39565,16 +39609,9 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _vm._m(0)
+  return _c("div", { style: _vm.styleObject, attrs: { id: "container" } })
 }
-var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", [_c("div", { staticClass: "container" })])
-  }
-]
+var staticRenderFns = []
 render._withStripped = true
 
 
@@ -39711,16 +39748,9 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _vm._m(0)
+  return _c("div", { style: _vm.styleObject, attrs: { id: "container" } })
 }
-var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", [_c("div", { staticClass: "container" })])
-  }
-]
+var staticRenderFns = []
 render._withStripped = true
 
 
@@ -39743,16 +39773,9 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _vm._m(0)
+  return _c("div", { style: _vm.styleObject, attrs: { id: "container" } })
 }
-var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", [_c("div", { staticClass: "container" })])
-  }
-]
+var staticRenderFns = []
 render._withStripped = true
 
 
@@ -39775,16 +39798,9 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _vm._m(0)
+  return _c("div", { style: _vm.styleObject, attrs: { id: "container" } })
 }
-var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", [_c("div", { staticClass: "container" })])
-  }
-]
+var staticRenderFns = []
 render._withStripped = true
 
 

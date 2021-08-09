@@ -1,7 +1,5 @@
 <template>
-    <div>
-        <div class="container"></div>
-    </div>
+    <div id="container" v-bind:style="styleObject"></div>
 </template>
 
 <script>
@@ -18,6 +16,14 @@ export default {
         type: Object,
         required: true
       },
+      chartWidth: {
+        type: Number,
+        default: 300
+      },
+      chartHeight: {
+        type: Number,
+        default: 300
+      }
     // showDataTable : {
     //     type: Boolean,
     //     default: false
@@ -27,7 +33,12 @@ export default {
   	data : function() {
       return {
         // target: 'container'
-        target: undefined
+        target: undefined,
+        styleObject: {
+          width: this.chartWidth + 'px',
+          height: this.chartHeight + 'px',
+          border: '1px solid gray',
+        },
       }
     },
 
