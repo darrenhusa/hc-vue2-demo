@@ -67,6 +67,8 @@
         <h2>Basic Line</h2>
         <div class="">
             <basic-line-chart v-bind:series='@json($series)'
+                              v-bind:input-plot-width="1200"
+                              v-bind:input-plot-height="400"
                               v-bind:show-data-labels="true"></basic-line-chart>
         </div>
 
