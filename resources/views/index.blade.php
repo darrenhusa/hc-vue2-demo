@@ -69,14 +69,14 @@
             v-bind:series='@json($series)'
             v-bind:chart-width="1200"
             v-bind:chart-height="400"
-            v-bind:show-data-labels="true">
+            v-bind:show-data-labels="false">
         </basic-line-chart>
 
         <h2>Column</h2>
         <column-chart 
             :series='@json($series)'
-            :chart-width="1200"
-            :chart-height="400">
+            :chart-width="1500"
+            :chart-height="500">
         </column-chart>
         
         <!-- <h2>Column with data table</h2>
@@ -102,8 +102,8 @@
         <h2>Stacked Percentage Column</h2>
         <stacked-percentage-column-chart 
             :series='@json($series2)'
-            :chart-width="1200"
-            :chart-height="400">
+            :chart-width="1500"
+            :chart-height="500">
         </stacked-percentage-column-chart>
         
         <h2>Sankey</h2>
