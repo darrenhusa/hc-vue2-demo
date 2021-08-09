@@ -21,11 +21,11 @@ export default {
         default: false
       },
      
-      inputPlotWidth: {
+      chartWidth: {
         type: Number,
         default: 300
       },
-      inputPlotHeight: {
+      chartHeight: {
         type: Number,
         default: 300
       }
@@ -37,8 +37,8 @@ export default {
         // width: '300px',
         // height: '300px',
         styleObject: {
-          width: this.inputPlotWidth + 'px',
-          height: this.inputPlotHeight + 'px',
+          width: this.chartWidth + 'px',
+          height: this.chartHeight + 'px',
           border: '1px solid gray',
         },
       }

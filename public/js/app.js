@@ -1869,11 +1869,11 @@ highcharts_modules_exporting__WEBPACK_IMPORTED_MODULE_1___default()((highcharts_
       type: Boolean,
       "default": false
     },
-    inputPlotWidth: {
+    chartWidth: {
       type: Number,
       "default": 300
     },
-    inputPlotHeight: {
+    chartHeight: {
       type: Number,
       "default": 300
     }
@@ -1885,8 +1885,8 @@ highcharts_modules_exporting__WEBPACK_IMPORTED_MODULE_1___default()((highcharts_
       // width: '300px',
       // height: '300px',
       styleObject: {
-        width: this.inputPlotWidth + 'px',
-        height: this.inputPlotHeight + 'px',
+        width: this.chartWidth + 'px',
+        height: this.chartHeight + 'px',
         border: '1px solid gray'
       }
     };
