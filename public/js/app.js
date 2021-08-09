@@ -1866,6 +1866,10 @@ highcharts_modules_exporting__WEBPACK_IMPORTED_MODULE_1___default()((highcharts_
       // type: Array,
       type: Object,
       required: true
+    },
+    showDataLabels: {
+      type: Boolean,
+      "default": false
     }
   },
   data: function data() {
@@ -1912,6 +1916,15 @@ highcharts_modules_exporting__WEBPACK_IMPORTED_MODULE_1___default()((highcharts_
           width: 1,
           color: '#808080'
         }]
+      },
+      // end yAxis
+      plotOptions: {
+        line: {
+          dataLabels: {
+            enabled: this.showDataLabels
+          },
+          enableMouseTracking: false
+        }
       },
       tooltip: {
         valueSuffix: '°C'

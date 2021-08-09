@@ -65,7 +65,7 @@
     @endphp
 
         <h2>Basic Line</h2>
-        <basic-line-chart :series='@json($series)'></basic-line-chart>
+        <basic-line-chart :series='@json($series)' :show-data-labels="true"></basic-line-chart>
 
         <h2>Column</h2>
         <column-chart :series='@json($series)'></column-chart>

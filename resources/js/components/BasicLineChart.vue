@@ -17,7 +17,11 @@ export default {
         // type: Array,
         type: Object,
         required: true
-      }
+      },
+      showDataLabels : {
+        type: Boolean,
+        default: false
+      },
 	},
   	data : function() {
       return {
@@ -59,21 +63,34 @@ export default {
           title: {
           text: this.series.y_axis
         },
+      
         plotLines: [{
           value: 0,
           width: 1,
           color: '#808080'
         }]
-      },
+      }, // end yAxis
+
+      plotOptions: {
+          line: {
+              dataLabels: {
+                  enabled: this.showDataLabels
+              },
+              enableMouseTracking: false
+          }
+        },
+
       tooltip: {
         valueSuffix: '°C'
       },
+
       legend: {
         layout: 'vertical',
         align: 'right',
         verticalAlign: 'middle',
   	        borderWidth: 0
       },
+
         series: seriesTemp,
         // for loop generates code of the form below dynamically!
         // [
