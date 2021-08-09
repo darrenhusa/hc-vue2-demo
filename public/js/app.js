@@ -1871,31 +1871,102 @@ highcharts_modules_exporting__WEBPACK_IMPORTED_MODULE_1___default()((highcharts_
       type: Boolean,
       "default": false
     },
-    width: {
-      type: String,
-      "default": '300px'
+    inputPlotWidth: {
+      type: Number,
+      "default": 300
     },
-    height: {
-      type: String,
-      "default": '300px'
+    inputPlotHeight: {
+      type: Number,
+      "default": 300
     }
   },
   data: function data() {
     return {
       // target: 'container'
-      target: undefined,
-      // width: '300px',
+      target: undefined // width: '300px',
       // height: '300px',
-      styleObject: {
-        width: this.width,
-        height: this.height
-      }
+      // styleObject: {
+      //   width: this.width,
+      //   height: this.height,
+      // },
+
     };
   },
   mounted: function mounted() {
-    // console.log(this.series);
+    (function (H) {
+      H.wrap(H.Chart.prototype, 'setChartSize', function (proceed, skipAxes) {
+        var chart = this,
+            inverted = chart.inverted,
+            renderer = chart.renderer,
+            chartWidth = chart.chartWidth,
+            chartHeight = chart.chartHeight,
+            optionsChart = chart.options.chart,
+            spacing = chart.spacing,
+            clipOffset = chart.clipOffset,
+            clipX,
+            clipY,
+            plotLeft,
+            plotTop,
+            plotWidth,
+            plotHeight,
+            plotBorderWidth,
+            plotAreaWidth = chart.options.chart.plotAreaWidth,
+            plotAreaHeight = chart.options.chart.plotAreaHeight;
+
+        if (plotAreaWidth) {
+          chart.plotWidth = plotWidth = plotAreaWidth;
+          chart.plotLeft = plotLeft = Math.round((chartWidth - plotAreaWidth) / 2);
+        } else {
+          chart.plotLeft = plotLeft = Math.round(chart.plotLeft);
+          chart.plotWidth = plotWidth = Math.max(0, Math.round(chartWidth - plotLeft - chart.marginRight));
+        }
+
+        if (plotAreaHeight) {
+          chart.plotTop = plotTop = Math.round((chartHeight - plotAreaHeight) / 2);
+          chart.plotHeight = plotHeight = plotAreaHeight;
+        } else {
+          chart.plotTop = plotTop = Math.round(chart.plotTop);
+          chart.plotHeight = plotHeight = Math.max(0, Math.round(chartHeight - plotTop - chart.marginBottom));
+        }
+
+        chart.plotSizeX = inverted ? plotHeight : plotWidth;
+        chart.plotSizeY = inverted ? plotWidth : plotHeight;
+        chart.plotBorderWidth = optionsChart.plotBorderWidth || 0; // Set boxes used for alignment
+
+        chart.spacingBox = renderer.spacingBox = {
+          x: spacing[3],
+          y: spacing[0],
+          width: chartWidth - spacing[3] - spacing[1],
+          height: chartHeight - spacing[0] - spacing[2]
+        };
+        chart.plotBox = renderer.plotBox = {
+          x: plotLeft,
+          y: plotTop,
+          width: plotWidth,
+          height: plotHeight
+        };
+        plotBorderWidth = 2 * Math.floor(chart.plotBorderWidth / 2);
+        clipX = Math.ceil(Math.max(plotBorderWidth, clipOffset[3]) / 2);
+        clipY = Math.ceil(Math.max(plotBorderWidth, clipOffset[0]) / 2);
+        chart.clipBox = {
+          x: clipX,
+          y: clipY,
+          width: Math.floor(chart.plotSizeX - Math.max(plotBorderWidth, clipOffset[1]) / 2 - clipX),
+          height: Math.max(0, Math.floor(chart.plotSizeY - Math.max(plotBorderWidth, clipOffset[2]) / 2 - clipY))
+        };
+
+        if (!skipAxes) {
+          highcharts__WEBPACK_IMPORTED_MODULE_0___default().each(chart.axes, function (axis) {
+            axis.setAxisSize();
+            axis.setAxisTranslation();
+          });
+        }
+      });
+    })((highcharts__WEBPACK_IMPORTED_MODULE_0___default())); // console.log(this.series);
     // console.log(this.series.title);
     // see https://stackoverflow.com/questions/50144557/how-to-add-data-to-chart-js-with-a-for-loop/50144700
+
+
     var seriesTemp = [];
     var number = this.series.data.length;
 
@@ -1909,6 +1980,10 @@ highcharts_modules_exporting__WEBPACK_IMPORTED_MODULE_1___default()((highcharts_
 
 
     this.target = highcharts__WEBPACK_IMPORTED_MODULE_0___default().chart(this.$el, {
+      chart: {
+        plotAreaWidth: this.inputPlotWidth,
+        plotAreaHeight: this.inputPlotHeight
+      },
       title: {
         text: this.series.title,
         x: -20 //center
@@ -39471,11 +39546,16 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", [
-    _c("div", { style: _vm.styleObject, attrs: { id: "container" } })
-  ])
+  return _vm._m(0)
 }
-var staticRenderFns = []
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", [_c("div", { attrs: { id: "container" } })])
+  }
+]
 render._withStripped = true
 
 
