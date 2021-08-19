@@ -14,6 +14,10 @@ Route::get('/sparklines', function () {
     return view('sparkline-demo');
 });
 
+Route::get('/table-01', function () {
+    return view('table-01');
+});
+
 
 // Route::get('/', function () {
 //     return view('welcome');
