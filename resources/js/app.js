@@ -17,6 +17,7 @@ Vue.component('stacked-percentage-column-chart', require('./components/StackedPe
 
 Vue.component('sankey-chart', require('./components/SankeyChart.vue').default);
 Vue.component('hierarchical-treemap', require('./components/HierarchicalTreemap.vue').default);
+Vue.component('table-with-sparklines', require('./components/TableWithSparklines.vue').default);
 // Vue.component('treemap', require('./components/Treemap.vue').default);
 
 // Vue.component('pie-chart', require('./components/PieChart.vue').default);

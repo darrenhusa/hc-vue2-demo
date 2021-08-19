@@ -217,6 +217,9 @@
         <h2>Hierarchical Treemap</h2>
         <hierarchical-treemap></hierarchical-treemap>
         
+        <h2>Table with Sparklines</h2>
+        <table-with-sparklines></table-with-sparklines>
+
         <!-- <h2>Treemap - default</h2>
         <treemap :series='@json($series3)'></treemap>
         
