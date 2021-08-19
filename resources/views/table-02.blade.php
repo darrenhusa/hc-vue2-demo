@@ -45,11 +45,26 @@ thead th {
 @php
   
   $data = [
-    ["TRAD Programs - Full-time", [403, 353, 384, 409, 409]],
-    ["TRAD Programs - Part-time", [36, 31, 30, 23, 23]],
-    ["Degree Completion Programs (DCP)", [149, 141, 130, 133, 133]],
-    ["Graduate Programs (GRAD)", [213, 190, 169, 138, 138]],
-    ["Grand Total", [801, 715, 713, 703, 703]],
+    ["Accounting", [18, 19, 12, 15, 15]],
+    ["Biokinetics/Kinesiology", [14, 19, 17, 31, 31]],
+    ["Biomedical Science", [41, 25, 20, 31, 31]],
+    ["Business Management", [80, 72, 73, 92, 92]],
+    ["Computer Information Systems (*)", [7, 2, 2, 0, 0]],
+    ["Criminal Justice", [77, 71, 80, 72, 72]],
+    ["Digital & Studio Arts", [18, 14, 14, 18, 18]],
+    ["Elementary Education", [27, 28, 45, 36, 36]],
+    ["English & Media Communications", [23, 15, 20, 16, 16]],
+    ["Forensic Biotechnology (*)", [8, 5, 2, 3, 3]],
+    ["Forensic Science", [0, 0, 5, 8, 8]],
+    ["General Studies", [29, 46, 41, 30, 30]],
+    ["Health Science", [0, 0, 0, 5, 5]],
+    ["Human Services", [27, 12, 19, 22, 22]],
+    ["Integrated Studies", [6, 2, 1, 0, 0]],
+    ["Legal/Paralegal Studies (*)", [5, 2, 2, 0, 0]],
+    ["Medical Lab Science", [0, 0, 0, 1, 1]],
+    ["Psychology", [19, 21, 31, 29, 29]],
+    ["Theology/Religious Studies (*)", [4, 0, 0, 0, 0]],
+    ["Grand Total", [403, 353, 384, 409, 409]],
   ];
 
   foreach ($data as $val)
@@ -63,7 +78,7 @@ thead th {
 
 @endphp
 
-<h2>Total College Enrollment</h2>
+<h2>Full-Time Undergraduates - First Majors - Traditional Programs</h2>
 <div id="result"></div>
 <table id="table-sparkline">
     <thead>
@@ -78,7 +93,7 @@ thead th {
         </tr>
     </thead>
     <tbody id="tbody-sparkline">
-    @for ($i = 0; $i < $length; $i++)
+        @for ($i = 0; $i < $length; $i++)
         <tr>
             <th>{{ $programs[$i] }}</td>
             @for ($j = 0; $j < 5; $j++)
@@ -229,9 +244,9 @@ function doChunk() {
         }
 
         // Print a feedback on the performance
-        if (n === fullLen) {
-            document.getElementById('result').innerHTML = 'Generated ' + fullLen + ' sparklines in ' + (new Date() - start) + ' ms';
-        }
+        // if (n === fullLen) {
+        //     document.getElementById('result').innerHTML = 'Generated ' + fullLen + ' sparklines in ' + (new Date() - start) + ' ms';
+        // }
     }
 }
 doChunk();

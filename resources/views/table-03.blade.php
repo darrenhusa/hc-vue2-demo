@@ -45,11 +45,25 @@ thead th {
 @php
   
   $data = [
-    ["TRAD Programs - Full-time", [403, 353, 384, 409, 409]],
-    ["TRAD Programs - Part-time", [36, 31, 30, 23, 23]],
-    ["Degree Completion Programs (DCP)", [149, 141, 130, 133, 133]],
-    ["Graduate Programs (GRAD)", [213, 190, 169, 138, 138]],
-    ["Grand Total", [801, 715, 713, 703, 703]],
+    ["Accounting", [1, 1, 2, 0, 0]],
+    ["Biokinetics/Kinesiology", [0, 0, 0, 1, 1]],
+    ["Biomedical Science", [4, 0, 0, 2, 2]],
+    ["Business Management", [3, 1, 5, 3, 3]],
+    ["Criminal Justice", [2, 3, 2, 3, 3]],
+    ["Digital & Studio Arts", [1, 2, 0, 2, 2]],
+    ["Elementary Education", [1, 2, 2, 2, 2]],
+    ["English & Media Communications", [1, 1, 3, 1, 1]],
+    ["Forensic Biotechnology (*)", [2, 1, 1, 1, 1]],
+    ["General Studies", [3, 4, 7, 4, 4]],
+    ["Health Science", [0, 0, 0, 1, 1]],
+    ["Human Services", [4, 4, 2, 1, 1]],
+    ["Integrated Studies", [1, 3, 3, 0, 0]],
+    ["Legal/Paralegal Studies (*)", [2, 3, 0, 0, 0]],
+    ["Not Applicable/Non-Degree-Seeking", [6, 3, 1, 0, 0]],
+    ["Psychology", [3, 1, 2, 2, 2]],
+    ["(*) Public Safety Management", [0, 1, 0, 0, 0]],
+    ["Theology/Religious Studies (*)", [2, 1, 0, 0, 0]],
+    ["Grand Total", [36, 31, 30, 23, 23]],
   ];
 
   foreach ($data as $val)
@@ -63,7 +77,7 @@ thead th {
 
 @endphp
 
-<h2>Total College Enrollment</h2>
+<h2>Part-Time Undergraduates - First Majors - Traditional Programs</h2>
 <div id="result"></div>
 <table id="table-sparkline">
     <thead>
@@ -78,7 +92,7 @@ thead th {
         </tr>
     </thead>
     <tbody id="tbody-sparkline">
-    @for ($i = 0; $i < $length; $i++)
+        @for ($i = 0; $i < $length; $i++)
         <tr>
             <th>{{ $programs[$i] }}</td>
             @for ($j = 0; $j < 5; $j++)
@@ -229,9 +243,9 @@ function doChunk() {
         }
 
         // Print a feedback on the performance
-        if (n === fullLen) {
-            document.getElementById('result').innerHTML = 'Generated ' + fullLen + ' sparklines in ' + (new Date() - start) + ' ms';
-        }
+        // if (n === fullLen) {
+        //     document.getElementById('result').innerHTML = 'Generated ' + fullLen + ' sparklines in ' + (new Date() - start) + ' ms';
+        // }
     }
 }
 doChunk();

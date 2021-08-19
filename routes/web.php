@@ -18,6 +18,18 @@ Route::get('/table-01', function () {
     return view('table-01');
 });
 
+Route::get('/table-02', function () {
+    return view('table-02');
+});
+
+Route::get('/table-03', function () {
+    return view('table-03');
+});
+
+Route::get('/table-04', function () {
+    return view('table-04');
+});
+
 
 // Route::get('/', function () {
 //     return view('welcome');

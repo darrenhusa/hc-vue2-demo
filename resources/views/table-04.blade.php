@@ -45,11 +45,11 @@ thead th {
 @php
   
   $data = [
-    ["TRAD Programs - Full-time", [403, 353, 384, 409, 409]],
-    ["TRAD Programs - Part-time", [36, 31, 30, 23, 23]],
-    ["Degree Completion Programs (DCP)", [149, 141, 130, 133, 133]],
-    ["Graduate Programs (GRAD)", [213, 190, 169, 138, 138]],
-    ["Grand Total", [801, 715, 713, 703, 703]],
+    ["Management (MSM)", [9, 15, 11, 11, 11]],
+    ["Teaching (MAT)", [59, 59, 61, 45, 45]],
+    ["Psychology (MAP)", [29, 22, 13, 13, 13]],
+    ["Public Safety Administration (PSA)", [116, 94, 84, 69, 69]],
+    ["Grand Total", [213, 190, 169, 138, 138]],
   ];
 
   foreach ($data as $val)
@@ -63,7 +63,7 @@ thead th {
 
 @endphp
 
-<h2>Total College Enrollment</h2>
+<h2>Graduate Students by Major</h2>
 <div id="result"></div>
 <table id="table-sparkline">
     <thead>
@@ -78,7 +78,7 @@ thead th {
         </tr>
     </thead>
     <tbody id="tbody-sparkline">
-    @for ($i = 0; $i < $length; $i++)
+        @for ($i = 0; $i < $length; $i++)
         <tr>
             <th>{{ $programs[$i] }}</td>
             @for ($j = 0; $j < 5; $j++)
@@ -229,9 +229,9 @@ function doChunk() {
         }
 
         // Print a feedback on the performance
-        if (n === fullLen) {
-            document.getElementById('result').innerHTML = 'Generated ' + fullLen + ' sparklines in ' + (new Date() - start) + ' ms';
-        }
+        // if (n === fullLen) {
+        //     document.getElementById('result').innerHTML = 'Generated ' + fullLen + ' sparklines in ' + (new Date() - start) + ' ms';
+        // }
     }
 }
 doChunk();
