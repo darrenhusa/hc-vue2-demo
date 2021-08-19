@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Html Table with Sparklines</title>
+    <title>Table 01</title>
     <script src="https://code.highcharts.com/highcharts.js"></script>
     <script src="https://code.highcharts.com/modules/accessibility.js"></script>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
 <style>
 #result {
     text-align: right;
@@ -39,6 +40,10 @@ thead th {
     padding: 8px;
 }
 
+.container {
+    text-align: left;
+}
+
 </style>
 </head>
 <body>
@@ -63,8 +68,9 @@ thead th {
 
 @endphp
 
-<h2>Total College Enrollment</h2>
+<h2 class="ml-8">Total College Enrollment</h2>
 <div id="result"></div>
+<div class="container ml-8">
 <table id="table-sparkline">
     <thead>
         <tr>
@@ -89,7 +95,7 @@ thead th {
         @endfor  
     </tbody>
 </table>
-
+</div>
 <script>
 /**
  * Create a constructor for sparklines that takes some sensible defaults and merges in the individual
@@ -229,9 +235,9 @@ function doChunk() {
         }
 
         // Print a feedback on the performance
-        if (n === fullLen) {
-            document.getElementById('result').innerHTML = 'Generated ' + fullLen + ' sparklines in ' + (new Date() - start) + ' ms';
-        }
+        // if (n === fullLen) {
+        //     document.getElementById('result').innerHTML = 'Generated ' + fullLen + ' sparklines in ' + (new Date() - start) + ' ms';
+        // }
     }
 }
 doChunk();
