@@ -30,6 +30,10 @@ Route::get('/table-04', function () {
     return view('table-04');
 });
 
+Route::get('/section01', function () {
+    return view('section01-enrollment');
+});
+
 
 // Route::get('/', function () {
 //     return view('welcome');

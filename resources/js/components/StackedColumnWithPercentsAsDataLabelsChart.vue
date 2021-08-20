@@ -65,7 +65,8 @@ export default {
       for(let i=0; i<number; i++){
         seriesTemp.push({
             name: this.series.data[i].label,
-            data: this.series.data[i].values
+            data: this.series.data[i].values,
+            color: this.series.data[i].color
         });
       }
 

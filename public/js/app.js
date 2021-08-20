@@ -2720,7 +2720,8 @@ highcharts_modules_exporting__WEBPACK_IMPORTED_MODULE_1___default()((highcharts_
     for (var i = 0; i < number; i++) {
       seriesTemp.push({
         name: this.series.data[i].label,
-        data: this.series.data[i].values
+        data: this.series.data[i].values,
+        color: this.series.data[i].color
       });
     } // alert(seriesTemp);
     // console.log(seriesTemp);
