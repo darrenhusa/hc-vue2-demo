@@ -39,27 +39,28 @@
             :chart-height="400">
         </stacked-column-with-data-label-percents-chart>
 
-        <table style="margin: 10px 0px 10px 50px; border-collapse: collapse;">
-            <thead>
+        <div style="padding-top: 25px; padding-bottom: 25px; margin: 0px 0px 0px 0px;">
+        <table style="border-collapse: collapse;">
+            <thead style="border-top: 2px solid gray; border-bottom: 2px solid gray;">
                 <tr>
-                    <th style="border-top: 2px solid gray; border-bottom: 2px solid gray;"></th>                    
+                    <th style="padding-right: 25px;"></th>                    
                     @for ($i = 0; $i < 5; $i++)
-                        <th style="padding-right: 10px; padding-left: 10px; border-top: 2px solid gray; border-bottom: 2px solid gray;">{{ $series3['categories'][$i] }}</th>
+                        <th style="text-align: center; padding-right: 125px;">{{ $series3['categories'][$i] }}</th>
                     @endfor
                 </tr>
             </thead>
             <tbody>
                 @for ($j = 0; $j < 3; $j++)
-                    <tr>
-                        <th style="font-weight: bold; text-align: left; padding: 10px; border-bottom: 1px solid silver; height: 20px;">{{ $labels3[$j] }}</th>
+                    <tr style="border-bottom: 1px solid gray; height: 20px;">
+                        <th style="font-weight: bold; text-align: left; padding-right: 125px; ">{{ $labels3[$j] }}</th>
                         @for ($i = 0; $i < 5; $i++)
-                            <td style="padding: 10px; border-bottom: 1px solid silver; height: 20px;">{{ $numbers3[$j][$i] }}</td>
+                            <td style="text-align: center; padding-right: 100px;">{{ $numbers3[$j][$i] }}</td>
                         @endfor
                     </tr>
                 @endfor
             </tbody>
         </table>
-       
+        </div>
     @php
     
     $data4 = [
