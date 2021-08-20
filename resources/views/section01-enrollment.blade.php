@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Highcharts Vue 2 Wrapper Demo</title>
+    <title>Section 01</title>
     <!-- <script src="https://code.highcharts.com/highcharts.js"></script> -->
 </head>
 <body>
@@ -39,21 +39,21 @@
             :chart-height="400">
         </stacked-column-with-data-label-percents-chart>
 
-        <table>
+        <table style="margin: 10px 0px 10px 50px; border-collapse: collapse;">
             <thead>
                 <tr>
-                    <td></td>                    
+                    <th style="border-top: 2px solid gray; border-bottom: 2px solid gray;"></th>                    
                     @for ($i = 0; $i < 5; $i++)
-                        <td>{{ $series3['categories'][$i] }}</td>
+                        <th style="padding-right: 10px; padding-left: 10px; border-top: 2px solid gray; border-bottom: 2px solid gray;">{{ $series3['categories'][$i] }}</th>
                     @endfor
                 </tr>
             </thead>
             <tbody>
                 @for ($j = 0; $j < 3; $j++)
                     <tr>
-                        <td class="border px-4 py-2 text-left">{{ $labels3[$j] }}</td>
+                        <th style="font-weight: bold; text-align: left; padding: 10px; border-bottom: 1px solid silver; height: 20px;">{{ $labels3[$j] }}</th>
                         @for ($i = 0; $i < 5; $i++)
-                            <td class="border px-4 py-2">{{ $numbers3[$j][$i] }}</td>
+                            <td style="padding: 10px; border-bottom: 1px solid silver; height: 20px;">{{ $numbers3[$j][$i] }}</td>
                         @endfor
                     </tr>
                 @endfor
