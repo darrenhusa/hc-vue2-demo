@@ -15,7 +15,15 @@
              ['label' => 'NonAthlete', 'color' => '#8d230f', 'values' => [748, 640, 883, 1392, 1392]]
     ];
 
-    $series3 = [
+    for ($i = 0; $i < 5; $i++)
+    {
+        $total[] = $data3[0]['values'][$i] + $data3[1]['values'][$i]; 
+    }
+
+    $labels3 = ['Total', $data3[0]['label'], $data3[1]['label']];
+    $numbers3 = [$total, $data3[0]['values'], $data3[1]['values']];
+
+   $series3 = [
         'title' => 'Number of Applications - TRAD Programs',
         'categories' => ['Fall 2017', 'Fall 2018', 'Fall 2019', 'Fall 2020', 'Fall 2021'],
         'data' => $data3,
@@ -30,6 +38,27 @@
             :chart-width="1200"
             :chart-height="400">
         </stacked-column-with-data-label-percents-chart>
+
+        <table>
+            <thead>
+                <tr>
+                    <td></td>                    
+                    @for ($i = 0; $i < 5; $i++)
+                        <td>{{ $series3['categories'][$i] }}</td>
+                    @endfor
+                </tr>
+            </thead>
+            <tbody>
+                @for ($j = 0; $j < 3; $j++)
+                    <tr>
+                        <td class="border px-4 py-2 text-left">{{ $labels3[$j] }}</td>
+                        @for ($i = 0; $i < 5; $i++)
+                            <td class="border px-4 py-2">{{ $numbers3[$j][$i] }}</td>
+                        @endfor
+                    </tr>
+                @endfor
+            </tbody>
+        </table>
        
     @php
     
