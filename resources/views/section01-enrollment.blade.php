@@ -17,11 +17,11 @@
 
     for ($i = 0; $i < 5; $i++)
     {
-        $total[] = $data3[0]['values'][$i] + $data3[1]['values'][$i]; 
+        $total3[] = $data3[0]['values'][$i] + $data3[1]['values'][$i]; 
     }
 
     $labels3 = ['Total', $data3[0]['label'], $data3[1]['label']];
-    $numbers3 = [$total, $data3[0]['values'], $data3[1]['values']];
+    $numbers3 = [$total3, $data3[0]['values'], $data3[1]['values']];
 
    $series3 = [
         'title' => 'Number of Applications - TRAD Programs',
@@ -68,6 +68,14 @@
              ['label' => 'NonAthlete', 'color' => '#8d230f', 'values' => [303, 208, 395, 722, 722]]
     ];
 
+    for ($i = 0; $i < 5; $i++)
+    {
+        $total4[] = $data4[0]['values'][$i] + $data4[1]['values'][$i]; 
+    }
+
+    $labels4 = ['Total', $data4[0]['label'], $data4[1]['label']];
+    $numbers4 = [$total4, $data4[0]['values'], $data4[1]['values']];
+
     $series4 = [
         'title' => 'Number of Accepted - TRAD Programs',
         'categories' => ['Fall 2017', 'Fall 2018', 'Fall 2019', 'Fall 2020', 'Fall 2021'],
@@ -84,12 +92,43 @@
         :chart-height="400">
     </stacked-column-with-data-label-percents-chart>
     
+    <div style="padding-top: 25px; padding-bottom: 25px; margin: 0px 0px 0px 0px;">
+        <table style="border-collapse: collapse;">
+            <thead style="border-top: 2px solid gray; border-bottom: 2px solid gray;">
+                <tr>
+                    <th style="padding-right: 25px;"></th>                    
+                    @for ($i = 0; $i < 5; $i++)
+                        <th style="text-align: center; padding-right: 125px;">{{ $series4['categories'][$i] }}</th>
+                    @endfor
+                </tr>
+            </thead>
+            <tbody>
+                @for ($j = 0; $j < 3; $j++)
+                    <tr style="border-bottom: 1px solid gray; height: 20px;">
+                        <th style="font-weight: bold; text-align: left; padding-right: 125px; ">{{ $labels4[$j] }}</th>
+                        @for ($i = 0; $i < 5; $i++)
+                            <td style="text-align: center; padding-right: 100px;">{{ $numbers4[$j][$i] }}</td>
+                        @endfor
+                    </tr>
+                @endfor
+            </tbody>
+        </table>
+        </div>
+
     @php
     
     $data5 = [
              ['label' => 'Athlete', 'color' => '#217ca3', 'values' => [6, 119, 132, 131, 131]],
              ['label' => 'NonAthlete', 'color' => '#8d230f', 'values' => [239, 100, 158, 296, 296]]
     ];
+
+    for ($i = 0; $i < 5; $i++)
+    {
+        $total5[] = $data5[0]['values'][$i] + $data5[1]['values'][$i]; 
+    }
+
+    $labels5 = ['Total', $data5[0]['label'], $data5[1]['label']];
+    $numbers5 = [$total5, $data5[0]['values'], $data5[1]['values']];
 
     $series5 = [
         'title' => 'Number of Final Accepted - TRAD Programs',
@@ -106,12 +145,43 @@
         :chart-height="400">
     </stacked-column-with-data-label-percents-chart>
     
+    <div style="padding-top: 25px; padding-bottom: 25px; margin: 0px 0px 0px 0px;">
+        <table style="border-collapse: collapse;">
+            <thead style="border-top: 2px solid gray; border-bottom: 2px solid gray;">
+                <tr>
+                    <th style="padding-right: 25px;"></th>                    
+                    @for ($i = 0; $i < 5; $i++)
+                        <th style="text-align: center; padding-right: 125px;">{{ $series5['categories'][$i] }}</th>
+                    @endfor
+                </tr>
+            </thead>
+            <tbody>
+                @for ($j = 0; $j < 3; $j++)
+                    <tr style="border-bottom: 1px solid gray; height: 20px;">
+                        <th style="font-weight: bold; text-align: left; padding-right: 125px; ">{{ $labels5[$j] }}</th>
+                        @for ($i = 0; $i < 5; $i++)
+                            <td style="text-align: center; padding-right: 100px;">{{ $numbers5[$j][$i] }}</td>
+                        @endfor
+                    </tr>
+                @endfor
+            </tbody>
+        </table>
+        </div>
+
     @php
     
     $data6 = [
              ['label' => 'Athlete', 'color' => '#217ca3', 'values' => [4, 110, 113, 96, 96]],
              ['label' => 'NonAthlete', 'color' => '#8d230f', 'values' => [186, 78, 125, 125, 125]]
     ];
+
+    for ($i = 0; $i < 5; $i++)
+    {
+        $total6[] = $data6[0]['values'][$i] + $data6[1]['values'][$i]; 
+    }
+
+    $labels6 = ['Total', $data6[0]['label'], $data6[1]['label']];
+    $numbers6 = [$total6, $data6[0]['values'], $data6[1]['values']];
 
     $series6 = [
         'title' => 'Number of Registered - TRAD Programs',
@@ -128,12 +198,43 @@
         :chart-height="400">
     </stacked-column-with-data-label-percents-chart>
 
+    <div style="padding-top: 25px; padding-bottom: 25px; margin: 0px 0px 0px 0px;">
+        <table style="border-collapse: collapse;">
+            <thead style="border-top: 2px solid gray; border-bottom: 2px solid gray;">
+                <tr>
+                    <th style="padding-right: 25px;"></th>                    
+                    @for ($i = 0; $i < 5; $i++)
+                        <th style="text-align: center; padding-right: 125px;">{{ $series6['categories'][$i] }}</th>
+                    @endfor
+                </tr>
+            </thead>
+            <tbody>
+                @for ($j = 0; $j < 3; $j++)
+                    <tr style="border-bottom: 1px solid gray; height: 20px;">
+                        <th style="font-weight: bold; text-align: left; padding-right: 125px; ">{{ $labels6[$j] }}</th>
+                        @for ($i = 0; $i < 5; $i++)
+                            <td style="text-align: center; padding-right: 100px;">{{ $numbers6[$j][$i] }}</td>
+                        @endfor
+                    </tr>
+                @endfor
+            </tbody>
+        </table>
+        </div>
+
     @php
     
     $data7 = [
              ['label' => 'Athlete', 'color' => '#217ca3', 'values' => [2, 103, 107, 90, 90]],
              ['label' => 'NonAthlete', 'color' => '#8d230f', 'values' => [159, 63, 90, 81, 81]]
     ];
+
+    for ($i = 0; $i < 5; $i++)
+    {
+        $total7[] = $data7[0]['values'][$i] + $data7[1]['values'][$i]; 
+    }
+
+    $labels7 = ['Total', $data7[0]['label'], $data7[1]['label']];
+    $numbers7 = [$total7, $data7[0]['values'], $data7[1]['values']];
 
     $series7 = [
         'title' => 'Number of Enrolled - TRAD Programs',
@@ -150,6 +251,29 @@
         :chart-height="400">
     </stacked-column-with-data-label-percents-chart>
        
+    <div style="padding-top: 25px; padding-bottom: 25px; margin: 0px 0px 0px 0px;">
+        <table style="border-collapse: collapse;">
+            <thead style="border-top: 2px solid gray; border-bottom: 2px solid gray;">
+                <tr>
+                    <th style="padding-right: 25px;"></th>                    
+                    @for ($i = 0; $i < 5; $i++)
+                        <th style="text-align: center; padding-right: 125px;">{{ $series7['categories'][$i] }}</th>
+                    @endfor
+                </tr>
+            </thead>
+            <tbody>
+                @for ($j = 0; $j < 3; $j++)
+                    <tr style="border-bottom: 1px solid gray; height: 20px;">
+                        <th style="font-weight: bold; text-align: left; padding-right: 125px; ">{{ $labels7[$j] }}</th>
+                        @for ($i = 0; $i < 5; $i++)
+                            <td style="text-align: center; padding-right: 100px;">{{ $numbers7[$j][$i] }}</td>
+                        @endfor
+                    </tr>
+                @endfor
+            </tbody>
+        </table>
+        </div>
+
 </div>
 
     <script src="/js/app.js"></script>
