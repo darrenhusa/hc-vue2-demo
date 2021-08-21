@@ -352,6 +352,31 @@
         :chart-height="600">
     </column-chart>
 
+    @php
+    
+    $data13 = [
+             ['label' => '0', 'color' => '#217ca3', 'values' => [4, 1, 4, 2, 2]],
+             ['label' => '1-15', 'color' => '#8d230f', 'values' => [8, 9, 7, 7, 7]],
+             ['label' => '16-30', 'color' => '#50CB93', 'values' => [5, 9, 7, 8, 8]],
+             ['label' => '31-60', 'color' => 'purple', 'values' => [14, 21, 26, 6, 6]],
+             ['label' => '61-90', 'color' => 'lightblue', 'values' => [21, 11, 7, 6, 6]],
+             ['label' => '91 and above', 'color' => 'orange', 'values' => [8, 1, 2, 0, 0]],
+    ];
+
+    $series13 = [
+        'title' => 'TRAD Transfer Students - By Transfer Cr Hrs Earned Ranges',
+        'categories' => ['Fall 2017', 'Fall 2018', 'Fall 2019', 'Fall 2020', 'Fall 2021'],
+        'data' => $data13,
+    ];
+
+    @endphp
+
+    <h2>Figure 13 - TRAD Programs - Transfer Students by Transfer Credit Hours Earned Ranges</h2>
+    <stacked-column-chart 
+        :series='@json($series13)'
+        :chart-width="1200"
+        :chart-height="600">
+    </stacked-column-chart>
 
 </div>
 
