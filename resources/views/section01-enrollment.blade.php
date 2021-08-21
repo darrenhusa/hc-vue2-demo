@@ -378,6 +378,38 @@
         :chart-height="600">
     </stacked-column-chart>
 
+    @php
+    
+    $data16 = [
+             ['label' => 'Catholic', 'color' => '#217ca3', 'values' => [44.6, 39.1, 41.8, 35.4, 35.4]],
+             ['label' => 'Non-Catholic', 'color' => '#8d230f', 'values' => [55.4, 60.9, 58.2, 64.6, 64.6]],
+    ];
+
+    $series16 = [
+        'title' => "Percent of Catholic Traditional Students",
+        'subtitle' => "",
+        'x_axis' => '',
+        'y_axis' => '',
+        'categories' => ['Fall 2017', 'Fall 2018', 'Fall 2019', 'Fall 2020', 'Fall 2021'],
+        'data' => $data16,
+    ];
+
+    @endphp
+
+    <h2>Figure 16 - Percentages of Catholic Traditional Students</h2>
+    <stacked-percentage-column-chart 
+        :series='@json($series16)'
+        :chart-width="1200"
+        :chart-height="600">
+    </stacked-percentage-column-chart>
+    
+    <column-chart 
+        :series='@json($series16)'
+        :chart-width="1200"
+        :chart-height="600">
+    </column-chart>
+    
+
 </div>
 
     <script src="/js/app.js"></script>
