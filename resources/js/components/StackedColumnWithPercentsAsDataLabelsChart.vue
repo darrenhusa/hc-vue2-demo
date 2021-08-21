@@ -87,6 +87,9 @@ export default {
           text: this.series.title
       },
       xAxis: {
+        title: {
+              text: this.series.x_axis
+          },
           categories: this.series.categories
       },
       yAxis: {

@@ -275,7 +275,7 @@
         </div>
 
 
-        @php
+@php
     
     $data8 = [
              ['label' => 'first-time', 'color' => '#217ca3', 'values' => [3, 11, 15, 27, 18, 10, 9, 4, 1, 5, 16, 6, 5, 1, 9]],
@@ -288,6 +288,7 @@
     $series8 = [
         'title' => "Fall 2021 TRAD Enrollment",
         'subtitle' => "by Program and by Entry-type",
+        'x_axis' => 'Programs',
         'y_axis' => 'Headcount - Full-time and Part-time',
         'categories' => $programs8,
         'data' => $data8,
@@ -302,7 +303,35 @@
         :chart-height="600">
     </stacked-column-chart>
        
+    @php
     
+    $data9 = [
+             ['label' => 'first-time', 'color' => '#217ca3', 'values' => [3, 11, 15, 27, 18, 10, 9, 4, 1, 5, 16, 6, 5, 1, 9]],
+             ['label' => 'continuing', 'color' => '#8d230f', 'values' => [11, 18, 17, 58, 50, 9, 29, 13, 3, 3, 16, 0, 18, 0, 18]],
+             ['label' => 'transfer', 'color' => '#50CB93', 'values' => [1, 3, 1, 10, 7, 1, 0, 0, 0, 0, 2, 0, 0, 0, 4]]
+    ];
+
+    $programs9 = ['Acct', 'Bio/Kines', 'Biomed', 'Bmt', 'CriJ', 'DSA', 'Educ', 'Emco', 'FrnsBio', 'FrnsSci', 'GenStud', 'HlthSci', 'HSv', 'MedLabSci', 'Psyc'];
+
+    $series9 = [
+        'title' => "Fall 2021 TRAD Enrollment",
+        'subtitle' => "by Program and by Entry-type",
+        'x_axis' => 'Programs',
+        'y_axis' => 'Percentages',
+        'categories' => $programs9,
+        'data' => $data9,
+    ];
+
+    @endphp
+
+    <h2>Figure 9 - Fall 2021 TRAD Enrolled by Program and by Entry-type (percentage)</h2>
+    <stacked-percentage-column-chart 
+        :series='@json($series9)'
+        :chart-width="1200"
+        :chart-height="600">
+    </stacked-percentage-column-chart>
+    
+
 </div>
 
     <script src="/js/app.js"></script>

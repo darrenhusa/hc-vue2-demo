@@ -67,6 +67,9 @@ export default {
               text: this.series.subtitle
           },
           xAxis: {
+            title: {
+                  text: this.series.x_axis
+              },
               categories: this.series.categories
           },
           yAxis: {
