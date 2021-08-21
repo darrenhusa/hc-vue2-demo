@@ -2908,6 +2908,17 @@ highcharts_modules_exporting__WEBPACK_IMPORTED_MODULE_1___default()((highcharts_
       plotOptions: {
         column: {
           stacking: 'percent'
+        },
+        dataLabels: {
+          enabled: true,
+          inside: true,
+          style: {
+            color: 'black'
+          },
+          formatter: function formatter() {
+            // return Highcharts.numberFormat(this.y / this.series.chart.series[this.series.index - 1].data[this.point.index].y * 100, 2) + '%'
+            return '<span>{point.percentage:.0f}%';
+          }
         }
       },
       series: seriesTemp,

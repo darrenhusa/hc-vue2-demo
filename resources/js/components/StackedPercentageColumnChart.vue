@@ -81,7 +81,18 @@ export default {
           plotOptions: {
               column: {
                   stacking: 'percent'
-              }
+              },
+              dataLabels: {
+                    enabled: true,
+                    inside: true,
+                    style: {
+                        color: 'black'
+                    },
+                    formatter: function() {
+                      // return Highcharts.numberFormat(this.y / this.series.chart.series[this.series.index - 1].data[this.point.index].y * 100, 2) + '%'
+                    return '<span>{point.percentage:.0f}%'
+                }
+              },
           },
           series: seriesTemp,
           
