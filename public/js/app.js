@@ -2103,7 +2103,8 @@ highcharts_modules_exporting__WEBPACK_IMPORTED_MODULE_1___default()((highcharts_
     for (var i = 0; i < number; i++) {
       seriesTemp.push({
         name: this.series.data[i].label,
-        data: this.series.data[i].values
+        data: this.series.data[i].values,
+        color: this.series.data[i].color
       });
     } // alert(seriesTemp);
     // console.log(seriesTemp);
@@ -2131,7 +2132,7 @@ highcharts_modules_exporting__WEBPACK_IMPORTED_MODULE_1___default()((highcharts_
       },
       tooltip: {
         headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
-        pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' + '<td style="padding:0"><b>{point.y:.1f} mm</b></td></tr>',
+        pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}</td>' + '<td style="padding:0"><b>{point.y:.1f} </b></td></tr>',
         footerFormat: '</table>',
         shared: true,
         useHTML: true
@@ -2139,10 +2140,17 @@ highcharts_modules_exporting__WEBPACK_IMPORTED_MODULE_1___default()((highcharts_
       plotOptions: {
         column: {
           pointPadding: 0.2,
-          borderWidth: 0
+          borderWidth: 0,
+          dataLabels: {
+            enabled: true,
+            inside: false
+          }
         }
       },
       series: seriesTemp,
+      legend: {
+        enabled: false
+      },
       credits: {
         enabled: false
       },
@@ -2919,17 +2927,13 @@ highcharts_modules_exporting__WEBPACK_IMPORTED_MODULE_1___default()((highcharts_
       },
       plotOptions: {
         column: {
-          stacking: 'percent'
-        },
-        dataLabels: {
-          enabled: true,
-          // inside: true,
-          // style: {
-          //     color: 'white'
-          // },
-          formatter: function formatter() {
-            // console.log('hello' + this.series.data[0].values);
-            return Math.round(100 * this.y / this.total) + '%';
+          stacking: 'percent',
+          dataLabels: {
+            enabled: true,
+            inside: true,
+            formatter: function formatter() {
+              return Math.round(100 * this.y / this.total) + '%';
+            }
           }
         }
       },

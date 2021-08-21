@@ -91,17 +91,14 @@ export default {
           },
           plotOptions: {
               column: {
-                  stacking: 'percent'
-              },
-              dataLabels: {
-                    enabled: true,
-                    // inside: true,
-                    // style: {
-                    //     color: 'white'
-                    // },
-                    formatter: function() {
-                      // console.log('hello' + this.series.data[0].values);
+                  stacking: 'percent',
+
+                  dataLabels: {
+                  enabled: true,
+                  inside: true,
+                  formatter: function() {
                      return Math.round(100 * this.y / this.total) + '%';
+                  }
                 }
               },
           },

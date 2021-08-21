@@ -331,6 +331,27 @@
         :chart-height="600">
     </stacked-percentage-column-chart>
     
+    @php
+    
+    $data10 = [
+             ['label' => '', 'color' => '#217ca3', 'values' => [46, 36, 31, 30, 30]],
+    ];
+
+    $series10 = [
+        'title' => 'TRAD Programs - Part-time Students',
+        'categories' => ['Fall 2017', 'Fall 2018', 'Fall 2019', 'Fall 2020', 'Fall 2021'],
+        'data' => $data10,
+    ];
+
+    @endphp
+
+    <h2>Figure 10 - TRAD Programs - Number of Part-time Students</h2>
+    <column-chart 
+        :series='@json($series10)'
+        :chart-width="1200"
+        :chart-height="600">
+    </column-chart>
+
 
 </div>
 
