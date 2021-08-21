@@ -2139,7 +2139,7 @@ highcharts_modules_exporting__WEBPACK_IMPORTED_MODULE_1___default()((highcharts_
       },
       plotOptions: {
         column: {
-          pointPadding: 0.2,
+          pointPadding: 0,
           borderWidth: 0,
           dataLabels: {
             enabled: true,
