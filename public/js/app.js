@@ -2882,6 +2882,18 @@ highcharts_modules_exporting__WEBPACK_IMPORTED_MODULE_1___default()((highcharts_
     // console.log(seriesTemp);
 
 
+    var entryTypeTotal = 0;
+    var percentage = [];
+
+    for (var _i = 0; _i < number; _i++) {
+      entryTypeTotal += this.series.data[_i].values[0];
+    }
+
+    for (var _i2 = 0; _i2 < number; _i2++) {
+      percentage.push(100.0 * this.series.data[_i2].values[0] / entryTypeTotal);
+    }
+
+    console.log(percentage);
     this.target = highcharts__WEBPACK_IMPORTED_MODULE_0___default().chart(this.$el, {
       chart: {
         type: 'column'
@@ -2911,13 +2923,13 @@ highcharts_modules_exporting__WEBPACK_IMPORTED_MODULE_1___default()((highcharts_
         },
         dataLabels: {
           enabled: true,
-          inside: true,
-          style: {
-            color: 'black'
-          },
+          // inside: true,
+          // style: {
+          //     color: 'white'
+          // },
           formatter: function formatter() {
-            // return Highcharts.numberFormat(this.y / this.series.chart.series[this.series.index - 1].data[this.point.index].y * 100, 2) + '%'
-            return '<span>{point.percentage:.0f}%';
+            // console.log('hello' + this.series.data[0].values);
+            return Math.round(100 * this.y / this.total) + '%';
           }
         }
       },

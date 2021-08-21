@@ -54,6 +54,17 @@ export default {
 
       // alert(seriesTemp);
       // console.log(seriesTemp);
+      let entryTypeTotal = 0;
+      const percentage = [];
+
+      for(let i=0; i<number; i++){
+        entryTypeTotal += this.series.data[i].values[0];
+      }
+      for(let i=0; i<number; i++){
+        percentage.push((100.0 * this.series.data[i].values[0]) / entryTypeTotal);
+      }
+
+      console.log(percentage);
 
       this.target = Highcharts.chart(this.$el, {
           chart: {
@@ -84,13 +95,13 @@ export default {
               },
               dataLabels: {
                     enabled: true,
-                    inside: true,
-                    style: {
-                        color: 'black'
-                    },
+                    // inside: true,
+                    // style: {
+                    //     color: 'white'
+                    // },
                     formatter: function() {
-                      // return Highcharts.numberFormat(this.y / this.series.chart.series[this.series.index - 1].data[this.point.index].y * 100, 2) + '%'
-                    return '<span>{point.percentage:.0f}%'
+                      // console.log('hello' + this.series.data[0].values);
+                     return Math.round(100 * this.y / this.total) + '%';
                 }
               },
           },
