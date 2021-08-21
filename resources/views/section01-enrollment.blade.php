@@ -280,20 +280,14 @@
     $data8 = [
              ['label' => 'first-time', 'color' => '#217ca3', 'values' => [3, 11, 15, 27, 18, 10, 9, 4, 1, 5, 16, 6, 5, 1, 9]],
              ['label' => 'continuing', 'color' => '#8d230f', 'values' => [11, 18, 17, 58, 50, 9, 29, 13, 3, 3, 16, 0, 18, 0, 18]],
-             ['label' => 'transfer', 'color' => '#00ff00', 'values' => [1, 3, 1, 10, 7, 1, 0, 0, 0, 0, 2, 0, 0, 0, 4]]
+             ['label' => 'transfer', 'color' => '#50CB93', 'values' => [1, 3, 1, 10, 7, 1, 0, 0, 0, 0, 2, 0, 0, 0, 4]]
     ];
 
-    for ($i = 0; $i < 5; $i++)
-    {
-        $total8[] = $data8[0]['values'][$i] + $data8[1]['values'][$i] + $data8[2]['values'][$i]; 
-    }
-
-    $labels8 = ['Total', $data8[0]['label'], $data8[1]['label'], $data8[2]['label']];
-    $numbers8 = [$total8, $data8[0]['values'], $data8[1]['values'], $data8[2]['values']];
     $programs8 = ['Acct', 'Bio/Kines', 'Biomed', 'Bmt', 'CriJ', 'DSA', 'Educ', 'Emco', 'FrnsBio', 'FrnsSci', 'GenStud', 'HlthSci', 'HSv', 'MedLabSci', 'Psyc'];
 
     $series8 = [
-        'title' => "Fall 2021 TRAD Enrollment\nby Program and by Entry-type",
+        'title' => "Fall 2021 TRAD Enrollment",
+        'subtitle' => "by Program and by Entry-type",
         'y_axis' => 'Headcount - Full-time and Part-time',
         'categories' => $programs8,
         'data' => $data8,
@@ -305,7 +299,7 @@
     <stacked-column-chart 
         :series='@json($series8)'
         :chart-width="1200"
-        :chart-height="400">
+        :chart-height="600">
     </stacked-column-chart>
        
     
