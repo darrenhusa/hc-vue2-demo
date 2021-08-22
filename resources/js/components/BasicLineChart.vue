@@ -128,7 +128,9 @@ export default {
       for(let i=0; i<number; i++){
         seriesTemp.push({
             name: this.series.data[i].label,
-            data: this.series.data[i].values
+            data: this.series.data[i].values,
+            color: this.series.data[i].color,
+            dataLabels: {enabled: this.series.data[i].showDataLabels}
         });
       }
 
@@ -166,15 +168,15 @@ export default {
 
       plotOptions: {
           line: {
-              dataLabels: {
-                  enabled: this.showDataLabels
-              },
+              // dataLabels: {
+              //     enabled: this.showDataLabels
+              // },
               enableMouseTracking: false
           }
         },
 
       tooltip: {
-        valueSuffix: '°C'
+        valueSuffix: ''
       },
 
       legend: {
@@ -185,6 +187,9 @@ export default {
       },
 
         series: seriesTemp,
+        // dataLabels: {
+        //     enabled: this.series.data.showDataLabels
+        // },
         // for loop generates code of the form below dynamically!
         // [
         //   {

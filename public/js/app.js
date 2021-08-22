@@ -1967,7 +1967,11 @@ highcharts_modules_exporting__WEBPACK_IMPORTED_MODULE_1___default()((highcharts_
     for (var i = 0; i < number; i++) {
       seriesTemp.push({
         name: this.series.data[i].label,
-        data: this.series.data[i].values
+        data: this.series.data[i].values,
+        color: this.series.data[i].color,
+        dataLabels: {
+          enabled: this.series.data[i].showDataLabels
+        }
       });
     } // alert(seriesTemp);
     // console.log(seriesTemp);
@@ -2003,14 +2007,14 @@ highcharts_modules_exporting__WEBPACK_IMPORTED_MODULE_1___default()((highcharts_
       // end yAxis
       plotOptions: {
         line: {
-          dataLabels: {
-            enabled: this.showDataLabels
-          },
+          // dataLabels: {
+          //     enabled: this.showDataLabels
+          // },
           enableMouseTracking: false
         }
       },
       tooltip: {
-        valueSuffix: '°C'
+        valueSuffix: ''
       },
       legend: {
         layout: 'vertical',
@@ -2019,6 +2023,9 @@ highcharts_modules_exporting__WEBPACK_IMPORTED_MODULE_1___default()((highcharts_
         borderWidth: 0
       },
       series: seriesTemp,
+      // dataLabels: {
+      //     enabled: this.series.data.showDataLabels
+      // },
       // for loop generates code of the form below dynamically!
       // [
       //   {
