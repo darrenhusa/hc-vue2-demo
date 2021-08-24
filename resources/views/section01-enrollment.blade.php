@@ -14,6 +14,8 @@
              ['label' => 'Athlete', 'color' => '#217ca3', 'values' => [16, 271, 268, 234, 234]],
              ['label' => 'NonAthlete', 'color' => '#8d230f', 'values' => [748, 640, 883, 1392, 1392]]
     ];
+    $length3 = count($data3);
+    $total3 = [];
 
     for ($i = 0; $i < 5; $i++)
     {
@@ -50,7 +52,7 @@
                 </tr>
             </thead>
             <tbody>
-                @for ($j = 0; $j < 3; $j++)
+                @for ($j = 0; $j < $length3+1; $j++)
                     <tr style="border-bottom: 1px solid gray; height: 20px;">
                         <th style="font-weight: bold; text-align: left; padding-right: 125px; ">{{ $labels3[$j] }}</th>
                         @for ($i = 0; $i < 5; $i++)
@@ -67,6 +69,7 @@
              ['label' => 'Athlete', 'color' => '#217ca3', 'values' => [10, 147, 205, 180, 180]],
              ['label' => 'NonAthlete', 'color' => '#8d230f', 'values' => [303, 208, 395, 722, 722]]
     ];
+    $length4 = count($data4);
 
     for ($i = 0; $i < 5; $i++)
     {
@@ -103,7 +106,7 @@
                 </tr>
             </thead>
             <tbody>
-                @for ($j = 0; $j < 3; $j++)
+                @for ($j = 0; $j < $length4+1; $j++)
                     <tr style="border-bottom: 1px solid gray; height: 20px;">
                         <th style="font-weight: bold; text-align: left; padding-right: 125px; ">{{ $labels4[$j] }}</th>
                         @for ($i = 0; $i < 5; $i++)
@@ -121,6 +124,8 @@
              ['label' => 'Athlete', 'color' => '#217ca3', 'values' => [6, 119, 132, 131, 131]],
              ['label' => 'NonAthlete', 'color' => '#8d230f', 'values' => [239, 100, 158, 296, 296]]
     ];
+
+    $length5 = count($data5);
 
     for ($i = 0; $i < 5; $i++)
     {
@@ -156,7 +161,7 @@
                 </tr>
             </thead>
             <tbody>
-                @for ($j = 0; $j < 3; $j++)
+                @for ($j = 0; $j < $length5+1; $j++)
                     <tr style="border-bottom: 1px solid gray; height: 20px;">
                         <th style="font-weight: bold; text-align: left; padding-right: 125px; ">{{ $labels5[$j] }}</th>
                         @for ($i = 0; $i < 5; $i++)
@@ -174,6 +179,8 @@
              ['label' => 'Athlete', 'color' => '#217ca3', 'values' => [4, 110, 113, 96, 96]],
              ['label' => 'NonAthlete', 'color' => '#8d230f', 'values' => [186, 78, 125, 125, 125]]
     ];
+
+    $length6 = count($data6);
 
     for ($i = 0; $i < 5; $i++)
     {
@@ -209,7 +216,7 @@
                 </tr>
             </thead>
             <tbody>
-                @for ($j = 0; $j < 3; $j++)
+                @for ($j = 0; $j < $length6+1; $j++)
                     <tr style="border-bottom: 1px solid gray; height: 20px;">
                         <th style="font-weight: bold; text-align: left; padding-right: 125px; ">{{ $labels6[$j] }}</th>
                         @for ($i = 0; $i < 5; $i++)
@@ -227,6 +234,8 @@
              ['label' => 'Athlete', 'color' => '#217ca3', 'values' => [2, 103, 107, 90, 90]],
              ['label' => 'NonAthlete', 'color' => '#8d230f', 'values' => [159, 63, 90, 81, 81]]
     ];
+
+    $length7 = count($data7);
 
     for ($i = 0; $i < 5; $i++)
     {
@@ -262,7 +271,7 @@
                 </tr>
             </thead>
             <tbody>
-                @for ($j = 0; $j < 3; $j++)
+                @for ($j = 0; $j < $length7+1; $j++)
                     <tr style="border-bottom: 1px solid gray; height: 20px;">
                         <th style="font-weight: bold; text-align: left; padding-right: 125px; ">{{ $labels7[$j] }}</th>
                         @for ($i = 0; $i < 5; $i++)
@@ -361,12 +370,12 @@
              ['label' => 'returning', 'color' => 'purple', 'values' => [1, 2, 0, 0, 0]],
              ['label' => 'transfer', 'color' => 'lightblue', 'values' => [60, 52, 53, 29, 29]],
     ];
-
+    $length12 = count($data12);
     $total12 = [];
 
     for ($i = 0; $i < 5; $i++) {
         $sum = 0;
-        for ($j = 0; $j < 5; $j++) {
+        for ($j = 0; $j < $length12; $j++) {
             $sum += $data12[$j]['values'][$i];
         }
         array_push($total12, $sum);
@@ -375,7 +384,7 @@
     $labels12 = [];
     $numbers12 = [];
 
-    for ($j = 0; $j < 5; $j++) {
+    for ($j = 0; $j < $length12; $j++) {
         array_push($labels12, $data12[$j]['label']);
         array_push($numbers12, $data12[$j]['values']);
     }
@@ -408,7 +417,7 @@
                 </tr>
             </thead>
             <tbody>
-                @for ($j = 0; $j < 6; $j++)
+                @for ($j = 0; $j < $length12+1; $j++)
                     <tr style="border-bottom: 1px solid gray; height: 20px;">
                         <th style="font-weight: bold; text-align: left; padding-right: 125px; ">{{ $labels12[$j] }}</th>
                         @for ($i = 0; $i < 5; $i++)
