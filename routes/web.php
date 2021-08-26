@@ -34,6 +34,10 @@ Route::get('/section01', function () {
     return view('section01-enrollment');
 });
 
+Route::get('/section02', function () {
+    return view('section02');
+});
+
 Route::get('/section03', function () {
     return view('section03');
 });
