@@ -6,6 +6,11 @@ Route::get('/', function () {
     return view('index');
 });
 
+Route::get('/sample-charts', function () {    
+    return view('sample-charts');
+});
+
+
 Route::get('/export', function () {
     return view('export-chart2');
 });
@@ -46,6 +51,9 @@ Route::get('/section06', function () {
     return view('section06');
 });
 
+Route::get('/sankey-chart', function () {    
+    return view('sankey-chart');
+});
 
 // Route::get('/', function () {
 //     return view('welcome');
