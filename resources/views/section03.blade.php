@@ -239,6 +239,7 @@
         'data' => $data37,
     ];
 
+    
     @endphp
 
     <div id="app">
@@ -264,7 +265,7 @@
                     <tr style="border-bottom: 1px solid gray; height: 20px;">
                         <th style="font-weight: bold; text-align: left; padding-right: 125px; ">{{ $labels37[$j] }}</th>
                         @for ($i = 0; $i < 5; $i++)
-                            <td style="text-align: center; padding-right: 100px;">{{ $numbers37[$j][$i] }}</td>
+                            <td style="text-align: center; padding-right: 100px;">{{ number_format($numbers37[$j][$i]) }}</td>
                         @endfor
                     </tr>
                 @endfor
