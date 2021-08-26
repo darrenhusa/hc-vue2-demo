@@ -162,7 +162,7 @@
         'title' => "Percentage Credit Hours Taught",
         'subtitle' => "by Full-Time vs. Adjunct Faculty",
         'x_axis' => '',
-        'y_axis' => '',
+        'y_axis' => 'Percentage (%)',
         'categories' => ['2017-2018', '2018-2019', '2019-2020', '2020-2021', '2021-2022'],
         'data' => $data35,
     ];
@@ -176,11 +176,11 @@
         :chart-height="600">
     </stacked-percentage-column-chart> -->
     
-    <column-chart 
+    <column-chart-for-percentages 
         :series='@json($series35)'
         :chart-width="1200"
         :chart-height="600">
-    </column-chart>
+    </column-chart-for-percentages>
     
     @php
     
@@ -193,7 +193,7 @@
         'title' => "Percentage General Education Credit Hours Taught",
         'subtitle' => "by Full-Time vs. Adjunct Faculty",
         'x_axis' => '',
-        'y_axis' => '',
+        'y_axis' => 'Percentage (%)',
         'categories' => ['2017-2018', '2018-2019', '2019-2020', '2020-2021', '2021-2022'],
         'data' => $data36,
     ];
@@ -207,11 +207,11 @@
         :chart-height="600">
     </stacked-percentage-column-chart> -->
     
-    <column-chart 
+    <column-chart-for-percentages 
         :series='@json($series36)'
         :chart-width="1200"
         :chart-height="600">
-    </column-chart>
+    </column-chart-for-percentages>
     
 
     @php

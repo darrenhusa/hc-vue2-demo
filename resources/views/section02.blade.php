@@ -20,7 +20,7 @@
         'title' => "Fall-to-Spring",
         'subtitle' => "Retention of First-time, First-semester TRAD Freshman (F1)",
         'x_axis' => '',
-        'y_axis' => '',
+        'y_axis' => 'Percentage (%)',
         'categories' => ['Fall 2016-Spring 2017', 'Fall 2017-Spring 2018', 'Fall 2018-Spring 2019', 
                          'Fall 2019-Spring 2020', 'Fall 2020-Spring 2021'],
         'data' => $data29,
@@ -37,11 +37,11 @@
         :chart-height="600">
     </stacked-percentage-column-chart> -->
     
-    <column-chart 
+    <column-chart-for-percentages  
         :series='@json($series29)'
         :chart-width="1200"
         :chart-height="600">
-    </column-chart>
+    </column-chart-for-percentages>
    
 
     @php
@@ -55,7 +55,7 @@
         'title' => "Fall-to-Fall",
         'subtitle' => "Retention of First-time, First-semester TRAD Freshman (F1)",
         'x_axis' => '',
-        'y_axis' => '',
+        'y_axis' => 'Percentage (%)',
         'categories' => ['Fall 2016-Fall 2017', 'Fall 2017-Fall 2018', 'Fall 2018-Fall 2019', 
                          'Fall 2019-Fall 2020', 'Fall 2020-Fall 2021'],
         'data' => $data30,
@@ -72,11 +72,11 @@
         :chart-height="600">
     </stacked-percentage-column-chart> -->
     
-    <column-chart 
+    <column-chart-for-percentages 
         :series='@json($series30)'
         :chart-width="1200"
         :chart-height="600">
-    </column-chart>
+    </column-chart-for-percentages>
 
 </div>
 
