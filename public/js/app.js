@@ -3027,6 +3027,9 @@ highcharts_modules_exporting__WEBPACK_IMPORTED_MODULE_1___default()((highcharts_
       title: {
         text: this.series.title
       },
+      subtitle: {
+        text: this.series.subtitle
+      },
       xAxis: {
         title: {
           text: this.series.x_axis
