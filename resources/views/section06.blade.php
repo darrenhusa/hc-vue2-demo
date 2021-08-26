@@ -41,6 +41,7 @@
     $series40 = [
         'title' => 'Endowment (at the end of the FY)',
         'subtitle' => '',
+        'y_axis' => 'U.S. Dollars ($)',
         'categories' => ['FY 2016-17', 'FY 2017-18', 'FY 2018-19', 'FY 2019-20', 'FY 2020-21'],
         'data' => $data40,
     ];
@@ -50,11 +51,11 @@
 <div id="app">
 
     <h2>Figure 40 - Endowment (at the end of the FY)</h2>
-    <column-chart 
+    <column-chart-for-currency 
         :series='@json($series40)'
         :chart-width="1200"
         :chart-height="600">
-    </column-chart>
+    </column-chart-for-currency>
 
 </div>
 
