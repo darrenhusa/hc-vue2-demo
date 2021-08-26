@@ -37,7 +37,7 @@
     $data32 = [
              ['label' => '3.0 and above', 'color' => '#217ca3', 'values' => [35.2, 33.0, 35.6, 35.6, 35.6]],
              ['label' => '2.5 to 2.99', 'color' => '#8d230f', 'values' => [26.4, 25.2, 29.7, 29.7, 29.7]],
-             ['label' => '2.0 to 2.49', 'color' => 'lightgreen', 'values' => [28.6, 20.4, 17.8, 17.8, 17.8]],
+             ['label' => '2.0 to 2.49', 'color' => '#50CB93', 'values' => [28.6, 20.4, 17.8, 17.8, 17.8]],
              ['label' => 'Less than 2.0', 'color' => 'purple', 'values' => [9.9, 21.4, 16.9, 16.9, 16.9]],
     ];
 
@@ -219,8 +219,8 @@
     $data37 = [
              ['label' => 'Traditional Undergraduate', 'color' => '#217ca3', 'values' => [12465, 10755, 11388, 9337, 9337]],
              ['label' => 'Traditional-Intersession', 'color' => '#8d230f', 'values' => [63, 39, 39, 0, 0]],
-             ['label' => 'Degree Completion', 'color' => '#8d230f', 'values' => [2652, 2457, 2349, 840, 840]],
-             ['label' => 'Graduate', 'color' => '#8d230f', 'values' => [3783, 3145, 2689, 860, 860]],
+             ['label' => 'Degree Completion', 'color' => '#50CB93', 'values' => [2652, 2457, 2349, 840, 840]],
+             ['label' => 'Graduate', 'color' => 'purple', 'values' => [3783, 3145, 2689, 860, 860]],
     ];
     $length37 = count($data37);
     $total37 = [];

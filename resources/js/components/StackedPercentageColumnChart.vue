@@ -73,6 +73,9 @@ export default {
           title: {
               text: this.series.title
           },
+          subtitle: {
+              text: this.series.subtitle
+          },
           xAxis: {
               title: {
                 text: this.series.x_axis
