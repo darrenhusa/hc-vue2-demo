@@ -648,7 +648,7 @@
         'title' => "Percent of Catholic Traditional Students",
         'subtitle' => "",
         'x_axis' => '',
-        'y_axis' => '',
+        'y_axis' => 'Percentage (%)',
         'categories' => ['Fall 2017', 'Fall 2018', 'Fall 2019', 'Fall 2020', 'Fall 2021'],
         'data' => $data16,
     ];
@@ -662,11 +662,11 @@
         :chart-height="600">
     </stacked-percentage-column-chart>
     
-    <column-chart 
+    <column-chart-for-percentages 
         :series='@json($series16)'
         :chart-width="1200"
         :chart-height="600">
-    </column-chart>
+    </column-chart-for-percentages>
     
     @php
     
