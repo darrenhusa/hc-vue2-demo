@@ -42,6 +42,10 @@ Route::get('/section03', function () {
     return view('section03');
 });
 
+Route::get('/section06', function () {
+    return view('section06');
+});
+
 
 // Route::get('/', function () {
 //     return view('welcome');
