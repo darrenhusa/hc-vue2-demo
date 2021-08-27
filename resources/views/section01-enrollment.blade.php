@@ -56,7 +56,7 @@
                     <tr style="border-bottom: 1px solid gray; height: 20px;">
                         <th style="font-weight: bold; text-align: left; padding-right: 125px; ">{{ $labels3[$j] }}</th>
                         @for ($i = 0; $i < 5; $i++)
-                            <td style="text-align: center; padding-right: 100px;">{{ $numbers3[$j][$i] }}</td>
+                            <td style="text-align: center; padding-right: 100px;">{{ number_format($numbers3[$j][$i]) }}</td>
                         @endfor
                     </tr>
                 @endfor
