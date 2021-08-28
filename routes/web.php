@@ -10,6 +10,10 @@ Route::get('/sample-charts', function () {
     return view('sample-charts');
 });
 
+Route::get('/practice', function () {    
+    return view('section01-practice');
+});
+
 
 Route::get('/export', function () {
     return view('export-chart2');
