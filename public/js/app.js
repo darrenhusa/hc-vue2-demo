@@ -2712,95 +2712,125 @@ highcharts_modules_sankey__WEBPACK_IMPORTED_MODULE_2___default()((highcharts__WE
         data: [['Accounting', 'Accounting2', 2], ['Accounting', 'Health Science2', 1], ['Biomedical Science', 'Biomedical Science2', 7], ['Biomedical Science', 'General Studies2', 1], ['Biomedical Science', 'Psychology2', 1], ['Biomedical Science', 'Stop-out2', 4], ['Business Management', 'Business Management2', 21], ['Business Management', 'Stop-out2', 4], ['Business Management', 'Psychology2', 1], ['Business Management', 'Digital & Studio Arts2', 1], ['Criminal Justice', 'Criminal Justice2', 9], ['Criminal Justice', 'Business Management2', 2], ['Criminal Justice', 'Stop-out2', 6], ['Digital & Studio Arts', 'Digital & Studio Arts2', 2], ['Digital & Studio Arts', 'Stop-out2', 8], ['Education', 'Education2', 5], ['Education', 'General Studies2', 2], ['Education', 'Human Services2', 1], ['Education', 'Business Management2', 1], ['English', 'English2', 3], ['English', 'Education2', 1], ['Forensic Science', 'Forensic Science2', 1], ['Forensic Science', 'Stop-out2', 4], ['General Studies', 'General Studies2', 8], ['General Studies', 'Education2', 1], ['General Studies', 'Stop-out2', 6], ['Health Science', 'Health Science2', 5], ['Health Science', 'Stop-out2', 1], ['Human Services', 'Human Services2', 4], ['Kinesiology', 'Kinesiology2', 6], ['Kinesiology', 'Digital & Studio Arts2', 1], ['Kinesiology', 'Psychology2', 1], ['Kinesiology', 'Stop-out2', 2], ['Medical Lab Science', 'Criminal Justice2', 1], ['Psychology', 'Psychology2', 5], ['Psychology', 'Stop-out2', 4], ['Accounting2', 'Accounting3', 1], ['Accounting2', 'Health Science3', 1], ['Accounting2', 'Stop-out3', 1], ['Biomedical Science2', 'Biomedical Science3', 5], ['Biomedical Science2', 'Psychology3', 1], ['Biomedical Science2', 'Stop-out3', 7], ['Business Management2', 'Business Management3', 13], ['Business Management2', 'Digital & Studio Arts3', 1], ['Business Management2', 'Psychology3', 2], ['Business Management2', 'Stop-out3', 11], ['Criminal Justice2', 'Criminal Justice3', 7], ['Criminal Justice2', 'Business Management3', 1], ['Criminal Justice2', 'Stop-out3', 9], ['Digital & Studio Arts2', 'Digital & Studio Arts3', 2], ['Digital & Studio Arts2', 'Stop-out3', 8], ['Education2', 'Education3', 3], ['Education2', 'Business Management3', 1], ['Education2', 'Psychology3', 1], ['Education2', 'Stop-out3', 4], ['English2', 'English3', 2], ['English2', 'Stop-out3', 2], ['Forensic Science2', 'Forensic Science3', 1], ['Forensic Science2', 'Stop-out3', 4], ['General Studies2', 'General Studies3', 2], ['General Studies2', 'Human Services3', 1], ['General Studies2', 'Stop-out3', 12], ['Health Science2', 'Health Science3', 2], ['Health Science2', 'Stop-out3', 4], ['Human Services2', 'Human Services3', 1], ['Human Services2', 'Stop-out3', 3], ['Kinesiology2', 'Kinesiology3', 4], ['Kinesiology2', 'Digital & Studio Arts3', 1], ['Kinesiology2', 'Stop-out3', 5], ['Medical Lab Science2', 'Stop-out3', 1], ['Psychology2', 'Psychology3', 2], ['Psychology2', 'Business Management3', 1], ['Psychology2', 'Human Services3', 1], ['Psychology2', 'Stop-out3', 5]],
         nodes: [{
           id: 'Accounting2',
+          name: 'Accounting',
           // colorIndex: 0
           color: '#7cb5ec'
         }, {
           id: 'Biomedical Science2',
+          name: 'Biomedical Science',
           color: '#f7a35c'
         }, {
           id: 'Business Management2',
+          name: 'Business Management',
           color: '#f45b5b'
         }, {
           id: 'Criminal Justice2',
+          name: 'Criminal Justice',
           color: '#434348'
         }, {
           id: 'Digital & Studio Arts2',
+          name: 'Digital & Studio Arts',
           color: '#f7a35c'
         }, {
           id: 'Education2',
+          name: 'Education',
           color: '#8085e9'
         }, {
           id: 'English2',
+          name: 'English',
           color: '#2b908f'
         }, {
           id: 'Forensic Science2',
+          name: 'Forensic Science',
           color: '#91e8e1'
         }, {
           id: 'General Studies2',
+          name: 'General Studies',
           color: '#434348'
         }, {
           id: 'Health Science2',
+          name: 'Health Science',
           color: '#90ed7d'
         }, {
           id: 'Human Services2',
+          name: 'Human Services',
           color: '#f7a35c'
         }, {
           id: 'Kinesiology2',
+          name: 'Kinesiology',
           color: '#8085e9'
         }, {
           id: 'Medical Lab Science2',
+          name: 'Medical Lab Science',
           color: '#e4d354'
         }, {
           id: 'Psychology2',
+          name: 'Psychology',
           color: '#2b908f'
         }, {
           id: 'Stop-out2',
+          name: 'Stop-out',
           color: '#2b908f'
         }, {
           id: 'Accounting3',
+          name: 'Accounting',
           // colorIndex: 0
           color: '#7cb5ec'
         }, {
           id: 'Biomedical Science3',
+          name: 'Biomedical Science',
           color: '#f7a35c'
         }, {
           id: 'Business Management3',
+          name: 'Business Management',
           color: '#f45b5b'
         }, {
           id: 'Criminal Justice3',
+          name: 'Criminal Justice',
           color: '#434348'
         }, {
           id: 'Digital & Studio Arts3',
+          name: 'Digital & Studio Arts',
           color: '#f7a35c'
         }, {
           id: 'Education3',
+          name: 'Education',
           color: '#8085e9'
         }, {
           id: 'English3',
+          name: 'English',
           color: '#2b908f'
         }, {
           id: 'Forensic Science3',
+          name: 'Forensic Science',
           color: '#91e8e1'
         }, {
           id: 'General Studies3',
+          name: 'General Studies',
           color: '#434348'
         }, {
           id: 'Health Science3',
+          name: 'Health Science',
           color: '#90ed7d'
         }, {
           id: 'Human Services3',
+          name: 'Human Services',
           color: '#f7a35c'
         }, {
           id: 'Kinesiology3',
+          name: 'Kinesiology',
           color: '#8085e9'
         }, {
           id: 'Medical Lab Science3',
+          name: 'Medical Lab Science',
           color: '#e4d354'
         }, {
           id: 'Psychology3',
+          name: 'Psychology',
           color: '#2b908f'
         }, {
           id: 'Stop-out3',
+          name: 'Stop-out',
           color: '#2b908f'
         }],
         type: 'sankey',
