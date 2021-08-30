@@ -15,11 +15,11 @@ export default {
     props : {
       title: {
         type: String,
-        default: 'Highcharts Sankey Diagram'
+        default: ''
       },
       name: {
         type: String,
-        default: 'Sankey demo series'
+        default: ''
       },
     //   series : {
     //     type: Object,
@@ -56,7 +56,7 @@ export default {
       this.target = Highcharts.chart(this.$el, {
 
         chart: {
-          inverted: true
+        //   inverted: true
         },
     title: {
         text: this.title

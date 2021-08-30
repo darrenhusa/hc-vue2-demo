@@ -2661,11 +2661,11 @@ highcharts_modules_sankey__WEBPACK_IMPORTED_MODULE_2___default()((highcharts__WE
   props: {
     title: {
       type: String,
-      "default": 'Highcharts Sankey Diagram'
+      "default": ''
     },
     name: {
       type: String,
-      "default": 'Sankey demo series'
+      "default": ''
     } //   series : {
     //     type: Object,
     //     required: true
@@ -2696,8 +2696,7 @@ highcharts_modules_sankey__WEBPACK_IMPORTED_MODULE_2___default()((highcharts__WE
     // alert(seriesTemp);
     // console.log(seriesTemp);
     this.target = highcharts__WEBPACK_IMPORTED_MODULE_0___default().chart(this.$el, {
-      chart: {
-        inverted: true
+      chart: {//   inverted: true
       },
       title: {
         text: this.title
