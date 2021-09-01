@@ -59,6 +59,10 @@ Route::get('/sankey-chart', function () {
     return view('sankey-chart');
 });
 
+Route::get('/sankey-dept1', function () {    
+    return view('sankey-chart-dept1');
+});
+
 // Route::get('/', function () {
 //     return view('welcome');
 // });
