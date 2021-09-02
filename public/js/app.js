@@ -2674,6 +2674,224 @@ highcharts_modules_sankey__WEBPACK_IMPORTED_MODULE_2___default()((highcharts__WE
 
 /***/ }),
 
+/***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/Dept2SankeyChart.vue?vue&type=script&lang=js&":
+/*!***********************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/Dept2SankeyChart.vue?vue&type=script&lang=js& ***!
+  \***********************************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var highcharts__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! highcharts */ "./node_modules/highcharts/highcharts.js");
+/* harmony import */ var highcharts__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(highcharts__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var highcharts_modules_exporting__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! highcharts/modules/exporting */ "./node_modules/highcharts/modules/exporting.js");
+/* harmony import */ var highcharts_modules_exporting__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(highcharts_modules_exporting__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var highcharts_modules_sankey__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! highcharts/modules/sankey */ "./node_modules/highcharts/modules/sankey.js");
+/* harmony import */ var highcharts_modules_sankey__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(highcharts_modules_sankey__WEBPACK_IMPORTED_MODULE_2__);
+//
+//
+//
+//
+// var Highcharts = require('highcharts');
+
+
+
+highcharts_modules_exporting__WEBPACK_IMPORTED_MODULE_1___default()((highcharts__WEBPACK_IMPORTED_MODULE_0___default()));
+highcharts_modules_sankey__WEBPACK_IMPORTED_MODULE_2___default()((highcharts__WEBPACK_IMPORTED_MODULE_0___default()));
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+  name: "SankeyChart",
+  props: {
+    title: {
+      type: String,
+      "default": ''
+    },
+    name: {
+      type: String,
+      "default": ''
+    } //   series : {
+    //     type: Object,
+    //     required: true
+    //   }
+    //   nodes : {
+    //     type: Array,
+    //   }
+
+  },
+  data: function data() {
+    return {
+      // target: 'container'
+      target: undefined
+    };
+  },
+  mounted: function mounted() {
+    // console.log(this.series);
+    // console.log(this.series.title);
+    // see https://stackoverflow.com/questions/50144557/how-to-add-data-to-chart-js-with-a-for-loop/50144700
+    // const seriesTemp = [];
+    // const number = this.series.data.length
+    // for(let i=0; i<number; i++){
+    //   seriesTemp.push({
+    //       name: this.series.data[i].label,
+    //       data: this.series.data[i].values
+    //   });
+    // }
+    // alert(seriesTemp);
+    // console.log(seriesTemp);
+    this.target = highcharts__WEBPACK_IMPORTED_MODULE_0___default().chart(this.$el, {
+      chart: {//   inverted: true
+      },
+      title: {
+        text: this.title
+      },
+      accessibility: {
+        point: {
+          valueDescriptionFormat: '{index}. {point.from} to {point.to}, {point.weight}.'
+        }
+      },
+      series: [{
+        keys: ['from', 'to', 'weight'],
+        data: [//part 1
+        ['Biomedical Science', 'Biomedical Science2', 22], ['Biomedical Science', 'Changed to Outside Major2', 4], ['Biomedical Science', 'Earned Bachelors2', 1], ['Biomedical Science', 'Stop-out2', 5], ['Forensic Biotechnology', 'Forensic Biotechnology2', 2], ['Forensic Biotechnology', 'Changed to Outside Major2', 0], ['Forensic Biotechnology', 'Earned Bachelors2', 0], ['Forensic Biotechnology', 'Stop-out2', 2], ['Forensic Science', 'Forensic Science2', 3], ['Forensic Science', 'Changed to Outside Major2', 0], ['Forensic Science', 'Earned Bachelors2', 0], ['Forensic Science', 'Stop-out2', 5], ['Health Science', 'Health Science2', 5], ['Health Science', 'Changed to Outside Major2', 0], ['Health Science', 'Earned Bachelors2', 0], ['Health Science', 'Stop-out2', 2], ['Kinesiology', 'Kinesiology2', 24], ['Kinesiology', 'Changed to Outside Major2', 3], ['Kinesiology', 'Earned Bachelors2', 1], ['Kinesiology', 'Stop-out2', 3], ['Medical Lab Science', 'Medical Lab Science2', 1], ['Medical Lab Science', 'Changed to Outside Major2', 0], ['Medical Lab Science', 'Earned Bachelors2', 0], ['Medical Lab Science', 'Stop-out2', 0], //part 2
+        ['Biomedical Science2', 'Biomedical Science3', 15], ['Biomedical Science2', 'Changed to Outside Major3', 2], ['Biomedical Science2', 'Earned Bachelors3', 2], ['Biomedical Science2', 'Stop-out3', 7], ['Stop-out2', 'Biomedical Science3', 0], ['Forensic Biotechnology2', 'Forensic Biotechnology3', 1], ['Forensic Biotechnology2', 'Changed to Outside Major3', 0], ['Forensic Biotechnology2', 'Earned Bachelors3', 1], ['Forensic Biotechnology2', 'Stop-out3', 0], ['Forensic Science2', 'Forensic Science3', 1], ['Forensic Science2', 'Changed to Outside Major3', 0], ['Forensic Science2', 'Earned Bachelors3', 1], ['Forensic Science2', 'Stop-out3', 0], ['Health Science2', 'Health Science3', 1], ['Health Science2', 'Changed to Outside Major3', 0], ['Health Science2', 'Earned Bachelors3', 1], ['Health Science2', 'Stop-out3', 0], ['Kinesiology2', 'Kinesiology3', 1], ['Kinesiology2', 'Changed to Outside Major3', 0], ['Kinesiology2', 'Earned Bachelors3', 1], ['Kinesiology2', 'Stop-out3', 0], ['Medical Lab Science2', 'Medical Lab Science3', 1], ['Medical Lab Science2', 'Changed to Outside Major3', 0], ['Medical Lab Science2', 'Earned Bachelors3', 1], ['Medical Lab Science2', 'Stop-out3', 0]],
+        nodes: [{
+          id: 'Biomedical Science',
+          name: 'Biomedical Science',
+          colorIndex: 0 // color: '#7cb5ec'
+
+        }, {
+          id: 'Forensic Biotechnology',
+          name: 'Forensic Biotechnology',
+          colorIndex: 1 // color: '#f7a35c'
+
+        }, {
+          id: 'Forensic Science',
+          name: 'Forensic Science',
+          colorIndex: 2 // color: '#f45b5b'
+
+        }, {
+          id: 'Health Science',
+          name: 'Health Science',
+          colorIndex: 3 // color: '#f45b5b'
+
+        }, {
+          id: 'Kinesiology',
+          name: 'Kinesiology',
+          colorIndex: 4 // color: '#f45b5b'
+
+        }, {
+          id: 'Medical Lab Science',
+          name: 'Medical Lab Science',
+          colorIndex: 5 // color: '#f45b5b'
+
+        }, {
+          id: 'Biomedical Science2',
+          name: 'Biomedical Science',
+          colorIndex: 0 // color: '#7cb5ec'
+
+        }, {
+          id: 'Forensic Biotechnology2',
+          name: 'Forensic Biotechnology',
+          colorIndex: 1 // color: '#f7a35c'
+
+        }, {
+          id: 'Forensic Science2',
+          name: 'Forensic Science',
+          colorIndex: 2 // color: '#f45b5b'
+
+        }, {
+          id: 'Health Science2',
+          name: 'Health Science',
+          colorIndex: 3 // color: '#f45b5b'
+
+        }, {
+          id: 'Kinesiology2',
+          name: 'Kinesiology',
+          colorIndex: 4 // color: '#f45b5b'
+
+        }, {
+          id: 'Medical Lab Science2',
+          name: 'Medical Lab Science',
+          colorIndex: 5 // color: '#f45b5b'
+
+        }, {
+          id: 'Biomedical Science3',
+          name: 'Biomedical Science',
+          colorIndex: 0 // color: '#7cb5ec'
+
+        }, {
+          id: 'Forensic Biotechnology3',
+          name: 'Forensic Biotechnology',
+          colorIndex: 1 // color: '#f7a35c'
+
+        }, {
+          id: 'Forensic Science3',
+          name: 'Forensic Science',
+          colorIndex: 2 // color: '#f45b5b'
+
+        }, {
+          id: 'Health Science3',
+          name: 'Health Science',
+          colorIndex: 3 // color: '#f45b5b'
+
+        }, {
+          id: 'Kinesiology3',
+          name: 'Kinesiology',
+          colorIndex: 4 // color: '#f45b5b'
+
+        }, {
+          id: 'Medical Lab Science3',
+          name: 'Medical Lab Science',
+          colorIndex: 5 // color: '#f45b5b'
+
+        }, {
+          id: 'Changed to Outside Major2',
+          name: 'Changed to Outside Major',
+          colorIndex: 6 // color: '#434348'
+
+        }, {
+          id: 'Earned Bachelors2',
+          name: 'Earned Bachelors',
+          colorIndex: 7 // color: '#f7a35c'
+
+        }, {
+          id: 'Stop-out2',
+          name: 'Stop-out',
+          colorIndex: 8 // color: '#8085e9'
+
+        }, {
+          id: 'Changed to Outside Major3',
+          name: 'Changed to Outside Major',
+          colorIndex: 6 // color: '#434348'
+
+        }, {
+          id: 'Earned Bachelors3',
+          name: 'Earned Bachelors',
+          colorIndex: 7 // color: '#f7a35c'
+
+        }, {
+          id: 'Stop-out3',
+          name: 'Stop-out',
+          colorIndex: 8 // color: '#8085e9'
+
+        }],
+        type: 'sankey',
+        name: this.name
+      }],
+      credits: {
+        enabled: false
+      }
+    });
+  } //   beforeDestroy: function() {
+  //     this.target.destroy();
+  //   },
+
+}); // end export default
+
+/***/ }),
+
 /***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/ExampleComponent.vue?vue&type=script&lang=js&":
 /*!***********************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/ExampleComponent.vue?vue&type=script&lang=js& ***!
@@ -40832,6 +41050,45 @@ component.options.__file = "resources/js/components/Dept1SankeyChart.vue"
 
 /***/ }),
 
+/***/ "./resources/js/components/Dept2SankeyChart.vue":
+/*!******************************************************!*\
+  !*** ./resources/js/components/Dept2SankeyChart.vue ***!
+  \******************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _Dept2SankeyChart_vue_vue_type_template_id_1da95586___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Dept2SankeyChart.vue?vue&type=template&id=1da95586& */ "./resources/js/components/Dept2SankeyChart.vue?vue&type=template&id=1da95586&");
+/* harmony import */ var _Dept2SankeyChart_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Dept2SankeyChart.vue?vue&type=script&lang=js& */ "./resources/js/components/Dept2SankeyChart.vue?vue&type=script&lang=js&");
+/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! !../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+/* normalize component */
+;
+var component = (0,_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__.default)(
+  _Dept2SankeyChart_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__.default,
+  _Dept2SankeyChart_vue_vue_type_template_id_1da95586___WEBPACK_IMPORTED_MODULE_0__.render,
+  _Dept2SankeyChart_vue_vue_type_template_id_1da95586___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns,
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "resources/js/components/Dept2SankeyChart.vue"
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (component.exports);
+
+/***/ }),
+
 /***/ "./resources/js/components/ExampleComponent.vue":
 /*!******************************************************!*\
   !*** ./resources/js/components/ExampleComponent.vue ***!
@@ -41185,6 +41442,22 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./resources/js/components/Dept2SankeyChart.vue?vue&type=script&lang=js&":
+/*!*******************************************************************************!*\
+  !*** ./resources/js/components/Dept2SankeyChart.vue?vue&type=script&lang=js& ***!
+  \*******************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_0_rules_0_use_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Dept2SankeyChart_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./Dept2SankeyChart.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/Dept2SankeyChart.vue?vue&type=script&lang=js&");
+ /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_babel_loader_lib_index_js_clonedRuleSet_5_0_rules_0_use_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Dept2SankeyChart_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__.default); 
+
+/***/ }),
+
 /***/ "./resources/js/components/ExampleComponent.vue?vue&type=script&lang=js&":
 /*!*******************************************************************************!*\
   !*** ./resources/js/components/ExampleComponent.vue?vue&type=script&lang=js& ***!
@@ -41378,6 +41651,23 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "staticRenderFns": () => (/* reexport safe */ _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Dept1SankeyChart_vue_vue_type_template_id_0f99775e___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns)
 /* harmony export */ });
 /* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Dept1SankeyChart_vue_vue_type_template_id_0f99775e___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./Dept1SankeyChart.vue?vue&type=template&id=0f99775e& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/Dept1SankeyChart.vue?vue&type=template&id=0f99775e&");
+
+
+/***/ }),
+
+/***/ "./resources/js/components/Dept2SankeyChart.vue?vue&type=template&id=1da95586&":
+/*!*************************************************************************************!*\
+  !*** ./resources/js/components/Dept2SankeyChart.vue?vue&type=template&id=1da95586& ***!
+  \*************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "render": () => (/* reexport safe */ _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Dept2SankeyChart_vue_vue_type_template_id_1da95586___WEBPACK_IMPORTED_MODULE_0__.render),
+/* harmony export */   "staticRenderFns": () => (/* reexport safe */ _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Dept2SankeyChart_vue_vue_type_template_id_1da95586___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns)
+/* harmony export */ });
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Dept2SankeyChart_vue_vue_type_template_id_1da95586___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./Dept2SankeyChart.vue?vue&type=template&id=1da95586& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/Dept2SankeyChart.vue?vue&type=template&id=1da95586&");
 
 
 /***/ }),
@@ -41604,6 +41894,31 @@ render._withStripped = true
 /***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/Dept1SankeyChart.vue?vue&type=template&id=0f99775e&":
 /*!****************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/Dept1SankeyChart.vue?vue&type=template&id=0f99775e& ***!
+  \****************************************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "render": () => (/* binding */ render),
+/* harmony export */   "staticRenderFns": () => (/* binding */ staticRenderFns)
+/* harmony export */ });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("div", { attrs: { id: "container" } })
+}
+var staticRenderFns = []
+render._withStripped = true
+
+
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/Dept2SankeyChart.vue?vue&type=template&id=1da95586&":
+/*!****************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/Dept2SankeyChart.vue?vue&type=template&id=1da95586& ***!
   \****************************************************************************************************************************************************************************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
@@ -55022,6 +55337,7 @@ vue__WEBPACK_IMPORTED_MODULE_1__.default.component('stacked-column-with-data-lab
 vue__WEBPACK_IMPORTED_MODULE_1__.default.component('stacked-percentage-column-chart', __webpack_require__(/*! ./components/StackedPercentageColumnChart.vue */ "./resources/js/components/StackedPercentageColumnChart.vue").default);
 vue__WEBPACK_IMPORTED_MODULE_1__.default.component('sankey-chart', __webpack_require__(/*! ./components/SankeyChart.vue */ "./resources/js/components/SankeyChart.vue").default);
 vue__WEBPACK_IMPORTED_MODULE_1__.default.component('dept1-sankey-chart', __webpack_require__(/*! ./components/Dept1SankeyChart.vue */ "./resources/js/components/Dept1SankeyChart.vue").default);
+vue__WEBPACK_IMPORTED_MODULE_1__.default.component('dept2-sankey-chart', __webpack_require__(/*! ./components/Dept2SankeyChart.vue */ "./resources/js/components/Dept2SankeyChart.vue").default);
 vue__WEBPACK_IMPORTED_MODULE_1__.default.component('hierarchical-treemap', __webpack_require__(/*! ./components/HierarchicalTreemap.vue */ "./resources/js/components/HierarchicalTreemap.vue").default);
 vue__WEBPACK_IMPORTED_MODULE_1__.default.component('table-with-sparklines', __webpack_require__(/*! ./components/TableWithSparklines.vue */ "./resources/js/components/TableWithSparklines.vue").default); // Vue.component('treemap', require('./components/Treemap.vue').default);
 // Vue.component('pie-chart', require('./components/PieChart.vue').default);

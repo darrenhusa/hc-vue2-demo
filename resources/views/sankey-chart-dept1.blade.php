@@ -21,6 +21,14 @@
         </div>
         <dept1-sankey-chart></dept1-sankey-chart>
         
+        <h2>Biomedical and Health Sciences</h2>
+        <h3>Fall 2020 to Spring 2021 to Fall 2021 TRAD Retention in Majors</h3>
+        <div class="flex justify-between pt-4">
+            <span>At Start of<br />Fall 2020</span>
+            <span>At Start of<br />Spring 2021</span>
+            <span>At Start of<br />Fall 2021</span>
+        </div>
+        <dept2-sankey-chart></dept2-sankey-chart>
     
     </div>
     <script src="/js/app.js"></script>
