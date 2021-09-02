@@ -69,38 +69,43 @@ export default {
     series: [{
         keys: ['from', 'to', 'weight'],
         data: [
-            //part 1
+          //part 1
           ['General Studies', 'General Studies2', 19],
           ['General Studies', 'Changed to Outside Major2', 3],
           ['General Studies', 'Earned Bachelors2', 0],
           ['General Studies', 'Stop-out2', 13],
           
+          //part 2
+          ['General Studies2', 'General Studies3', 8],
+          ['General Studies2', 'Changed to Outside Major3', 6],
+          ['General Studies2', 'Earned Bachelors3', 1],
+          ['General Studies2', 'Stop-out3', 7],
+          ['Stop-out2', 'General Studies3', 2],
+          
+          //part 1
           ['Human Services', 'Human Services2', 18],
           ['Human Services', 'General Studies2', 1],
           ['Human Services', 'Changed to Outside Major2', 1],
           ['Human Services', 'Earned Bachelors2', 1],
           ['Human Services', 'Stop-out2', 1],
           
+          //part 2
+          ['Human Services2', 'Human Services3', 12],
+          ['Human Services2', 'General Studies3', 1],
+          ['Human Services2', 'Changed to Outside Major3', 3],
+          ['Human Services2', 'Earned Bachelors3', 0],
+          ['Human Services2', 'Stop-out3', 4],
+          
+          //part 1
           ['Psychology', 'Psychology2', 23],
           ['Psychology', 'Changed to Outside Major2', 0],
           ['Psychology', 'Earned Bachelors2', 1],
           ['Psychology', 'Stop-out2', 8],
 
-            //part 2
-          ['General Studies2', 'General Studies3', 12],
-          ['General Studies2', 'Changed to Outside Major3', 2],
-          ['General Studies2', 'Earned Bachelors3', 1],
-          ['General Studies2', 'Stop-out3', 7],
-          ['Stop-out2', 'General Studies3', 2],
-          
-          ['Human Services2', 'Human Services3', 14],
-          ['Human Services2', 'General Studies3', 1],
-          ['Human Services2', 'Changed to Outside Major3', 1],
-          ['Human Services2', 'Earned Bachelors3', 0],
-          ['Human Services2', 'Stop-out3', 4],
-          
-          ['Psychology2', 'Psychology3', 18],
-          ['Psychology2', 'Changed to Outside Major3', 0],
+          //part 2
+          ['Psychology2', 'Psychology3', 16],
+          ['Psychology2', 'Human Services3', 1],
+          ['Psychology2', 'Changed to Outside Major3', 1],
           ['Psychology2', 'Earned Bachelors3', 3],
           ['Psychology2', 'Stop-out3', 2],
 

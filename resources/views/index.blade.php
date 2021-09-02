@@ -21,7 +21,7 @@
         <li><a href="/section02">Section 02 - Retention Rates</a></li>
             <ul>
                 <li><a href="/sankey-chart"> Sankey Chart - Fall 2020 to Spring 2021 to Fall 2021 TRAD Retention in Majors</a></li>
-                <li><a href="/sankey-dept1"> Sankey Chart - Dept 1 - Behavorial & Social Sciences</a></li>
+                <li><a href="/sankey-dept1"> Sankey Charts - Retention by Academic Department</a></li>
             </ul>
         <li><a href="/section03">Section 03 - Student Learning</a></li>
         <li><a href="#"></a>Section 04 - Graduation Rates</li>

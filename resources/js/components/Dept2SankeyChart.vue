@@ -139,7 +139,7 @@ export default {
           ['Medical Lab Science2', 'Medical Lab Science3', 0],
           ['Medical Lab Science2', 'Changed to Outside Major3', 0],
           ['Medical Lab Science2', 'Earned Bachelors3', 0],
-          ['Medical Lab Science2', 'Stop-out3', 0],
+          ['Medical Lab Science2', 'Stop-out3', 1],
 
         ],
   nodes: [{
