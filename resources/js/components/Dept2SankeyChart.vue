@@ -69,67 +69,76 @@ export default {
     series: [{
         keys: ['from', 'to', 'weight'],
         data: [
-            //part 1
+          //part 1
           ['Biomedical Science', 'Biomedical Science2', 22],
           ['Biomedical Science', 'Changed to Outside Major2', 4],
           ['Biomedical Science', 'Earned Bachelors2', 1],
           ['Biomedical Science', 'Stop-out2', 5],
           
+          //part 2
+          ['Biomedical Science2', 'Biomedical Science3', 14],
+          ['Biomedical Science2', 'Changed to Outside Major3', 3],
+          ['Biomedical Science2', 'Earned Bachelors3', 2],
+          ['Biomedical Science2', 'Stop-out3', 7],
+
+          //part 1
           ['Forensic Biotechnology', 'Forensic Biotechnology2', 2],
           ['Forensic Biotechnology', 'Changed to Outside Major2', 0],
           ['Forensic Biotechnology', 'Earned Bachelors2', 0],
           ['Forensic Biotechnology', 'Stop-out2', 2],
           
-          ['Forensic Science', 'Forensic Science2', 3],
-          ['Forensic Science', 'Changed to Outside Major2', 0],
-          ['Forensic Science', 'Earned Bachelors2', 0],
-          ['Forensic Science', 'Stop-out2', 5],
-          
-          ['Health Science', 'Health Science2', 5],
-          ['Health Science', 'Changed to Outside Major2', 0],
-          ['Health Science', 'Earned Bachelors2', 0],
-          ['Health Science', 'Stop-out2', 2],
-          
-          ['Kinesiology', 'Kinesiology2', 24],
-          ['Kinesiology', 'Changed to Outside Major2', 3],
-          ['Kinesiology', 'Earned Bachelors2', 1],
-          ['Kinesiology', 'Stop-out2', 3],
-
-          ['Medical Lab Science', 'Medical Lab Science2', 1],
-          ['Medical Lab Science', 'Changed to Outside Major2', 0],
-          ['Medical Lab Science', 'Earned Bachelors2', 0],
-          ['Medical Lab Science', 'Stop-out2', 0],
-
-           //part 2
-          ['Biomedical Science2', 'Biomedical Science3', 15],
-          ['Biomedical Science2', 'Changed to Outside Major3', 2],
-          ['Biomedical Science2', 'Earned Bachelors3', 2],
-          ['Biomedical Science2', 'Stop-out3', 7],
-          ['Stop-out2', 'Biomedical Science3', 0],
-          
+          //part 2
           ['Forensic Biotechnology2', 'Forensic Biotechnology3', 1],
           ['Forensic Biotechnology2', 'Changed to Outside Major3', 0],
           ['Forensic Biotechnology2', 'Earned Bachelors3', 1],
           ['Forensic Biotechnology2', 'Stop-out3', 0],
           
+          //part 1
+          ['Forensic Science', 'Forensic Science2', 3],
+          ['Forensic Science', 'Changed to Outside Major2', 0],
+          ['Forensic Science', 'Earned Bachelors2', 0],
+          ['Forensic Science', 'Stop-out2', 5],
+          
+          //part 2
           ['Forensic Science2', 'Forensic Science3', 1],
-          ['Forensic Science2', 'Changed to Outside Major3', 0],
-          ['Forensic Science2', 'Earned Bachelors3', 1],
-          ['Forensic Science2', 'Stop-out3', 0],
+          ['Forensic Science2', 'Changed to Outside Major3', 1],
+          ['Forensic Science2', 'Earned Bachelors3', 0],
+          ['Forensic Science2', 'Stop-out3', 1],
 
-          ['Health Science2', 'Health Science3', 1],
+          //part 1
+          ['Health Science', 'Health Science2', 5],
+          ['Health Science', 'Changed to Outside Major2', 0],
+          ['Health Science', 'Earned Bachelors2', 0],
+          ['Health Science', 'Stop-out2', 2],
+          
+          //part 2
+          ['Health Science2', 'Health Science3', 2],
           ['Health Science2', 'Changed to Outside Major3', 0],
-          ['Health Science2', 'Earned Bachelors3', 1],
-          ['Health Science2', 'Stop-out3', 0],
+          ['Health Science2', 'Earned Bachelors3', 0],
+          ['Health Science2', 'Stop-out3', 3],
 
-          ['Kinesiology2', 'Kinesiology3', 1],
-          ['Kinesiology2', 'Changed to Outside Major3', 0],
-          ['Kinesiology2', 'Earned Bachelors3', 1],
-          ['Kinesiology2', 'Stop-out3', 0],
+          //part 1
+          ['Kinesiology', 'Kinesiology2', 24],
+          ['Kinesiology', 'Changed to Outside Major2', 3],
+          ['Kinesiology', 'Earned Bachelors2', 1],
+          ['Kinesiology', 'Stop-out2', 3],
 
-          ['Medical Lab Science2', 'Medical Lab Science3', 1],
+          //part 2
+          ['Kinesiology2', 'Kinesiology3', 16],
+          ['Kinesiology2', 'Changed to Outside Major3', 4],
+          ['Kinesiology2', 'Earned Bachelors3', 4],
+          ['Kinesiology2', 'Stop-out3', 3],
+
+          //part 1
+          ['Medical Lab Science', 'Medical Lab Science2', 0],
+          ['Medical Lab Science', 'Changed to Outside Major2', 1],
+          ['Medical Lab Science', 'Earned Bachelors2', 0],
+          ['Medical Lab Science', 'Stop-out2', 0],         
+          
+          //part 2
+          ['Medical Lab Science2', 'Medical Lab Science3', 0],
           ['Medical Lab Science2', 'Changed to Outside Major3', 0],
-          ['Medical Lab Science2', 'Earned Bachelors3', 1],
+          ['Medical Lab Science2', 'Earned Bachelors3', 0],
           ['Medical Lab Science2', 'Stop-out3', 0],
 
         ],
