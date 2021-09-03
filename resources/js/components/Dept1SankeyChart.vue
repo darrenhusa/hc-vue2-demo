@@ -119,150 +119,74 @@ export default {
         {
             id: 'Human Services',
             name: 'Human Services',
-            color: '#f7a35c'
+            color: '#434348'
         }, {
             id: 'Psychology',
             name: 'Psychology',
-            color: '#f45b5b'
+            color: '#90ed7d'
         },
         {
             id: 'General Studies2',
             name: 'General Studies',
-            // colorIndex: 0
             color: '#7cb5ec'
         },
         {
             id: 'Human Services2',
             name: 'Human Services',
-            color: '#f7a35c'
-        }, {
+            color: '#434348'
+        }, 
+        {
             id: 'Psychology2',
             name: 'Psychology',
-            color: '#f45b5b'
+            color: '#90ed7d'
         }, 
         {
             id: 'General Studies3',
             name: 'General Studies',
-            // colorIndex: 0
             color: '#7cb5ec'
         },
         {
             id: 'Human Services3',
             name: 'Human Services',
-            color: '#f7a35c'
+            color: '#434348'
         }, {
             id: 'Psychology3',
             name: 'Psychology',
-            color: '#f45b5b'
+            color: '#90ed7d'
         },
         
         {
             id: 'Changed to Outside Major2',
             name: 'Changed to Outside Major',
-            color: '#434348'
+            color: '#e4d354'
         },
         {
             id: 'Earned Bachelors2',
             name: 'Earned Bachelors',
-            color: '#f7a35c'
+            color: '#2b908f'
         },
         {
             id: 'Stop-out2',
             name: 'Stop-out',
-            color: '#8085e9'
+            color: '#f45b5b'
         },
 
         {
             id: 'Changed to Outside Major3',
             name: 'Changed to Outside Major',
-            color: '#434348'
+            color: '#e4d354'
         },
         {
             id: 'Earned Bachelors3',
             name: 'Earned Bachelors',
-            color: '#f7a35c'
+            color: '#2b908f'
         },
         {
             id: 'Stop-out3',
             name: 'Stop-out',
-            color: '#8085e9'
+            color: '#f45b5b'
         },
 
-        // {
-        //     id: 'Accounting3',
-        //     name: 'Accounting',
-        //     // colorIndex: 0
-        //     color: '#7cb5ec'
-        // },
-        // {
-        //     id: 'Biomedical Science3',
-        //     name: 'Biomedical Science',
-        //     color: '#f7a35c'
-        // }, {
-        //     id: 'Business Management3',
-        //     name: 'Business Management',
-        //     color: '#f45b5b'
-        // }, {
-        //     id: 'Criminal Justice3',
-        //     name: 'Criminal Justice',
-        //     color: '#434348'
-        // },
-        // {
-        //     id: 'Digital & Studio Arts3',
-        //     name: 'Digital & Studio Arts',
-        //     color: '#f7a35c'
-        // },
-        // {
-        //     id: 'Education3',
-        //     name: 'Education',
-        //     color: '#8085e9'
-        // },
-        // {
-        //     id: 'English3',
-        //     name: 'English',
-        //     color: '#2b908f'
-        // },
-        // {
-        //     id: 'Forensic Science3',
-        //     name: 'Forensic Science',
-        //     color: '#91e8e1'
-        // },
-
-        // {
-        //     id: 'General Studies3',
-        //     name: 'General Studies',
-        //     color: '#434348'
-        // },
-        // {
-        //     id: 'Health Science3',
-        //     name: 'Health Science',
-        //     color: '#90ed7d'
-        // },
-        // {
-        //     id: 'Human Services3',
-        //     name: 'Human Services',
-        //     color: '#f7a35c'
-        // },
-        // {
-        //     id: 'Kinesiology3',
-        //     name: 'Kinesiology',
-        //     color: '#8085e9'
-        // },
-        // {
-        //     id: 'Medical Lab Science3',
-        //     name: 'Medical Lab Science',
-        //     color: '#e4d354'
-        // },
-        // {
-        //     id: 'Psychology3',
-        //     name: 'Psychology',
-        //     color: '#2b908f'
-        // },
-        // {
-        //     id: 'Stop-out3',
-        //     name: 'Stop-out',
-        //     color: '#2b908f'
-        // },
       ],
         type: 'sankey',
         name: this.name

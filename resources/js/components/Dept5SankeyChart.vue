@@ -105,67 +105,65 @@ export default {
         {
             id: 'English',
             name: 'English',
-            color: '#f7a35c'
+            color: '#434348'
         }, 
         {
             id: 'Digital & Studio Arts2',
             name: 'Digital & Studio Arts',
-            // colorIndex: 0
             color: '#7cb5ec'
         },
         {
             id: 'English2',
             name: 'English',
-            color: '#f7a35c'
+            color: '#434348'
         }, 
         {
             id: 'Digital & Studio Arts3',
             name: 'Digital & Studio Arts',
-            // colorIndex: 0
             color: '#7cb5ec'
         },
         {
             id: 'English3',
             name: 'English',
-            color: '#f7a35c'
+            color: '#434348'
         }, 
         
         {
             id: 'Changed to Outside Major2',
             name: 'Changed to Outside Major',
-            color: '#434348'
+            color: '#e4d354'
         },
         {
             id: 'Earned Bachelors2',
             name: 'Earned Bachelors',
-            color: '#f7a35c'
+            color: '#2b908f'
         },
         {
             id: 'Stop-out2',
             name: 'Stop-out',
-            color: '#8085e9'
+            color: '#f45b5b'
         },
 
         {
             id: 'Entered Graduate Program3',
             name: 'Entered Graduate Program',
-            colorIndex: 8
+            color: "#91e8e1"
         },
         
         {
             id: 'Changed to Outside Major3',
             name: 'Changed to Outside Major',
-            color: '#434348'
+            color: '#e4d354'
         },
         {
             id: 'Earned Bachelors3',
             name: 'Earned Bachelors',
-            color: '#f7a35c'
+            color: '#2b908f'
         },
         {
             id: 'Stop-out3',
             name: 'Stop-out',
-            color: '#8085e9'
+            color: '#f45b5b'
         },
 
       ],

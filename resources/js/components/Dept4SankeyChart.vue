@@ -104,39 +104,39 @@ export default {
         {
             id: 'Changed to Outside Major2',
             name: 'Changed to Outside Major',
-            color: '#434348'
+            color: '#e4d354'
         },
         {
             id: 'Earned Bachelors2',
             name: 'Earned Bachelors',
-            color: '#f7a35c'
+            color: '#2b908f'
         },
         {
             id: 'Stop-out2',
             name: 'Stop-out',
-            color: '#8085e9'
+            color: '#f45b5b'
         },
 
         // {
         //     id: 'Entered Graduate Program3',
         //     name: 'Entered Graduate Program',
-        //     colorIndex: 8
+        //     color: "#91e8e1"
         // },
         
         {
             id: 'Changed to Outside Major3',
             name: 'Changed to Outside Major',
-            color: '#434348'
+            color: '#e4d354'
         },
         {
             id: 'Earned Bachelors3',
             name: 'Earned Bachelors',
-            color: '#f7a35c'
+            color: '#2b908f'
         },
         {
             id: 'Stop-out3',
             name: 'Stop-out',
-            color: '#8085e9'
+            color: '#f45b5b'
         },
 
       ],
