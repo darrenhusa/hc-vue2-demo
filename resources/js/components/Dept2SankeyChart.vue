@@ -145,151 +145,126 @@ export default {
   nodes: [{
             id: 'Biomedical Science',
             name: 'Biomedical Science',
-            colorIndex: 0
-            // color: '#7cb5ec'
+            // colorIndex: 0
+            color: '#7cb5ec'
         },
         {
             id: 'Forensic Biotechnology',
             name: 'Forensic Biotechnology',
-            colorIndex: 1
-            // color: '#f7a35c'
+            color: '#434348'
         }, {
             id: 'Forensic Science',
             name: 'Forensic Science',
-            colorIndex: 2
-            // color: '#f45b5b'
+            color: '#90ed7d'
         },
 
         {
             id: 'Health Science',
             name: 'Health Science',
-            colorIndex: 3
-            // color: '#f45b5b'
+            color: '#f7a35c'
         },
         {
             id: 'Kinesiology',
             name: 'Kinesiology',
-            colorIndex: 4
-            // color: '#f45b5b'
+            color: '#8085e9'
         },
         {
             id: 'Medical Lab Science',
             name: 'Medical Lab Science',
-            colorIndex: 5
-            // color: '#f45b5b'
+            color: '#f15c80'
         },
 
         {
             id: 'Biomedical Science2',
             name: 'Biomedical Science',
-            colorIndex: 0
-            // color: '#7cb5ec'
+            color: '#7cb5ec'
         },
         {
             id: 'Forensic Biotechnology2',
             name: 'Forensic Biotechnology',
-            colorIndex: 1
-            // color: '#f7a35c'
+            color: '#434348'
         }, 
         {
             id: 'Forensic Science2',
             name: 'Forensic Science',
-            colorIndex: 2
-            // color: '#f45b5b'
+            color: '#90ed7d'
         }, 
-
         {
             id: 'Health Science2',
             name: 'Health Science',
-            colorIndex: 3
-            // color: '#f45b5b'
+            color: '#f7a35c'
         },
         {
             id: 'Kinesiology2',
             name: 'Kinesiology',
-            colorIndex: 4
-            // color: '#f45b5b'
+            color: '#8085e9'
         },
         {
             id: 'Medical Lab Science2',
             name: 'Medical Lab Science',
-            colorIndex: 5
-            // color: '#f45b5b'
+            color: '#f15c80'
         },
-
         {
             id: 'Biomedical Science3',
             name: 'Biomedical Science',
-            colorIndex: 0
-            // color: '#7cb5ec'
+            color: '#7cb5ec'
         },
         {
             id: 'Forensic Biotechnology3',
             name: 'Forensic Biotechnology',
-            colorIndex: 1
-            // color: '#f7a35c'
-        }, {
+            color: '#434348'
+        }, 
+        {
             id: 'Forensic Science3',
             name: 'Forensic Science',
-            colorIndex: 2
-            // color: '#f45b5b'
+            color: '#90ed7d'
         },
-        
         {
             id: 'Health Science3',
             name: 'Health Science',
-            colorIndex: 3
-            // color: '#f45b5b'
+            color: '#f7a35c'
         },
         {
             id: 'Kinesiology3',
             name: 'Kinesiology',
-            colorIndex: 4
-            // color: '#f45b5b'
+            color: '#8085e9'
         },
         {
             id: 'Medical Lab Science3',
             name: 'Medical Lab Science',
-            colorIndex: 5
-            // color: '#f45b5b'
+            color: '#f15c80'
         },
 
         {
             id: 'Changed to Outside Major2',
             name: 'Changed to Outside Major',
-            colorIndex: 6
-            // color: '#434348'
+            color: '#e4d354'
         },
         {
             id: 'Earned Bachelors2',
             name: 'Earned Bachelors',
-            colorIndex: 7
-            // color: '#f7a35c'
+            color: '#2b908f'
         },
         {
             id: 'Stop-out2',
             name: 'Stop-out',
-            colorIndex: 8
-            // color: '#8085e9'
+            color: '#f45b5b'
         },
 
         {
             id: 'Changed to Outside Major3',
             name: 'Changed to Outside Major',
-            colorIndex: 6
-            // color: '#434348'
+            color: '#e4d354'
         },
         {
             id: 'Earned Bachelors3',
             name: 'Earned Bachelors',
-            colorIndex: 7
-            // color: '#f7a35c'
+            color: '#2b908f'
         },
         {
             id: 'Stop-out3',
             name: 'Stop-out',
-            colorIndex: 8
-            // color: '#8085e9'
+            color: '#f45b5b'
         },
        
       ],
