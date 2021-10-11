@@ -287,12 +287,12 @@
 @php
     
     $data8 = [
-             ['label' => 'first-time', 'color' => '#217ca3', 'values' => [3, 11, 15, 27, 18, 10, 9, 4, 1, 5, 16, 6, 5, 1, 9]],
-             ['label' => 'continuing', 'color' => '#8d230f', 'values' => [11, 18, 17, 58, 50, 9, 29, 13, 3, 3, 16, 0, 18, 0, 18]],
-             ['label' => 'transfer', 'color' => '#50CB93', 'values' => [1, 3, 1, 10, 7, 1, 0, 0, 0, 0, 2, 0, 0, 0, 4]]
+             ['label' => 'first-time', 'color' => '#217ca3', 'values' => [4, 8, 31, 11, 9, 0, 3, 0, 2, 20, 3, 1, 9, 0, 1, 0, 5]],
+             ['label' => 'continuing', 'color' => '#8d230f', 'values' => [12, 15, 49, 39, 12, 19, 9, 1, 2, 15, 4, 14, 20, 0, 0, 1, 28]],
+             ['label' => 'transfer', 'color' => '#50CB93', 'values' => [0, 0, 16, 9, 4, 0, 0, 0, 0, 7, 1, 4, 4, 1, 0, 0, 2]]
     ];
 
-    $programs8 = ['Acct', 'Bio/Kines', 'Biomed', 'Bmt', 'CriJ', 'DSA', 'Educ', 'Emco', 'FrnsBio', 'FrnsSci', 'GenStud', 'HlthSci', 'HSv', 'MedLabSci', 'Psyc'];
+    $programs8 = ['Acct', 'Biomed', 'Bmt', 'CriJ', 'DSA', 'Educ', 'Emco', 'FrnsBio', 'FrnsSci', 'GenStud', 'HlthSci', 'HSv', 'Kines', 'LifSci', 'MedLabSci', 'NonDegree', 'Psyc'];
 
     $series8 = [
         'title' => "Fall 2021 TRAD Enrollment",
@@ -315,12 +315,12 @@
     @php
     
     $data9 = [
-             ['label' => 'first-time', 'color' => '#217ca3', 'values' => [3, 11, 15, 27, 18, 10, 9, 4, 1, 5, 16, 6, 5, 1, 9]],
-             ['label' => 'continuing', 'color' => '#8d230f', 'values' => [11, 18, 17, 58, 50, 9, 29, 13, 3, 3, 16, 0, 18, 0, 18]],
-             ['label' => 'transfer', 'color' => '#50CB93', 'values' => [1, 3, 1, 10, 7, 1, 0, 0, 0, 0, 2, 0, 0, 0, 4]]
+             ['label' => 'first-time', 'color' => '#217ca3', 'values' => [4, 8, 31, 11, 9, 0, 3, 0, 2, 20, 3, 1, 9, 0, 1, 0, 5]],
+             ['label' => 'continuing', 'color' => '#8d230f', 'values' => [12, 15, 49, 39, 12, 19, 9, 1, 2, 15, 4, 14, 20, 0, 0, 1, 28]],
+             ['label' => 'transfer', 'color' => '#50CB93', 'values' => [0, 0, 16, 9, 4, 0, 0, 0, 0, 7, 1, 4, 4, 1, 0, 0, 2]]
     ];
 
-    $programs9 = ['Acct', 'Bio/Kines', 'Biomed', 'Bmt', 'CriJ', 'DSA', 'Educ', 'Emco', 'FrnsBio', 'FrnsSci', 'GenStud', 'HlthSci', 'HSv', 'MedLabSci', 'Psyc'];
+    $programs9 = ['Acct', 'Biomed', 'Bmt', 'CriJ', 'DSA', 'Educ', 'Emco', 'FrnsBio', 'FrnsSci', 'GenStud', 'HlthSci', 'HSv', 'Kines', 'LifSci', 'MedLabSci', 'NonDegree', 'Psyc'];
 
     $series9 = [
         'title' => "Fall 2021 TRAD Enrollment",
@@ -343,7 +343,7 @@
     @php
     
     $data10 = [
-             ['label' => '', 'color' => '#217ca3', 'values' => [46, 36, 31, 30, 30]],
+             ['label' => '', 'color' => '#217ca3', 'values' => [36, 31, 30, 24, 25]],
     ];
 
     $series10 = [
@@ -364,11 +364,11 @@
     @php
     
     $data12 = [
-             ['label' => 'continuing', 'color' => '#217ca3', 'values' => [278, 224, 226, 263, 263]],
-             ['label' => 'first-time', 'color' => '#8d230f', 'values' => [99, 106, 135, 140, 140]],
+             ['label' => 'continuing', 'color' => '#217ca3', 'values' => [278, 224, 226, 263, 240]],
+             ['label' => 'first-time', 'color' => '#8d230f', 'values' => [99, 106, 135, 141, 107]],
              ['label' => 'new-2nd-degree', 'color' => '#50CB93', 'values' => [1, 0, 0, 0, 0]],
              ['label' => 'returning', 'color' => 'purple', 'values' => [1, 2, 0, 0, 0]],
-             ['label' => 'transfer', 'color' => 'lightblue', 'values' => [60, 52, 53, 29, 29]],
+             ['label' => 'transfer', 'color' => 'lightblue', 'values' => [60, 52, 53, 29, 48]],
     ];
     $length12 = count($data12);
     $total12 = [];
@@ -432,12 +432,12 @@
     @php
     
     $data13 = [
-             ['label' => '0', 'color' => '#217ca3', 'values' => [4, 1, 4, 2, 2]],
-             ['label' => '1-15', 'color' => '#8d230f', 'values' => [8, 9, 7, 7, 7]],
-             ['label' => '16-30', 'color' => '#50CB93', 'values' => [5, 9, 7, 8, 8]],
-             ['label' => '31-60', 'color' => 'purple', 'values' => [14, 21, 26, 6, 6]],
-             ['label' => '61-90', 'color' => 'lightblue', 'values' => [21, 11, 7, 6, 6]],
-             ['label' => '91 and above', 'color' => 'orange', 'values' => [8, 1, 2, 0, 0]],
+             ['label' => '0', 'color' => '#217ca3', 'values' => [4, 1, 4, 1, 2]],
+             ['label' => '1-15', 'color' => '#8d230f', 'values' => [8, 9, 7, 7, 2]],
+             ['label' => '16-30', 'color' => '#50CB93', 'values' => [5, 9, 7, 9, 7]],
+             ['label' => '31-60', 'color' => 'purple', 'values' => [14, 21, 24, 6, 13]],
+             ['label' => '61-90', 'color' => 'lightblue', 'values' => [21, 11, 9, 6, 17]],
+             ['label' => '91 and above', 'color' => 'orange', 'values' => [8, 1, 2, 0, 7]],
     ];
 
     $length13 = count($data13);
@@ -502,10 +502,10 @@
     @php
     
     $data14 = [
-             ['label' => 'continuing', 'color' => '#217ca3', 'values' => [125, 107, 87, 89, 89]],
+             ['label' => 'continuing', 'color' => '#217ca3', 'values' => [125, 107, 87, 88, 101]],
              ['label' => 'first-time', 'color' => '#8d230f', 'values' => [0, 0, 0, 1, 1]],
-             ['label' => 'returning', 'color' => '#50CB93', 'values' => [1, 0, 1, 2, 2]],
-             ['label' => 'transfer', 'color' => 'purple', 'values' => [23, 34, 42, 41, 41]],
+             ['label' => 'returning', 'color' => '#50CB93', 'values' => [1, 0, 1, 2, 0]],
+             ['label' => 'transfer', 'color' => 'purple', 'values' => [23, 34, 42, 42, 26]],
     ];
 
     $length14 = count($data14);
@@ -570,12 +570,12 @@
         @php
     
     $data15 = [
-             ['label' => '0', 'color' => '#217ca3', 'values' => [0, 0, 0, 1, 1]],
+             ['label' => '0', 'color' => '#217ca3', 'values' => [0, 0, 0, 0, 0]],
              ['label' => '1-15', 'color' => '#8d230f', 'values' => [0, 0, 0, 0, 0]],
              ['label' => '16-30', 'color' => '#50CB93', 'values' => [0, 0, 1, 0, 0]],
-             ['label' => '31-60', 'color' => 'purple', 'values' => [3, 1, 5, 6, 6]],
-             ['label' => '61-90', 'color' => 'lightblue', 'values' => [10, 19, 23, 22, 22]],
-             ['label' => '91 and above', 'color' => 'orange', 'values' => [10, 14, 13, 12, 12]],
+             ['label' => '31-60', 'color' => 'purple', 'values' => [3, 1, 4, 6, 6]],
+             ['label' => '61-90', 'color' => 'lightblue', 'values' => [10, 18, 24, 24, 14]],
+             ['label' => '91 and above', 'color' => 'orange', 'values' => [10, 15, 13, 12, 6]],
     ];
 
     $length15 = count($data15);
@@ -640,8 +640,8 @@
     @php
     
     $data16 = [
-             ['label' => 'Catholic', 'color' => '#217ca3', 'values' => [44.6, 39.1, 41.8, 35.4, 35.4]],
-             ['label' => 'Non-Catholic', 'color' => '#8d230f', 'values' => [55.4, 60.9, 58.2, 64.6, 64.6]],
+             ['label' => 'Catholic', 'color' => '#217ca3', 'values' => [45, 39, 42, 41, 41]],
+             ['label' => 'Non-Catholic', 'color' => '#8d230f', 'values' => [55, 61, 58, 59, 59]],
     ];
 
     $series16 = [
@@ -671,10 +671,10 @@
     @php
     
     $data17 = [
-             ['label' => 'Black or African American', 'color' => '#217ca3', 'values' => [31.1, 33.9, 26.1, 28.8]],
-             ['label' => 'Hispanics of any race', 'color' => '#8d230f', 'values' => [35.6, 23.2, 28.9, 30.3]],
-             ['label' => 'Other', 'color' => '#50CB93', 'values' => [6.8, 8.9, 4.7, 6.0]],
-             ['label' => 'White', 'color' => 'purple', 'values' => [26.5, 33.9, 40.3, 34.8]],
+             ['label' => 'Black or African American', 'color' => '#217ca3', 'values' => [38, 18, 57, 113]],
+             ['label' => 'Hispanics of any race', 'color' => '#8d230f', 'values' => [38, 14, 95, 147]],
+             ['label' => 'Other', 'color' => '#50CB93', 'values' => [5, 1, 12, 18]],
+             ['label' => 'White', 'color' => 'purple', 'values' => [22, 13, 67, 102]],
     ];
 
     $length17 = count($data17);
@@ -740,10 +740,10 @@
         @php
     
     $data18 = [
-             ['label' => 'Black or African American', 'color' => '#217ca3', 'values' => [33.3, 22.5, 29.4, 27.6]],
-             ['label' => 'Hispanics of any race', 'color' => '#8d230f', 'values' => [66.7, 35.0, 31.4, 33.1]],
-             ['label' => 'Other', 'color' => '#50CB93', 'values' => [0.0, 0.0, 0.0, 0.0]],
-             ['label' => 'White', 'color' => 'purple', 'values' => [0.0, 42.5, 39.2, 39.3]],
+             ['label' => 'Black or African American', 'color' => '#217ca3', 'values' => [2, 4, 22, 28]],
+             ['label' => 'Hispanics of any race', 'color' => '#8d230f', 'values' => [0, 10, 36, 46]],
+             ['label' => 'Other', 'color' => '#50CB93', 'values' => [1, 2, 7, 10]],
+             ['label' => 'White', 'color' => 'purple', 'values' => [2, 12, 45, 59]],
     ];
 
     $length18 = count($data18);
@@ -809,9 +809,9 @@
         @php
     
     $data19 = [
-             ['label' => 'Is First-Generation', 'color' => '#217ca3', 'values' => [31, 31, 43, 53, 53]],
-             ['label' => 'Is Not First-Generation', 'color' => '#8d230f', 'values' => [55, 73, 82, 72, 72]],
-             ['label' => 'Unknown', 'color' => '#50CB93', 'values' => [10, 0, 7, 8, 8]],
+             ['label' => 'Is First-Generation', 'color' => '#217ca3', 'values' => [31, 31, 43, 53, 28]],
+             ['label' => 'Is Not First-Generation', 'color' => '#8d230f', 'values' => [55, 73, 82, 73, 65]],
+             ['label' => 'Unknown', 'color' => '#50CB93', 'values' => [10, 0, 7, 7, 9]],
     ];
 
     $length19 = count($data19);

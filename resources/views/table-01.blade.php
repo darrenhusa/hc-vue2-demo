@@ -50,11 +50,11 @@ thead th {
 @php
   
   $data = [
-    ["TRAD Programs - Full-time", [403, 353, 384, 409, 409]],
-    ["TRAD Programs - Part-time", [36, 31, 30, 23, 23]],
-    ["Degree Completion Programs (DCP)", [149, 141, 130, 133, 133]],
-    ["Graduate Programs (GRAD)", [213, 190, 169, 138, 138]],
-    ["Grand Total", [801, 715, 713, 703, 703]],
+    ["TRAD Programs - Full-time", [403, 353, 384, 409, 370]],
+    ["TRAD Programs - Part-time", [36, 31, 30, 24, 25]],
+    ["Degree Completion Programs (DCP)", [149, 141, 130, 133, 128]],
+    ["Graduate Programs (GRAD)", [213, 190, 169, 140, 106]],
+    ["Grand Total", [801, 715, 713, 706, 629]],
   ];
 
   foreach ($data as $val)
