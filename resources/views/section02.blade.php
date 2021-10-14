@@ -12,8 +12,8 @@
 @php
     
     $data29 = [
-             ['label' => 'Full-time', 'color' => '#217ca3', 'values' => [82.9, 88.4, 75.7, 75.8, 75.8]],
-             ['label' => 'Part-time', 'color' => '#8d230f', 'values' => [25.0, 50.0, 0.0, 66.7, 66.7]],
+             ['label' => 'Full-time', 'color' => '#217ca3', 'values' => [82.9, 88.4, 75.7, 75.8, 70.2]],
+             ['label' => 'Part-time', 'color' => '#8d230f', 'values' => [25.0, 50.0, 0.0, 66.7, 12.5]],
     ];
 
     $series29 = [
@@ -47,8 +47,8 @@
     @php
     
     $data30 = [
-             ['label' => 'Full-time', 'color' => '#217ca3', 'values' => [50.5, 53.7, 48.5, 57.6, 57.6]],
-             ['label' => 'Part-time', 'color' => '#8d230f', 'values' => [50.0, 0.0, 0.0, 0.0, 0.0]],
+             ['label' => 'Full-time', 'color' => '#217ca3', 'values' => [50.5, 53.7, 48.5, 57.6, 42.7]],
+             ['label' => 'Part-time', 'color' => '#8d230f', 'values' => [50.0, 0.0, 0.0, 0.0, 25.0]],
     ];
 
     $series30 = [

@@ -14,57 +14,57 @@
 
         <h2>Behavioral & Social Sciences</h2>
         <h3>Fall 2020 to Spring 2021 to Fall 2021 TRAD Retention in Majors</h3>
-        <div class="flex justify-between pt-4">
+        <!-- <div class="flex justify-between pt-4">
             <span>At Start of<br />Fall 2020</span>
             <span>At Start of<br />Spring 2021</span>
             <span>At Start of<br />Fall 2021</span>
-        </div>
+        </div> -->
         <dept1-sankey-chart></dept1-sankey-chart>
         
         <h2>Biomedical and Health Sciences</h2>
         <h3>Fall 2020 to Spring 2021 to Fall 2021 TRAD Retention in Majors</h3>
-        <div class="flex justify-between pt-4">
+        <!-- <div class="flex justify-between pt-4">
             <span>At Start of<br />Fall 2020</span>
             <span>At Start of<br />Spring 2021</span>
             <span>At Start of<br />Fall 2021</span>
-        </div>
+        </div> -->
         <dept2-sankey-chart></dept2-sankey-chart>
     
 
         <h2>Business Management</h2>
         <h3>Fall 2020 to Spring 2021 to Fall 2021 TRAD Retention in Majors</h3>
-        <div class="flex justify-between pt-4">
+        <!-- <div class="flex justify-between pt-4">
             <span>At Start of<br />Fall 2020</span>
             <span>At Start of<br />Spring 2021</span>
             <span>At Start of<br />Fall 2021</span>
-        </div>
+        </div> -->
         <dept3-sankey-chart></dept3-sankey-chart>
 
         <h2>Education</h2>
         <h3>Fall 2020 to Spring 2021 to Fall 2021 TRAD Retention in Majors</h3>
-        <div class="flex justify-between pt-4">
+        <!-- <div class="flex justify-between pt-4">
             <span>At Start of<br />Fall 2020</span>
             <span>At Start of<br />Spring 2021</span>
             <span>At Start of<br />Fall 2021</span>
-        </div>
+        </div> -->
         <dept4-sankey-chart></dept4-sankey-chart>
     
         <h2>Humanities</h2>
         <h3>Fall 2020 to Spring 2021 to Fall 2021 TRAD Retention in Majors</h3>
-        <div class="flex justify-between pt-4">
+        <!-- <div class="flex justify-between pt-4">
             <span>At Start of<br />Fall 2020</span>
             <span>At Start of<br />Spring 2021</span>
             <span>At Start of<br />Fall 2021</span>
-        </div>
+        </div> -->
         <dept5-sankey-chart></dept5-sankey-chart>
 
         <h2>Public Safety and Criminal Justice</h2>
         <h3>Fall 2020 to Spring 2021 to Fall 2021 TRAD Retention in Majors</h3>
-        <div class="flex justify-between pt-4">
+        <!-- <div class="flex justify-between pt-4">
             <span>At Start of<br />Fall 2020</span>
             <span>At Start of<br />Spring 2021</span>
             <span>At Start of<br />Fall 2021</span>
-        </div>
+        </div> -->
         <dept6-sankey-chart></dept6-sankey-chart>
     </div>
     <script src="/js/app.js"></script>

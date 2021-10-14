@@ -108,6 +108,7 @@ export default {
           ['Psychology2', 'Changed to Outside Major3', 1],
           ['Psychology2', 'Earned Bachelors3', 3],
           ['Psychology2', 'Stop-out3', 2],
+          ['Stop-out2', 'Psychology3', 1],
 
         ],
   nodes: [{

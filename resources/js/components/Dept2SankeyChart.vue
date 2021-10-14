@@ -128,6 +128,7 @@ export default {
           ['Kinesiology2', 'Changed to Outside Major3', 4],
           ['Kinesiology2', 'Earned Bachelors3', 4],
           ['Kinesiology2', 'Stop-out3', 3],
+          ['Stop-out2', 'Kinesiology3', 1],
 
           //part 1
           ['Medical Lab Science', 'Medical Lab Science2', 0],

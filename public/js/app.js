@@ -2524,7 +2524,7 @@ highcharts_modules_sankey__WEBPACK_IMPORTED_MODULE_2___default()((highcharts__WE
         ['Human Services', 'Human Services2', 18], ['Human Services', 'General Studies2', 1], ['Human Services', 'Changed to Outside Major2', 1], ['Human Services', 'Earned Bachelors2', 1], ['Human Services', 'Stop-out2', 1], //part 2
         ['Human Services2', 'Human Services3', 12], ['Human Services2', 'General Studies3', 1], ['Human Services2', 'Changed to Outside Major3', 3], ['Human Services2', 'Earned Bachelors3', 0], ['Human Services2', 'Stop-out3', 4], //part 1
         ['Psychology', 'Psychology2', 23], ['Psychology', 'Changed to Outside Major2', 0], ['Psychology', 'Earned Bachelors2', 1], ['Psychology', 'Stop-out2', 8], //part 2
-        ['Psychology2', 'Psychology3', 16], ['Psychology2', 'Human Services3', 1], ['Psychology2', 'Changed to Outside Major3', 1], ['Psychology2', 'Earned Bachelors3', 3], ['Psychology2', 'Stop-out3', 2]],
+        ['Psychology2', 'Psychology3', 16], ['Psychology2', 'Human Services3', 1], ['Psychology2', 'Changed to Outside Major3', 1], ['Psychology2', 'Earned Bachelors3', 3], ['Psychology2', 'Stop-out3', 2], ['Stop-out2', 'Psychology3', 1]],
         nodes: [{
           id: 'General Studies',
           name: 'General Studies',
@@ -2691,7 +2691,7 @@ highcharts_modules_sankey__WEBPACK_IMPORTED_MODULE_2___default()((highcharts__WE
         ['Health Science', 'Health Science2', 5], ['Health Science', 'Changed to Outside Major2', 0], ['Health Science', 'Earned Bachelors2', 0], ['Health Science', 'Stop-out2', 2], //part 2
         ['Health Science2', 'Health Science3', 2], ['Health Science2', 'Changed to Outside Major3', 0], ['Health Science2', 'Earned Bachelors3', 0], ['Health Science2', 'Stop-out3', 3], //part 1
         ['Kinesiology', 'Kinesiology2', 24], ['Kinesiology', 'Changed to Outside Major2', 3], ['Kinesiology', 'Earned Bachelors2', 1], ['Kinesiology', 'Stop-out2', 3], //part 2
-        ['Kinesiology2', 'Kinesiology3', 16], ['Kinesiology2', 'Changed to Outside Major3', 4], ['Kinesiology2', 'Earned Bachelors3', 4], ['Kinesiology2', 'Stop-out3', 3], //part 1
+        ['Kinesiology2', 'Kinesiology3', 16], ['Kinesiology2', 'Changed to Outside Major3', 4], ['Kinesiology2', 'Earned Bachelors3', 4], ['Kinesiology2', 'Stop-out3', 3], ['Stop-out2', 'Kinesiology3', 1], //part 1
         ['Medical Lab Science', 'Medical Lab Science2', 0], ['Medical Lab Science', 'Changed to Outside Major2', 1], ['Medical Lab Science', 'Earned Bachelors2', 0], ['Medical Lab Science', 'Stop-out2', 0], //part 2
         ['Medical Lab Science2', 'Medical Lab Science3', 0], ['Medical Lab Science2', 'Changed to Outside Major3', 0], ['Medical Lab Science2', 'Earned Bachelors3', 0], ['Medical Lab Science2', 'Stop-out3', 1]],
         nodes: [{
