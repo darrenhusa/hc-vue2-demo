@@ -62,11 +62,11 @@
     @php
     
     $data33 = [
-             ['label' => 'MATH 103', 'color' => '#217ca3', 'values' => [255, 297, 285, 195, 195]],
-             ['label' => 'MATH 097', 'color' => '#8d230f', 'values' => [225, 171, 180, 156, 156]],
-             ['label' => 'MATH 095', 'color' => '#50CB93', 'values' => [78, 93, 105, 99, 99]],
+             ['label' => 'MATH 103', 'color' => '#217ca3', 'values' => [255, 297, 285, 285, 222]],
+             ['label' => 'MATH 097', 'color' => '#8d230f', 'values' => [225, 171, 180, 198, 135]],
+             ['label' => 'MATH 095', 'color' => '#50CB93', 'values' => [78, 93, 105, 141, 99]],
              ['label' => 'GENL 095', 'color' => 'purple', 'values' => [16, 31, 0, 0, 0]],
-             ['label' => '(EWPC)/EMCO 096', 'color' => 'lightblue', 'values' => [111, 213, 240, 150, 150]],
+             ['label' => '(EWPC)/EMCO 096', 'color' => 'lightblue', 'values' => [111, 213, 240, 204, 93]],
     ];
 
     $length33 = count($data33);
@@ -109,8 +109,8 @@
     @php
     
     $data34 = [
-             ['label' => 'Cr Hrs in Dev', 'color' => '#217ca3', 'values' => [685, 805, 810, 600, 600]],
-             ['label' => 'Cr Hrs in TRAD (Non-Dev)', 'color' => '#8d230f', 'values' => [11651, 9839, 10430, 8740, 8740]],
+             ['label' => 'Cr Hrs in Dev', 'color' => '#217ca3', 'values' => [685, 805, 810, 816, 549]],
+             ['label' => 'Cr Hrs in TRAD (Non-Dev)', 'color' => '#8d230f', 'values' => [11780, 9950, 10578, 10777, 7419]],
     ];
 
     $length34 = count($data34);
@@ -154,8 +154,8 @@
     @php
     
     $data35 = [
-             ['label' => 'Full-time Instructor', 'color' => '#217ca3', 'values' => [49.8, 55.1, 45.0, 43.9, 43.9]],
-             ['label' => 'Adjunct Instructor', 'color' => '#8d230f', 'values' => [50.2, 44.9, 55.0, 56.1, 56.1]],
+             ['label' => 'Full-time Instructor', 'color' => '#217ca3', 'values' => [49.8, 55.1, 45.0, 45.4, 46.6]],
+             ['label' => 'Adjunct Instructor', 'color' => '#8d230f', 'values' => [50.2, 44.9, 55.0, 54.6, 53.4]],
     ];
 
     $series35 = [
@@ -185,8 +185,8 @@
     @php
     
     $data36 = [
-             ['label' => 'Full-time Instructor', 'color' => '#217ca3', 'values' => [60.0, 73.0, 53.9, 45.4, 45.4]],
-             ['label' => 'Adjunct Instructor', 'color' => '#8d230f', 'values' => [40.0, 27.0, 46.1, 54.6]],
+             ['label' => 'Full-time Instructor', 'color' => '#217ca3', 'values' => [60.0, 73.0, 53.9, 50.7, 49.6]],
+             ['label' => 'Adjunct Instructor', 'color' => '#8d230f', 'values' => [40.0, 27.0, 46.1, 49.3, 50.4]],
     ];
 
     $series36 = [
@@ -217,10 +217,10 @@
     @php
     
     $data37 = [
-             ['label' => 'Traditional Undergraduate', 'color' => '#217ca3', 'values' => [12465, 10755, 11388, 9337, 9337]],
-             ['label' => 'Traditional-Intersession', 'color' => '#8d230f', 'values' => [63, 39, 39, 0, 0]],
-             ['label' => 'Degree Completion', 'color' => '#50CB93', 'values' => [2652, 2457, 2349, 840, 840]],
-             ['label' => 'Graduate', 'color' => 'purple', 'values' => [3783, 3145, 2689, 860, 860]],
+             ['label' => 'Traditional Undergraduate', 'color' => '#217ca3', 'values' => [12465, 10755, 11388, 11593, 7968]],
+             ['label' => 'Traditional-Intersession', 'color' => '#8d230f', 'values' => [63, 39, 39, 195, 0]],
+             ['label' => 'Degree Completion', 'color' => '#50CB93', 'values' => [2652, 2457, 2349, 2226, 870]],
+             ['label' => 'Graduate', 'color' => 'purple', 'values' => [3783, 3145, 2689, 2576, 636]],
     ];
     $length37 = count($data37);
     $total37 = [];
