@@ -76,6 +76,7 @@ export default {
             crosshair: true
         },
         yAxis: {
+            visible: (this.series.y_axis_visible != null ? this.series.y_axis_visible : false),
             min: 0,
             max: (this.series.y_axis_max != null ? this.series.y_axis_max : null),
             title: {
