@@ -349,17 +349,18 @@
     $series10 = [
         'title' => 'TRAD Programs - Part-time Students',
         'categories' => ['Fall 2017', 'Fall 2018', 'Fall 2019', 'Fall 2020', 'Fall 2021'],
+        'y_axis_visible' => false,
         'data' => $data10,
     ];
 
     @endphp
 
     <h2>Figure 10 - TRAD Programs - Number of Part-time Students</h2>
-    <column-chart 
+    <column-chart2 
         :series='@json($series10)'
         :chart-width="1200"
         :chart-height="600">
-    </column-chart>
+    </column-chart2>
 
     @php
     
@@ -648,7 +649,9 @@
         'title' => "Percent of Catholic Traditional Students",
         'subtitle' => "",
         'x_axis' => '',
+        'y_axis_visible' => false,
         'y_axis' => 'Percentage (%)',
+        'y_axis_max' => 100,
         'categories' => ['Fall 2017', 'Fall 2018', 'Fall 2019', 'Fall 2020', 'Fall 2021'],
         'data' => $data16,
     ];
@@ -662,11 +665,11 @@
         :chart-height="600">
     </stacked-percentage-column-chart>
     
-    <column-chart-for-percentages 
+    <column-chart-for-percentages2 
         :series='@json($series16)'
         :chart-width="1200"
         :chart-height="600">
-    </column-chart-for-percentages>
+    </column-chart-for-percentages2>
     
     @php
     
