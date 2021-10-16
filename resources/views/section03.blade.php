@@ -17,6 +17,7 @@
     $series31 = [
         'title' => 'Average High School GPA',
         'subtitle' => 'of First-time, Full-time Freshman',
+        'y_axis_max' => 4.0,
         'categories' => ['Fall 2017', 'Fall 2018', 'Fall 2019', 'Fall 2020', 'Fall 2021'],
         'data' => $data31,
     ];
@@ -26,11 +27,11 @@
 <div id="app">
 
     <h2>Figure 31 - Average High School GPA of First-time, Full-time Freshman</h2>
-    <column-chart 
+    <column-chart2 
         :series='@json($series31)'
         :chart-width="1200"
         :chart-height="600">
-    </column-chart>
+    </column-chart2>
 
     @php
     
@@ -163,6 +164,7 @@
         'subtitle' => "by Full-Time vs. Adjunct Faculty",
         'x_axis' => '',
         'y_axis' => 'Percentage (%)',
+        'y_axis_max' => 100,
         'categories' => ['2017-2018', '2018-2019', '2019-2020', '2020-2021', '2021-2022'],
         'data' => $data35,
     ];
@@ -176,11 +178,11 @@
         :chart-height="600">
     </stacked-percentage-column-chart> -->
     
-    <column-chart-for-percentages 
+    <column-chart-for-percentages2 
         :series='@json($series35)'
         :chart-width="1200"
         :chart-height="600">
-    </column-chart-for-percentages>
+    </column-chart-for-percentages2>
     
     @php
     
@@ -194,6 +196,7 @@
         'subtitle' => "by Full-Time vs. Adjunct Faculty",
         'x_axis' => '',
         'y_axis' => 'Percentage (%)',
+        'y_axis_max' => 100,
         'categories' => ['2017-2018', '2018-2019', '2019-2020', '2020-2021', '2021-2022'],
         'data' => $data36,
     ];
@@ -207,11 +210,11 @@
         :chart-height="600">
     </stacked-percentage-column-chart> -->
     
-    <column-chart-for-percentages 
+    <column-chart-for-percentages2 
         :series='@json($series36)'
         :chart-width="1200"
         :chart-height="600">
-    </column-chart-for-percentages>
+    </column-chart-for-percentages2>
     
 
     @php
