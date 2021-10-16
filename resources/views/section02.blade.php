@@ -37,11 +37,11 @@
         :chart-height="600">
     </stacked-percentage-column-chart> -->
     
-    <column-chart-for-percentages  
+    <column-chart-for-percentages2  
         :series='@json($series29)'
         :chart-width="1200"
         :chart-height="600">
-    </column-chart-for-percentages>
+    </column-chart-for-percentages2>
    
 
     @php
@@ -56,6 +56,7 @@
         'subtitle' => "Retention of First-time, First-semester TRAD Freshman (F1)",
         'x_axis' => '',
         'y_axis' => 'Percentage (%)',
+        'y_axis_max' => 100,
         'categories' => ['Fall 2016-Fall 2017', 'Fall 2017-Fall 2018', 'Fall 2018-Fall 2019', 
                          'Fall 2019-Fall 2020', 'Fall 2020-Fall 2021'],
         'data' => $data30,
@@ -72,11 +73,11 @@
         :chart-height="600">
     </stacked-percentage-column-chart> -->
     
-    <column-chart-for-percentages 
+    <column-chart-for-percentages2 
         :series='@json($series30)'
         :chart-width="1200"
         :chart-height="600">
-    </column-chart-for-percentages>
+    </column-chart-for-percentages2>
 
 </div>
 
