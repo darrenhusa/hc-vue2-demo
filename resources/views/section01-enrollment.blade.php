@@ -11,8 +11,8 @@
     @php
     
     $data3 = [
-             ['label' => 'Athlete', 'color' => '#217ca3', 'values' => [16, 271, 268, 234, 234]],
-             ['label' => 'NonAthlete', 'color' => '#8d230f', 'values' => [748, 640, 883, 1392, 1392]]
+             ['label' => 'Athlete', 'color' => '#217ca3', 'values' => [16, 271, 268, 258, 211]],
+             ['label' => 'NonAthlete', 'color' => '#8d230f', 'values' => [748, 640, 883, 1394, 374]]
     ];
     $length3 = count($data3);
     $total3 = [];
@@ -66,8 +66,8 @@
     @php
     
     $data4 = [
-             ['label' => 'Athlete', 'color' => '#217ca3', 'values' => [10, 147, 205, 180, 180]],
-             ['label' => 'NonAthlete', 'color' => '#8d230f', 'values' => [303, 208, 395, 722, 722]]
+             ['label' => 'Athlete', 'color' => '#217ca3', 'values' => [10, 147, 205, 197, 165]],
+             ['label' => 'NonAthlete', 'color' => '#8d230f', 'values' => [303, 208, 395, 727, 171]]
     ];
     $length4 = count($data4);
 
@@ -121,8 +121,8 @@
     @php
     
     $data5 = [
-             ['label' => 'Athlete', 'color' => '#217ca3', 'values' => [6, 119, 132, 131, 131]],
-             ['label' => 'NonAthlete', 'color' => '#8d230f', 'values' => [239, 100, 158, 296, 296]]
+             ['label' => 'Athlete', 'color' => '#217ca3', 'values' => [6, 119, 132, 148, 129]],
+             ['label' => 'NonAthlete', 'color' => '#8d230f', 'values' => [239, 100, 158, 303, 96]]
     ];
 
     $length5 = count($data5);
@@ -136,14 +136,14 @@
     $numbers5 = [$total5, $data5[0]['values'], $data5[1]['values']];
 
     $series5 = [
-        'title' => 'Number of Final Accepted - TRAD Programs',
+        'title' => 'Number of Admitted (Final Accepted) - TRAD Programs',
         'categories' => ['Fall 2017', 'Fall 2018', 'Fall 2019', 'Fall 2020', 'Fall 2021'],
         'data' => $data5,
     ];
 
     @endphp
 
-    <h2>Figure 5 - TRAD Final Accepted by Athletic Status</h2>
+    <h2>Figure 5 - TRAD Admitted by Athletic Status</h2>
     <stacked-column-with-data-label-percents-chart 
         :series='@json($series5)'
         :chart-width="1200"
@@ -176,8 +176,8 @@
     @php
     
     $data6 = [
-             ['label' => 'Athlete', 'color' => '#217ca3', 'values' => [4, 110, 113, 96, 96]],
-             ['label' => 'NonAthlete', 'color' => '#8d230f', 'values' => [186, 78, 125, 125, 125]]
+             ['label' => 'Athlete', 'color' => '#217ca3', 'values' => [4, 110, 113, 116, 109]],
+             ['label' => 'NonAthlete', 'color' => '#8d230f', 'values' => [186, 78, 125, 131, 69]]
     ];
 
     $length6 = count($data6);
@@ -231,8 +231,8 @@
     @php
     
     $data7 = [
-             ['label' => 'Athlete', 'color' => '#217ca3', 'values' => [2, 103, 107, 90, 90]],
-             ['label' => 'NonAthlete', 'color' => '#8d230f', 'values' => [159, 63, 90, 81, 81]]
+             ['label' => 'Athlete', 'color' => '#217ca3', 'values' => [2, 103, 107, 108, 105]],
+             ['label' => 'NonAthlete', 'color' => '#8d230f', 'values' => [159, 63, 90, 86, 58]]
     ];
 
     $length7 = count($data7);
