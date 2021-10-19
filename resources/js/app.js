@@ -16,8 +16,10 @@ Vue.component('column-chart-for-currency', require('./components/ColumnChartForC
 Vue.component('column-chart-for-percentages', require('./components/ColumnChartForPercentages.vue').default);
 Vue.component('column-chart-for-percentages2', require('./components/ColumnChartForPercentages2.vue').default);
 Vue.component('stacked-column-chart', require('./components/StackedColumnChart.vue').default);
+Vue.component('stacked-column-chart2', require('./components/StackedColumnChart2.vue').default);
 Vue.component('stacked-column-with-data-label-percents-chart', require('./components/StackedColumnWithPercentsAsDataLabelsChart.vue').default);
 Vue.component('stacked-percentage-column-chart', require('./components/StackedPercentageColumnChart.vue').default);
+Vue.component('stacked-percentage-column-chart2', require('./components/StackedPercentageColumnChart2.vue').default);
 
 Vue.component('sankey-chart', require('./components/SankeyChart.vue').default);
 Vue.component('dept1-sankey-chart', require('./components/Dept1SankeyChart.vue').default);

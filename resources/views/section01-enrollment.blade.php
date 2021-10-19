@@ -299,6 +299,7 @@
         'subtitle' => "by Program and by Entry-type",
         'x_axis' => 'Programs',
         'y_axis' => 'Headcount - Full-time and Part-time',
+        'y_axis_max' => 100,
         'categories' => $programs8,
         'data' => $data8,
     ];
@@ -306,11 +307,11 @@
     @endphp
 
     <h2>Figure 8 - Fall 2021 TRAD Enrolled by Program and by Entry-type (numbers)</h2>
-    <stacked-column-chart 
+    <stacked-column-chart2 
         :series='@json($series8)'
         :chart-width="1200"
         :chart-height="600">
-    </stacked-column-chart>
+    </stacked-column-chart2>
        
     @php
     
@@ -327,6 +328,7 @@
         'subtitle' => "by Program and by Entry-type",
         'x_axis' => 'Programs',
         'y_axis' => 'Percentages',
+        'y_axis_max' => 100,
         'categories' => $programs9,
         'data' => $data9,
     ];
@@ -334,11 +336,11 @@
     @endphp
 
     <h2>Figure 9 - Fall 2021 TRAD Enrolled by Program and by Entry-type (percentage)</h2>
-    <stacked-percentage-column-chart 
+    <stacked-percentage-column-chart2 
         :series='@json($series9)'
         :chart-width="1200"
         :chart-height="600">
-    </stacked-percentage-column-chart>
+    </stacked-percentage-column-chart2>
     
     @php
     
