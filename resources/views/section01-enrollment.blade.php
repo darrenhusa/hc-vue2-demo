@@ -454,6 +454,21 @@
         array_push($total13, $sum);
     }
 
+    //calculate percentages for html table
+    for ($i = 0; $i < 5; $i++)
+    {
+        $total13[] = $data13[0]['values'][$i] + $data13[1]['values'][$i] + $data13[2]['values'][$i] + $data13[3]['values'][$i] + $data13[4]['values'][$i] + $data13[5]['values'][$i]; 
+    }
+    for ($i = 0; $i < 5; $i++)
+    {   $num1 = round(100.0 * $data13[0]['values'][$i]/$total13[$i], 0);
+        $num2 = round(100.0 * $data13[1]['values'][$i]/$total13[$i], 0);
+        $num3 = round(100.0 * $data13[2]['values'][$i]/$total13[$i], 0);
+        $num4 = round(100.0 * $data13[3]['values'][$i]/$total13[$i], 0);
+        $num5 = round(100.0 * $data13[4]['values'][$i]/$total13[$i], 0);
+        $num6 = round(100.0 * $data13[5]['values'][$i]/$total13[$i], 0);
+        $percents13[] = [$num1, $num2, $num3, $num4, $num5, $num6, 100]; 
+    }
+
     $labels13 = [];
     $numbers13 = [];
 
@@ -494,7 +509,7 @@
                     <tr style="border-bottom: 1px solid gray; height: 20px;">
                         <th style="font-weight: bold; text-align: left; padding-right: 125px; ">{{ $labels13[$j] }}</th>
                         @for ($i = 0; $i < 5; $i++)
-                            <td style="text-align: center; padding-right: 100px;">{{ $numbers13[$j][$i] }}</td>
+                            <td style="text-align: center; padding-right: 100px;">{{ $numbers13[$j][$i] }} ({{$percents13[$i][$j] }}%)</td>
                         @endfor
                     </tr>
                 @endfor
@@ -520,6 +535,19 @@
             $sum += $data14[$j]['values'][$i];
         }
         array_push($total14, $sum);
+    }
+
+    //calculate percentages for html table
+    for ($i = 0; $i < 5; $i++)
+    {
+        $total14[] = $data14[0]['values'][$i] + $data14[1]['values'][$i] + $data14[2]['values'][$i] + $data14[3]['values'][$i]; 
+    }
+    for ($i = 0; $i < 5; $i++)
+    {   $num1 = round(100.0 * $data14[0]['values'][$i]/$total14[$i], 0);
+        $num2 = round(100.0 * $data14[1]['values'][$i]/$total14[$i], 0);
+        $num3 = round(100.0 * $data14[2]['values'][$i]/$total14[$i], 0);
+        $num4 = round(100.0 * $data14[3]['values'][$i]/$total14[$i], 0);
+        $percents14[] = [$num1, $num2, $num3, $num4, 100]; 
     }
 
     $labels14 = [];
@@ -562,7 +590,7 @@
                     <tr style="border-bottom: 1px solid gray; height: 20px;">
                         <th style="font-weight: bold; text-align: left; padding-right: 125px; ">{{ $labels14[$j] }}</th>
                         @for ($i = 0; $i < 5; $i++)
-                            <td style="text-align: center; padding-right: 100px;">{{ $numbers14[$j][$i] }}</td>
+                            <td style="text-align: center; padding-right: 100px;">{{ $numbers14[$j][$i] }} ({{$percents14[$i][$j] }}%)</td>
                         @endfor
                     </tr>
                 @endfor
@@ -590,6 +618,21 @@
             $sum += $data15[$j]['values'][$i];
         }
         array_push($total15, $sum);
+    }
+
+    //calculate percentages for html table
+    for ($i = 0; $i < 5; $i++)
+    {
+        $total15[] = $data15[0]['values'][$i] + $data15[1]['values'][$i] + $data15[2]['values'][$i] + $data15[3]['values'][$i] + $data15[4]['values'][$i] + $data15[5]['values'][$i]; 
+    }
+    for ($i = 0; $i < 5; $i++)
+    {   $num1 = round(100.0 * $data15[0]['values'][$i]/$total15[$i], 0);
+        $num2 = round(100.0 * $data15[1]['values'][$i]/$total15[$i], 0);
+        $num3 = round(100.0 * $data15[2]['values'][$i]/$total15[$i], 0);
+        $num4 = round(100.0 * $data15[3]['values'][$i]/$total15[$i], 0);
+        $num5 = round(100.0 * $data15[4]['values'][$i]/$total15[$i], 0);
+        $num6 = round(100.0 * $data15[5]['values'][$i]/$total15[$i], 0);
+        $percents15[] = [$num1, $num2, $num3, $num4, $num5, $num6, 100]; 
     }
 
     $labels15 = [];
@@ -632,7 +675,7 @@
                     <tr style="border-bottom: 1px solid gray; height: 20px;">
                         <th style="font-weight: bold; text-align: left; padding-right: 125px; ">{{ $labels15[$j] }}</th>
                         @for ($i = 0; $i < 5; $i++)
-                            <td style="text-align: center; padding-right: 100px;">{{ $numbers15[$j][$i] }}</td>
+                            <td style="text-align: center; padding-right: 100px;">{{ $numbers15[$j][$i] }} ({{$percents15[$i][$j] }}%)</td>
                         @endfor
                     </tr>
                 @endfor
@@ -830,6 +873,18 @@
         array_push($total19, $sum);
     }
 
+    //calculate percentages for html table
+    for ($i = 0; $i < 5; $i++)
+    {
+        $total19[] = $data19[0]['values'][$i] + $data19[1]['values'][$i] + $data19[2]['values'][$i]; 
+    }
+    for ($i = 0; $i < 5; $i++)
+    {   $num1 = round(100.0 * $data19[0]['values'][$i]/$total19[$i], 0);
+        $num2 = round(100.0 * $data19[1]['values'][$i]/$total19[$i], 0);
+        $num3 = round(100.0 * $data19[2]['values'][$i]/$total19[$i], 0);
+        $percents19[] = [$num1, $num2, $num3, 100]; 
+    }
+
     $labels19 = [];
     $numbers19 = [];
 
@@ -871,7 +926,7 @@
                     <tr style="border-bottom: 1px solid gray; height: 20px;">
                         <th style="font-weight: bold; text-align: left; padding-right: 125px; ">{{ $labels19[$j] }}</th>
                         @for ($i = 0; $i < 5; $i++)
-                            <td style="text-align: center; padding-right: 100px;">{{ $numbers19[$j][$i] }}</td>
+                            <td style="text-align: center; padding-right: 100px;">{{ $numbers19[$j][$i] }} ({{$percents19[$i][$j] }}%)</td>
                         @endfor
                     </tr>
                 @endfor

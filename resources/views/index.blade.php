@@ -12,6 +12,7 @@
 
     <ul>
         <li><a href="/section01">Section 01 - Enrollment</a></li>
+        <li><a href="/section01-practice">Section 01 Practice - Has Calculated Percentages in HTML table example</a></li>
         <ul>
             <li><a href="/table-01">Table 01 - Total College</a></li>
             <li><a href="/table-02">Table 02 - Full-Time Undergraduates - First Majors - Traditional Programs</a></li>

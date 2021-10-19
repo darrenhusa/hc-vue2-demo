@@ -43,6 +43,10 @@ Route::get('/section01', function () {
     return view('section01-enrollment');
 });
 
+Route::get('/section01-practice', function () {
+    return view('section01-practice');
+});
+
 Route::get('/section02', function () {
     return view('section02');
 });

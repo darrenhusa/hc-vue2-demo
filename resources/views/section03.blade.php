@@ -230,9 +230,18 @@
     $length37 = count($data37);
     $total37 = [];
 
+    //calculate percentages for html table
     for ($i = 0; $i < 5; $i++)
     {
         $total37[] = $data37[0]['values'][$i] + $data37[1]['values'][$i] + $data37[2]['values'][$i] + $data37[3]['values'][$i]; 
+    }
+    
+    for ($i = 0; $i < 5; $i++)
+    {   $num1 = round(100.0 * $data37[0]['values'][$i]/$total37[$i], 0);
+        $num2 = round(100.0 * $data37[1]['values'][$i]/$total37[$i], 0);
+        $num3 = round(100.0 * $data37[2]['values'][$i]/$total37[$i], 0);
+        $num4 = round(100.0 * $data37[3]['values'][$i]/$total37[$i], 0);
+        $percents37[] = [100, $num1, $num2, $num3, $num4]; 
     }
 
     $labels37 = ['Total', $data37[0]['label'], $data37[1]['label'], $data37[2]['label'], $data37[3]['label']];
@@ -270,7 +279,7 @@
                     <tr style="border-bottom: 1px solid gray; height: 20px;">
                         <th style="font-weight: bold; text-align: left; padding-right: 125px; ">{{ $labels37[$j] }}</th>
                         @for ($i = 0; $i < 5; $i++)
-                            <td style="text-align: center; padding-right: 100px;">{{ number_format($numbers37[$j][$i]) }}</td>
+                            <td style="text-align: center; padding-right: 100px;">{{ number_format($numbers37[$j][$i]) }} ({{$percents37[$i][$j] }}%)</td>
                         @endfor
                     </tr>
                 @endfor
