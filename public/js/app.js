@@ -3725,10 +3725,10 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/HierarchicalTreemap.vue?vue&type=script&lang=js&":
-/*!**************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/HierarchicalTreemap.vue?vue&type=script&lang=js& ***!
-  \**************************************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/HeadcountTreemap.vue?vue&type=script&lang=js&":
+/*!***********************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/HeadcountTreemap.vue?vue&type=script&lang=js& ***!
+  \***********************************************************************************************************************************************************************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -3757,7 +3757,7 @@ highcharts_modules_exporting__WEBPACK_IMPORTED_MODULE_2___default()((highcharts_
 
 highcharts_modules_treemap__WEBPACK_IMPORTED_MODULE_1___default()((highcharts__WEBPACK_IMPORTED_MODULE_0___default()));
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
-  name: "HierarchicalTreemap",
+  name: "HeadcountTreemap",
   // props : {
   //   series : {
   //     // type: Array,
@@ -3798,6 +3798,7 @@ highcharts_modules_treemap__WEBPACK_IMPORTED_MODULE_1___default()((highcharts__W
         alternateStartingDirection: true,
         levels: [{
           level: 1,
+          // layoutAlgorithm: 'squarified',
           layoutAlgorithm: 'sliceAndDice',
           dataLabels: {
             enabled: true,
@@ -3810,62 +3811,114 @@ highcharts_modules_treemap__WEBPACK_IMPORTED_MODULE_1___default()((highcharts__W
           }
         }],
         data: [{
-          id: 'A',
-          name: 'Apples',
-          color: "#EC2500"
+          id: '1',
+          name: 'TRAD',
+          color: "#636efa"
         }, {
-          id: 'B',
-          name: 'Bananas',
-          color: "#ECE100"
+          id: '2',
+          name: 'DCP',
+          color: "#ef553b"
         }, {
-          id: 'O',
-          name: 'Oranges',
-          color: '#EC9800'
+          id: '3',
+          name: 'GRAD',
+          color: '#00cc96'
+        }, // TRAD details
+        {
+          name: 'Accounting',
+          parent: '1',
+          value: 16
         }, {
-          name: 'Anne',
-          parent: 'A',
-          value: 5
+          name: 'Biomedical Science',
+          parent: '1',
+          value: 16
         }, {
-          name: 'Rick',
-          parent: 'A',
-          value: 3
+          name: 'Business Management',
+          parent: '1',
+          value: 96
         }, {
-          name: 'Peter',
-          parent: 'A',
-          value: 4
+          name: 'Criminal Justice',
+          parent: '1',
+          value: 59
         }, {
-          name: 'Anne',
-          parent: 'B',
-          value: 4
+          name: 'Digital & Studio Arts',
+          parent: '1',
+          value: 25
         }, {
-          name: 'Rick',
-          parent: 'B',
-          value: 10
+          name: 'Education',
+          parent: '1',
+          value: 19
         }, {
-          name: 'Peter',
-          parent: 'B',
+          name: 'English',
+          parent: '1',
+          value: 12
+        }, {
+          name: 'Forensic Biotechnology',
+          parent: '1',
           value: 1
         }, {
-          name: 'Anne',
-          parent: 'O',
+          name: 'Forensic Science',
+          parent: '1',
+          value: 4
+        }, {
+          name: 'General Studies',
+          parent: '1',
+          value: 42
+        }, {
+          name: 'Health Science',
+          parent: '1',
+          value: 8
+        }, {
+          name: 'Human Services',
+          parent: '1',
+          value: 19
+        }, {
+          name: 'Kinesiology',
+          parent: '1',
+          value: 33
+        }, {
+          name: 'Life Science',
+          parent: '1',
           value: 1
         }, {
-          name: 'Rick',
-          parent: 'O',
-          value: 3
+          name: 'Medical Lab Science',
+          parent: '1',
+          value: 1
         }, {
-          name: 'Peter',
-          parent: 'O',
-          value: 3
+          name: 'Not Applicable/Non-Degree-Seeking',
+          parent: '1',
+          value: 1
         }, {
-          name: 'Susanne',
-          parent: 'Kiwi',
-          value: 2,
-          color: '#9EDE00'
+          name: 'Psychology',
+          parent: '1',
+          value: 35
+        }, {
+          name: 'BMFT/ORMN',
+          parent: '2',
+          value: 11
+        }, {
+          name: 'Public Safety Management',
+          parent: '2',
+          value: 117
+        }, {
+          name: 'Education',
+          parent: '3',
+          value: 14
+        }, {
+          name: 'Management',
+          parent: '3',
+          value: 12
+        }, {
+          name: 'Psychology',
+          parent: '3',
+          value: 16
+        }, {
+          name: 'Public Safety Administration',
+          parent: '3',
+          value: 64
         }]
       }],
       title: {
-        text: 'Fruit consumption'
+        text: ''
       },
       credits: {
         enabled: false
@@ -42408,10 +42461,10 @@ component.options.__file = "resources/js/components/ExampleComponent.vue"
 
 /***/ }),
 
-/***/ "./resources/js/components/HierarchicalTreemap.vue":
-/*!*********************************************************!*\
-  !*** ./resources/js/components/HierarchicalTreemap.vue ***!
-  \*********************************************************/
+/***/ "./resources/js/components/HeadcountTreemap.vue":
+/*!******************************************************!*\
+  !*** ./resources/js/components/HeadcountTreemap.vue ***!
+  \******************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -42419,8 +42472,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var _HierarchicalTreemap_vue_vue_type_template_id_341b1c9a___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./HierarchicalTreemap.vue?vue&type=template&id=341b1c9a& */ "./resources/js/components/HierarchicalTreemap.vue?vue&type=template&id=341b1c9a&");
-/* harmony import */ var _HierarchicalTreemap_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./HierarchicalTreemap.vue?vue&type=script&lang=js& */ "./resources/js/components/HierarchicalTreemap.vue?vue&type=script&lang=js&");
+/* harmony import */ var _HeadcountTreemap_vue_vue_type_template_id_31d77dba___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./HeadcountTreemap.vue?vue&type=template&id=31d77dba& */ "./resources/js/components/HeadcountTreemap.vue?vue&type=template&id=31d77dba&");
+/* harmony import */ var _HeadcountTreemap_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./HeadcountTreemap.vue?vue&type=script&lang=js& */ "./resources/js/components/HeadcountTreemap.vue?vue&type=script&lang=js&");
 /* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! !../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
 
 
@@ -42430,9 +42483,9 @@ __webpack_require__.r(__webpack_exports__);
 /* normalize component */
 ;
 var component = (0,_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__.default)(
-  _HierarchicalTreemap_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__.default,
-  _HierarchicalTreemap_vue_vue_type_template_id_341b1c9a___WEBPACK_IMPORTED_MODULE_0__.render,
-  _HierarchicalTreemap_vue_vue_type_template_id_341b1c9a___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns,
+  _HeadcountTreemap_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__.default,
+  _HeadcountTreemap_vue_vue_type_template_id_31d77dba___WEBPACK_IMPORTED_MODULE_0__.render,
+  _HeadcountTreemap_vue_vue_type_template_id_31d77dba___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns,
   false,
   null,
   null,
@@ -42442,7 +42495,7 @@ var component = (0,_node_modules_vue_loader_lib_runtime_componentNormalizer_js__
 
 /* hot reload */
 if (false) { var api; }
-component.options.__file = "resources/js/components/HierarchicalTreemap.vue"
+component.options.__file = "resources/js/components/HeadcountTreemap.vue"
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (component.exports);
 
 /***/ }),
@@ -42928,10 +42981,10 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./resources/js/components/HierarchicalTreemap.vue?vue&type=script&lang=js&":
-/*!**********************************************************************************!*\
-  !*** ./resources/js/components/HierarchicalTreemap.vue?vue&type=script&lang=js& ***!
-  \**********************************************************************************/
+/***/ "./resources/js/components/HeadcountTreemap.vue?vue&type=script&lang=js&":
+/*!*******************************************************************************!*\
+  !*** ./resources/js/components/HeadcountTreemap.vue?vue&type=script&lang=js& ***!
+  \*******************************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -42939,8 +42992,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_0_rules_0_use_0_node_modules_vue_loader_lib_index_js_vue_loader_options_HierarchicalTreemap_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./HierarchicalTreemap.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/HierarchicalTreemap.vue?vue&type=script&lang=js&");
- /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_babel_loader_lib_index_js_clonedRuleSet_5_0_rules_0_use_0_node_modules_vue_loader_lib_index_js_vue_loader_options_HierarchicalTreemap_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__.default); 
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_0_rules_0_use_0_node_modules_vue_loader_lib_index_js_vue_loader_options_HeadcountTreemap_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./HeadcountTreemap.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/HeadcountTreemap.vue?vue&type=script&lang=js&");
+ /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_babel_loader_lib_index_js_clonedRuleSet_5_0_rules_0_use_0_node_modules_vue_loader_lib_index_js_vue_loader_options_HeadcountTreemap_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__.default); 
 
 /***/ }),
 
@@ -43277,19 +43330,19 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./resources/js/components/HierarchicalTreemap.vue?vue&type=template&id=341b1c9a&":
-/*!****************************************************************************************!*\
-  !*** ./resources/js/components/HierarchicalTreemap.vue?vue&type=template&id=341b1c9a& ***!
-  \****************************************************************************************/
+/***/ "./resources/js/components/HeadcountTreemap.vue?vue&type=template&id=31d77dba&":
+/*!*************************************************************************************!*\
+  !*** ./resources/js/components/HeadcountTreemap.vue?vue&type=template&id=31d77dba& ***!
+  \*************************************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "render": () => (/* reexport safe */ _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_HierarchicalTreemap_vue_vue_type_template_id_341b1c9a___WEBPACK_IMPORTED_MODULE_0__.render),
-/* harmony export */   "staticRenderFns": () => (/* reexport safe */ _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_HierarchicalTreemap_vue_vue_type_template_id_341b1c9a___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns)
+/* harmony export */   "render": () => (/* reexport safe */ _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_HeadcountTreemap_vue_vue_type_template_id_31d77dba___WEBPACK_IMPORTED_MODULE_0__.render),
+/* harmony export */   "staticRenderFns": () => (/* reexport safe */ _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_HeadcountTreemap_vue_vue_type_template_id_31d77dba___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns)
 /* harmony export */ });
-/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_HierarchicalTreemap_vue_vue_type_template_id_341b1c9a___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./HierarchicalTreemap.vue?vue&type=template&id=341b1c9a& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/HierarchicalTreemap.vue?vue&type=template&id=341b1c9a&");
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_HeadcountTreemap_vue_vue_type_template_id_31d77dba___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./HeadcountTreemap.vue?vue&type=template&id=31d77dba& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/HeadcountTreemap.vue?vue&type=template&id=31d77dba&");
 
 
 /***/ }),
@@ -43761,10 +43814,10 @@ render._withStripped = true
 
 /***/ }),
 
-/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/HierarchicalTreemap.vue?vue&type=template&id=341b1c9a&":
-/*!*******************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/HierarchicalTreemap.vue?vue&type=template&id=341b1c9a& ***!
-  \*******************************************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/HeadcountTreemap.vue?vue&type=template&id=31d77dba&":
+/*!****************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/HeadcountTreemap.vue?vue&type=template&id=31d77dba& ***!
+  \****************************************************************************************************************************************************************************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -57168,7 +57221,7 @@ vue__WEBPACK_IMPORTED_MODULE_1__.default.component('dept3-sankey-chart', __webpa
 vue__WEBPACK_IMPORTED_MODULE_1__.default.component('dept4-sankey-chart', __webpack_require__(/*! ./components/Dept4SankeyChart.vue */ "./resources/js/components/Dept4SankeyChart.vue").default);
 vue__WEBPACK_IMPORTED_MODULE_1__.default.component('dept5-sankey-chart', __webpack_require__(/*! ./components/Dept5SankeyChart.vue */ "./resources/js/components/Dept5SankeyChart.vue").default);
 vue__WEBPACK_IMPORTED_MODULE_1__.default.component('dept6-sankey-chart', __webpack_require__(/*! ./components/Dept6SankeyChart.vue */ "./resources/js/components/Dept6SankeyChart.vue").default);
-vue__WEBPACK_IMPORTED_MODULE_1__.default.component('hierarchical-treemap', __webpack_require__(/*! ./components/HierarchicalTreemap.vue */ "./resources/js/components/HierarchicalTreemap.vue").default);
+vue__WEBPACK_IMPORTED_MODULE_1__.default.component('headcount-treemap', __webpack_require__(/*! ./components/HeadcountTreemap.vue */ "./resources/js/components/HeadcountTreemap.vue").default);
 vue__WEBPACK_IMPORTED_MODULE_1__.default.component('table-with-sparklines', __webpack_require__(/*! ./components/TableWithSparklines.vue */ "./resources/js/components/TableWithSparklines.vue").default); // Vue.component('treemap', require('./components/Treemap.vue').default);
 // Vue.component('pie-chart', require('./components/PieChart.vue').default);
 // Vue.component('combo-chart', require('./components/ComboChart.vue').default);

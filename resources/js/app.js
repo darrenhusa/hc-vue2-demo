@@ -28,7 +28,7 @@ Vue.component('dept3-sankey-chart', require('./components/Dept3SankeyChart.vue')
 Vue.component('dept4-sankey-chart', require('./components/Dept4SankeyChart.vue').default);
 Vue.component('dept5-sankey-chart', require('./components/Dept5SankeyChart.vue').default);
 Vue.component('dept6-sankey-chart', require('./components/Dept6SankeyChart.vue').default);
-Vue.component('hierarchical-treemap', require('./components/HierarchicalTreemap.vue').default);
+Vue.component('headcount-treemap', require('./components/HeadcountTreemap.vue').default);
 Vue.component('table-with-sparklines', require('./components/TableWithSparklines.vue').default);
 // Vue.component('treemap', require('./components/Treemap.vue').default);
 

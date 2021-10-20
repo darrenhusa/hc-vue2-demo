@@ -394,6 +394,11 @@ $series1 = [
         :chart-height="600">
     </column-chart2>
 
+
+
+    <h2>Figure 11 - Fall 2021 Total College Headcount Treemap</h2>
+        <headcount-treemap></headcount-treemap>
+
     @php
     
     $data12 = [
