@@ -155,12 +155,12 @@ export default {
           categories: this.series.categories
         },
         yAxis: {
-          title: {
-          text: this.series.y_axis,
           min: 0,
           max: 1500,
           tickInterval: 100,
           // tickPixelInterval: 100,
+          title: {
+            text: this.series.y_axis,
         },
       
         plotLines: [{

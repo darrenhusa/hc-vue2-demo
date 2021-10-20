@@ -35,7 +35,7 @@ $series1 = [
         <basic-line-chart 
             v-bind:series='@json($series1)'
             v-bind:chart-width="1200"
-            v-bind:chart-height="400">
+            v-bind:chart-height="800">
         </basic-line-chart>
 
         @php

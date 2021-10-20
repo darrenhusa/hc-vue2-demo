@@ -1995,12 +1995,12 @@ highcharts_modules_exporting__WEBPACK_IMPORTED_MODULE_1___default()((highcharts_
         categories: this.series.categories
       },
       yAxis: {
+        min: 0,
+        max: 1500,
+        tickInterval: 100,
+        // tickPixelInterval: 100,
         title: {
-          text: this.series.y_axis,
-          min: 0,
-          max: 1500,
-          tickInterval: 100 // tickPixelInterval: 100,
-
+          text: this.series.y_axis
         },
         plotLines: [{
           value: 0,
