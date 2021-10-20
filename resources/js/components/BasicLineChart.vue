@@ -156,7 +156,10 @@ export default {
         },
         yAxis: {
           title: {
-          text: this.series.y_axis
+          text: this.series.y_axis,
+          min: 0,
+          max: 1500,
+          tickInterval: 100,
         },
       
         plotLines: [{
@@ -171,8 +174,11 @@ export default {
               // dataLabels: {
               //     enabled: this.showDataLabels
               // },
-              enableMouseTracking: false
+              enableMouseTracking: false,
+            marker: {
+            symbol: 'circle'
           }
+          },
         },
 
       tooltip: {
@@ -180,9 +186,12 @@ export default {
       },
 
       legend: {
-        layout: 'vertical',
-        align: 'right',
-        verticalAlign: 'middle',
+        layout: 'horizontal',
+        // layout: 'vertical',
+        align: 'center',
+        // align: 'right',
+        verticalAlign: 'top',
+        // verticalAlign: 'middle',
   	        borderWidth: 0
       },
 

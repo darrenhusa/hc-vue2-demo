@@ -1996,7 +1996,10 @@ highcharts_modules_exporting__WEBPACK_IMPORTED_MODULE_1___default()((highcharts_
       },
       yAxis: {
         title: {
-          text: this.series.y_axis
+          text: this.series.y_axis,
+          min: 0,
+          max: 1500,
+          tickInterval: 100
         },
         plotLines: [{
           value: 0,
@@ -2010,16 +2013,22 @@ highcharts_modules_exporting__WEBPACK_IMPORTED_MODULE_1___default()((highcharts_
           // dataLabels: {
           //     enabled: this.showDataLabels
           // },
-          enableMouseTracking: false
+          enableMouseTracking: false,
+          marker: {
+            symbol: 'circle'
+          }
         }
       },
       tooltip: {
         valueSuffix: ''
       },
       legend: {
-        layout: 'vertical',
-        align: 'right',
-        verticalAlign: 'middle',
+        layout: 'horizontal',
+        // layout: 'vertical',
+        align: 'center',
+        // align: 'right',
+        verticalAlign: 'top',
+        // verticalAlign: 'middle',
         borderWidth: 0
       },
       series: seriesTemp,
