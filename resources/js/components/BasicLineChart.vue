@@ -160,6 +160,7 @@ export default {
           min: 0,
           max: 1500,
           tickInterval: 100,
+          // tickPixelInterval: 100,
         },
       
         plotLines: [{

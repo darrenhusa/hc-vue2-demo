@@ -1999,7 +1999,8 @@ highcharts_modules_exporting__WEBPACK_IMPORTED_MODULE_1___default()((highcharts_
           text: this.series.y_axis,
           min: 0,
           max: 1500,
-          tickInterval: 100
+          tickInterval: 100 // tickPixelInterval: 100,
+
         },
         plotLines: [{
           value: 0,
