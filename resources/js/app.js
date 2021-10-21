@@ -12,6 +12,7 @@ Vue.component('example-component', require('./components/ExampleComponent.vue').
 Vue.component('basic-line-chart', require('./components/BasicLineChart.vue').default);
 Vue.component('column-chart', require('./components/ColumnChart.vue').default);
 Vue.component('column-chart2', require('./components/ColumnChart2.vue').default);
+Vue.component('combo-chart', require('./components/ComboChart.vue').default);
 Vue.component('column-chart-for-currency', require('./components/ColumnChartForCurrency.vue').default);
 Vue.component('column-chart-for-percentages', require('./components/ColumnChartForPercentages.vue').default);
 Vue.component('column-chart-for-percentages2', require('./components/ColumnChartForPercentages2.vue').default);

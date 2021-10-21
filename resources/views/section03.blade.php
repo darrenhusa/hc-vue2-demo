@@ -27,11 +27,11 @@
 <div id="app">
 
     <h2>Figure 31 - Average High School GPA of First-time, Full-time Freshman</h2>
-    <column-chart2 
+    <combo-chart 
         :series='@json($series31)'
         :chart-width="1200"
         :chart-height="600">
-    </column-chart2>
+    </combo-chart>
 
     @php
     

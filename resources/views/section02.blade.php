@@ -10,6 +10,38 @@
 <body>
 
 @php
+
+    $data_alt = ['values' => [79.9, 51.4, 69.0, 75.0],
+                 'color' => ['blue', 'red', 'green', 'purple']];
+    
+    $data20 = [
+             ['label' => 'F1 to F2', 'color' => 'blue', 'values' => [79.9]],
+             ['label' => 'F1 to SO', 'color' => 'red', 'values' => [51.4]],
+             ['label' => 'SO to JR', 'color' => 'green', 'values' => [69.0]],
+             ['label' => 'JR to SR', 'color' => 'purple', 'values' => [75.0]],
+    ];
+
+    $series20 = [
+        'title' => '5-Year Average Retention Rates with Retention Goals',
+        'subtitle' => '(Full-time Traditional)',
+        'y_axis_max' => 100,
+        'y_axis_visible' => true,
+        'categories' => ['F1 to F2', 'F1 to SO', 'SO to JR', 'JR to SR'],
+        'data' => $data20,
+    ];
+
+    @endphp
+
+<div id="app">
+
+    <h2>Figure 20 - 5-Year Average Retention Rates with Retention Goals</h2>
+    <column-chart2 
+        :series='@json($series20)'
+        :chart-width="1200"
+        :chart-height="600">
+    </column-chart2>
+
+@php
     
     $data29 = [
              ['label' => 'Full-time', 'color' => '#217ca3', 'values' => [82.9, 88.4, 75.7, 75.8, 70.2]],
@@ -27,8 +59,6 @@
     ];
 
     @endphp
-
-    <div id="app">
 
     <h2>Figure 29 - Fall-to-Spring Retention of First-time, First-semester TRAD Freshman</h2>
     <!-- <stacked-percentage-column-chart 
