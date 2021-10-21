@@ -110,6 +110,7 @@ export default {
                 data: [75.0, 55.0, 80.0, 85.0],
                 dataLabels: {
                     enabled: true,
+                    inside: true,
                     position: 'center',
                     // rotation: -90,
                     // color: '#FFFFFF',
@@ -127,6 +128,7 @@ export default {
                 data: [85.0, 65.0, 85.0, 85.0],
                 dataLabels: {
                     enabled: true,
+                    // inside: true,
                     // position: 'center',
                 }
             }],

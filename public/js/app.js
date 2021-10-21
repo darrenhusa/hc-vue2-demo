@@ -2833,6 +2833,7 @@ highcharts_modules_exporting__WEBPACK_IMPORTED_MODULE_1___default()((highcharts_
         data: [75.0, 55.0, 80.0, 85.0],
         dataLabels: {
           enabled: true,
+          inside: true,
           position: 'center' // rotation: -90,
           // color: '#FFFFFF',
           // align: 'right',
@@ -2848,7 +2849,8 @@ highcharts_modules_exporting__WEBPACK_IMPORTED_MODULE_1___default()((highcharts_
         type: 'scatter',
         data: [85.0, 65.0, 85.0, 85.0],
         dataLabels: {
-          enabled: true // position: 'center',
+          enabled: true // inside: true,
+          // position: 'center',
 
         }
       }]
