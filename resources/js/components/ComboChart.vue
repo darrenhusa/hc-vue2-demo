@@ -72,7 +72,8 @@ export default {
                     colorByPoint: true
                 }
             },
-            colors: ['blue', 'red', 'green', 'purple'],
+            colors: ['#4f81bd', '#be4a48', '#92d050', '#7030a0'],
+            // colors: ['blue', 'red', 'green', 'purple'],
             title: {
                 text: '5-Year Average Retention Rates with Retention Goals'
             },
@@ -91,7 +92,7 @@ export default {
                 // }
             },
             yAxis: {
-                min: 0,
+                min: 40,
                 max: 100,
                 title: {
                     text: ''
@@ -135,7 +136,10 @@ export default {
                     // inside: true,
                     // position: 'center',
                 },
-                symbol: 'square',
+                marker: {
+                  symbol: 'square',
+                  fillColor: 'red',
+                }
             }],
         });
     // });        

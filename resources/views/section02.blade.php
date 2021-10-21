@@ -13,14 +13,15 @@
 
 @php
 
-// for figure 01   
+// for figure 20   
 // colors taken from Excel chart via rgb lookup.
 // colors converted to hex using https://www.rgbtohex.net/
-$data20 = [['label' => 'F1 to F2', 'color' => '#5B9BD5', 'showDataLabels' => false,  'values' => [78.6, 83.5, 88.0, 73.7, 75.7]],
-         ['label' => 'F1 to SO', 'color' => '#ED7D31', 'showDataLabels' => false, 'values' => [50.4, 50.5, 54.0, 45.8, 56.3]],
-         ['label' => 'SO to JR', 'color' => '#A5A5A5',  'showDataLabels' => false, 'values' => [72.3, 62.3, 61.0, 77.2, 72.1]],
-         ['label' => 'JR to SR', 'color' => '#4472C4', 'showDataLabels' => false, 'values' => [75.0, 81.0, 65.9, 69.4, 84.0]],
+$data20 = [['label' => 'F1 to F2', 'color' => '#4f81bd', 'showDataLabels' => false,  'values' => [83.5, 88.0, 73.7, 75.7, 68.5]],
+         ['label' => 'F1 to SO', 'color' => '#be4a48', 'showDataLabels' => false, 'values' => [50.5, 54.0, 45.8, 56.3, 41.8]],
+         ['label' => 'SO to JR', 'color' => '#92d050',  'showDataLabels' => false, 'values' => [62.3, 61.0, 77.2, 72.1, 75.3]],
+         ['label' => 'JR to SR', 'color' => '#7030a0', 'showDataLabels' => false, 'values' => [85.9, 75.0, 76.8, 84.0, 80.0]],
 ];
+
     $length20 = count($data20);
     
     $labels20 = [$data20[0]['label'], $data20[1]['label'], $data20[2]['label'], $data20[3]['label']];
@@ -29,7 +30,9 @@ $data20 = [['label' => 'F1 to F2', 'color' => '#5B9BD5', 'showDataLabels' => fal
 $series20 = [
     'title' => 'Retention Rates',
     'subtitle' => '(Full-time Traditional)',
-    'y_axis' => '',
+    'y_axis_min' => 40,
+    'y_axis_max' => 100,
+    'y_axis_tickinterval' => 10,
     'categories' => ['Fall 2016', 'Fall 2017', 'Fall 2018', 'Fall 2019', 'Fall 2020'],
     'data' => $data20,
 ];
@@ -39,7 +42,7 @@ $series20 = [
         <line-chart2 
             v-bind:series='@json($series20)'
             v-bind:chart-width="1200"
-            v-bind:chart-height="800">
+            v-bind:chart-height="600">
         </line-chart2>
 
         <div style="padding-top: 25px; padding-bottom: 25px; margin: 0px 0px 0px 0px;">
@@ -65,7 +68,7 @@ $series20 = [
         </table>
         </div>
 
-
+    
     <h2>Figure 21 - 5-Year Average Retention Rates with Retention Goals</h2>
     <combo-chart
         :chart-width="1200"

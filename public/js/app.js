@@ -2795,7 +2795,8 @@ highcharts_modules_exporting__WEBPACK_IMPORTED_MODULE_1___default()((highcharts_
           colorByPoint: true
         }
       },
-      colors: ['blue', 'red', 'green', 'purple'],
+      colors: ['#4f81bd', '#be4a48', '#92d050', '#7030a0'],
+      // colors: ['blue', 'red', 'green', 'purple'],
       title: {
         text: '5-Year Average Retention Rates with Retention Goals'
       },
@@ -2814,7 +2815,7 @@ highcharts_modules_exporting__WEBPACK_IMPORTED_MODULE_1___default()((highcharts_
 
       },
       yAxis: {
-        min: 0,
+        min: 40,
         max: 100,
         title: {
           text: ''
@@ -2857,7 +2858,10 @@ highcharts_modules_exporting__WEBPACK_IMPORTED_MODULE_1___default()((highcharts_
           // position: 'center',
 
         },
-        symbol: 'square'
+        marker: {
+          symbol: 'square',
+          fillColor: 'red'
+        }
       }]
     }); // });        
   } // end mounted()
@@ -4249,12 +4253,12 @@ highcharts_modules_exporting__WEBPACK_IMPORTED_MODULE_1___default()((highcharts_
         categories: this.series.categories
       },
       yAxis: {
-        min: 0,
-        max: 100,
-        tickInterval: 10,
+        min: this.series.y_axis_min,
+        max: this.series.y_axis_max,
+        tickInterval: this.series.y_axis_tickinterval,
         // tickPixelInterval: 100,
         title: {
-          text: this.series.y_axis
+          text: this.series.y_axis || ''
         },
         plotLines: [{
           value: 0,
