@@ -47,78 +47,91 @@ export default {
       // console.log(this.series.title);
 
       // see https://stackoverflow.com/questions/50144557/how-to-add-data-to-chart-js-with-a-for-loop/50144700
-      const seriesTemp = [];
-      const number = this.series.data.length
+      // const seriesTemp = [];
+      // const number = this.series.data.length
 
-      for(let i=0; i<number; i++){
-        seriesTemp.push({
-            type: 'column',
-            name: this.series.data[i].label,
-            data: this.series.data[i].values,
-            color: this.series.data[i].color
-        });
-      }
-
-      goals = { type: 'scatter', data: [85, 65, 80, 80], color: ['red', 'red', 'red', 'red'] }
-
-      seriesTemp.push(goals)
+      // for(let i=0; i<number; i++){
+      //   seriesTemp.push({
+      //       type: 'column',
+      //       name: this.series.data[i].label,
+      //       data: this.series.data[i].values,
+      //       color: this.series.data[i].color
+      //   });
+      // }
 
       // alert(seriesTemp);
       // console.log(seriesTemp);
 
-      this.target = Highcharts.chart(this.$el, { 
-        // chart: {
-        //     type: 'column'
-        // },
-        title: {
-            text: this.series.title
-        },
-        subtitle: {
-            text: this.series.subtitle
-        },
-        xAxis: {
-            categories: this.series.categories,
-            crosshair: true
-        },
-        yAxis: {
-            visible: (this.series.y_axis_visible != null ? this.series.y_axis_visible : false),
-            min: 0,
-            max: (this.series.y_axis_max != null ? this.series.y_axis_max : null),
-            title: {
-                text: this.series.y_axis
-            }
-        },
-        tooltip: {
-            headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
-            pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}</td>' +
-                '<td style="padding:0"><b>{point.y:.1f} </b></td></tr>',
-            footerFormat: '</table>',
-            shared: true,
-            useHTML: true
-        },
-        plotOptions: {
-            column: {
-                pointPadding: 0,
-                borderWidth: 0,
-            
-                dataLabels: {
-                  enabled: true,
-                  inside: false,
+      this.target = Highcharts.chart(this.$el, {
+            // chart: {
+            //     type: 'column',
+            //     // margin: [ 50, 50, 100, 80]
+            // },
+            plotOptions: {
+                column: {
+                    colorByPoint: true
                 }
             },
-        },
-        series: seriesTemp,
-          legend: {
-            enabled: false
-        },  
-        credits: {
-          enabled: false
-        },
-
-        exporting: {
-          showTable: this.showTable
-        }
-      });        
+            colors: ['#ff0000', '#00ff00', '#0000ff', 'purple'],
+            title: {
+                text: 'add title'
+            },
+            xAxis: {
+                categories: ['F1 to F2', 'F1 to SO', 'SO to JR', 'JR to SR'],
+                // labels: {
+                    // rotation: -45,
+                    // align: 'right',
+                    // style: {
+                    //     fontSize: '13px',
+                    //     fontFamily: 'Verdana, sans-serif'
+                    // }
+                // }
+            },
+            yAxis: {
+                min: 0,
+                max: 100,
+                title: {
+                    text: ''
+                }
+            },
+            legend: {
+                enabled: false
+            },
+            // tooltip: {
+            //     formatter: function() {
+            //         return '<b>'+ this.x +'</b><br/>'+
+            //             'Population in 2008: '+ Highcharts.numberFormat(this.y, 1) +
+            //             ' millions';
+            //     }
+            // },
+            series: [{
+                type: 'column',
+                // name: 'results',
+                data: [75.0, 55.0, 80.0, 85.0],
+                dataLabels: {
+                    enabled: true,
+                    position: 'center',
+                    // rotation: -90,
+                    // color: '#FFFFFF',
+                    // align: 'right',
+                    // x: 4,
+                    // y: 10,
+                    // style: {
+                        // fontSize: '13px',
+                        // fontFamily: 'Verdana, sans-serif'
+                    // }
+                }
+              },
+                {
+                type: 'scatter',
+                data: [85.0, 65.0, 85.0, 85.0],
+                dataLabels: {
+                    enabled: true,
+                    // position: 'center',
+                }
+            }],
+        });
+    // });        
     } // end mounted()
 //   beforeDestroy: function() {
 //     this.target.destroy();
