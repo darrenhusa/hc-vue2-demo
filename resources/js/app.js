@@ -10,6 +10,7 @@ Vue.use(HighchartsVue)
 Vue.component('example-component', require('./components/ExampleComponent.vue').default);
 // Vue.component('line-chart', require('./components/LineChart.vue').default);
 Vue.component('basic-line-chart', require('./components/BasicLineChart.vue').default);
+Vue.component('line-chart2', require('./components/LineChart2.vue').default);
 Vue.component('column-chart', require('./components/ColumnChart.vue').default);
 Vue.component('column-chart2', require('./components/ColumnChart2.vue').default);
 Vue.component('combo-chart', require('./components/ComboChart.vue').default);

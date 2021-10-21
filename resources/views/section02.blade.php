@@ -11,7 +11,62 @@
 
 <div id="app">
 
-    <h2>Figure 20 - 5-Year Average Retention Rates with Retention Goals</h2>
+@php
+
+// for figure 01   
+// colors taken from Excel chart via rgb lookup.
+// colors converted to hex using https://www.rgbtohex.net/
+$data20 = [['label' => 'F1 to F2', 'color' => '#5B9BD5', 'showDataLabels' => false,  'values' => [78.6, 83.5, 88.0, 73.7, 75.7]],
+         ['label' => 'F1 to SO', 'color' => '#ED7D31', 'showDataLabels' => false, 'values' => [50.4, 50.5, 54.0, 45.8, 56.3]],
+         ['label' => 'SO to JR', 'color' => '#A5A5A5',  'showDataLabels' => false, 'values' => [72.3, 62.3, 61.0, 77.2, 72.1]],
+         ['label' => 'JR to SR', 'color' => '#4472C4', 'showDataLabels' => false, 'values' => [75.0, 81.0, 65.9, 69.4, 84.0]],
+];
+    $length20 = count($data20);
+    
+    $labels20 = [$data20[0]['label'], $data20[1]['label'], $data20[2]['label'], $data20[3]['label']];
+    $numbers20 = [$data20[0]['values'], $data20[1]['values'], $data20[2]['values'], $data20[3]['values']];
+
+$series20 = [
+    'title' => 'Retention Rates',
+    'subtitle' => '(Full-time Traditional)',
+    'y_axis' => '',
+    'categories' => ['Fall 2016', 'Fall 2017', 'Fall 2018', 'Fall 2019', 'Fall 2020'],
+    'data' => $data20,
+];
+@endphp
+
+        <h2>Figure 20 - Historical Retention Rates of Full-time Traditional Students</h2>
+        <line-chart2 
+            v-bind:series='@json($series20)'
+            v-bind:chart-width="1200"
+            v-bind:chart-height="800">
+        </line-chart2>
+
+        <div style="padding-top: 25px; padding-bottom: 25px; margin: 0px 0px 0px 0px;">
+        <table style="border-collapse: collapse;">
+            <thead style="border-top: 2px solid gray; border-bottom: 2px solid gray;">
+                <tr>
+                    <th style="padding-right: 25px;"></th>                    
+                    @for ($i = 0; $i < 5; $i++)
+                        <th style="text-align: center; padding-right: 125px;">{{ $series20['categories'][$i] }}</th>
+                    @endfor
+                </tr>
+            </thead>
+            <tbody>
+                @for ($j = 0; $j < $length20; $j++)
+                    <tr style="border-bottom: 1px solid gray; height: 20px;">
+                        <th style="font-weight: bold; text-align: left; padding-right: 125px; ">{{ $labels20[$j] }}</th>
+                        @for ($i = 0; $i < 5; $i++)
+                            <td style="text-align: center; padding-right: 100px;">{{ number_format($numbers20[$j][$i]) }}</td>
+                        @endfor
+                    </tr>
+                @endfor
+            </tbody>
+        </table>
+        </div>
+
+
+    <h2>Figure 21 - 5-Year Average Retention Rates with Retention Goals</h2>
     <combo-chart
         :chart-width="1200"
         :chart-height="600">
