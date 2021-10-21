@@ -72,9 +72,12 @@ export default {
                     colorByPoint: true
                 }
             },
-            colors: ['#ff0000', '#00ff00', '#0000ff', 'purple'],
+            colors: ['blue', 'red', 'green', 'purple'],
             title: {
-                text: 'add title'
+                text: '5-Year Average Retention Rates with Retention Goals'
+            },
+            subtitle: {
+                    text: '(Full-time Traditional)'
             },
             xAxis: {
                 categories: ['F1 to F2', 'F1 to SO', 'SO to JR', 'JR to SR'],
@@ -92,7 +95,7 @@ export default {
                 max: 100,
                 title: {
                     text: ''
-                }
+                },
             },
             legend: {
                 enabled: false
@@ -107,7 +110,7 @@ export default {
             series: [{
                 type: 'column',
                 // name: 'results',
-                data: [75.0, 55.0, 80.0, 85.0],
+                data: [79.9, 51.4, 69.0, 75.0],
                 dataLabels: {
                     enabled: true,
                     inside: true,
@@ -125,12 +128,14 @@ export default {
               },
                 {
                 type: 'scatter',
-                data: [85.0, 65.0, 85.0, 85.0],
+                data: [85.0, 65.0, 80.0, 80.0],
                 dataLabels: {
                     enabled: true,
+                    // color: 'red',
                     // inside: true,
                     // position: 'center',
-                }
+                },
+                symbol: 'square',
             }],
         });
     // });        

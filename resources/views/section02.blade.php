@@ -9,27 +9,10 @@
 </head>
 <body>
 
-@php
-
-    $data_alt = ['values' => [79.9, 51.4, 69.0, 75.0],
-                 'color' => ['blue', 'red', 'green', 'purple']];
-    
-    $series20 = [
-        'title' => '5-Year Average Retention Rates with Retention Goals',
-        'subtitle' => '(Full-time Traditional)',
-        'y_axis_max' => 100,
-        'y_axis_visible' => true,
-        'categories' => ['F1 to F2', 'F1 to SO', 'SO to JR', 'JR to SR'],
-        'data' => $data_alt,
-    ];
-
-    @endphp
-
 <div id="app">
 
     <h2>Figure 20 - 5-Year Average Retention Rates with Retention Goals</h2>
     <combo-chart
-        :series='@json($series20)'
         :chart-width="1200"
         :chart-height="600">
     </combo-chart>
