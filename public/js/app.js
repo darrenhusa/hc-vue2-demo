@@ -2862,7 +2862,10 @@ highcharts_modules_exporting__WEBPACK_IMPORTED_MODULE_1___default()((highcharts_
           symbol: 'square',
           fillColor: 'red'
         }
-      }]
+      }],
+      credits: {
+        enabled: false
+      }
     }); // });        
   } // end mounted()
   //   beforeDestroy: function() {

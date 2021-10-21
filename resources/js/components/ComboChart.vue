@@ -141,6 +141,9 @@ export default {
                   fillColor: 'red',
                 }
             }],
+            credits: {
+              enabled: false
+            },
         });
     // });        
     } // end mounted()
