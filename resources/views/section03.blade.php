@@ -27,11 +27,11 @@
 <div id="app">
 
     <h2>Figure 31 - Average High School GPA of First-time, Full-time Freshman</h2>
-    <combo-chart 
+    <column-chart2 
         :series='@json($series31)'
         :chart-width="1200"
         :chart-height="600">
-    </combo-chart>
+    </column-chart2>
 
     @php
     
@@ -135,6 +135,24 @@
     array_push($labels34, 'Grand Total');
     array_push($numbers34, $total34);
 
+    $total34 = [];
+
+    //calculate percentages for html table
+    for ($i = 0; $i < 5; $i++)
+    {
+        $total34[] = $data34[0]['values'][$i] + $data34[1]['values'][$i]; 
+    }
+    
+    for ($i = 0; $i < 5; $i++)
+    {   $num1 = round(100.0 * $data34[0]['values'][$i]/$total34[$i], 0);
+        $num2 = round(100.0 * $data34[1]['values'][$i]/$total34[$i], 0);
+        $percents34[] = [100, $num1, $num2]; 
+    }
+
+    $labels34 = ['Total', $data34[0]['label'], $data34[1]['label']];
+    $numbers34 = [$total34, $data34[0]['values'], $data34[1]['values']];
+
+
     $series34 = [
         'title' => 'Credit Hours in Developmental Courses vs Credit Hours in TRAD (Non-Dev) Courses',
         'subtitle' => '',
@@ -145,11 +163,44 @@
     @endphp
 
     <h2>Figure 34 - Credit Hours in Developmental Courses vs Credit Hours in TRAD (NON-DEV) Courses</h2>
+    <p>TODO - Add HTML table to display numbers and percentages????</p>
     <stacked-column-chart 
         :series='@json($series34)'
         :chart-width="1200"
         :chart-height="600">
     </stacked-column-chart>
+
+    <div style="padding-top: 25px; padding-bottom: 25px; margin: 0px 0px 0px 0px;">
+        <table style="border-collapse: collapse;">
+            <thead style="border-top: 2px solid gray; border-bottom: 2px solid gray;">
+                <tr>
+                    <th style="padding-right: 25px;"></th>                    
+                    @for ($i = 0; $i < 5; $i++)
+                        <th style="text-align: center; padding-right: 125px;">{{ $series34['categories'][$i] }}</th>
+                    @endfor
+                </tr>
+            </thead>
+            <tbody>
+                @for ($j = 0; $j < $length34+1; $j++)
+                    <tr style="border-bottom: 1px solid gray; height: 20px;">
+                        <th style="font-weight: bold; text-align: left; padding-right: 125px; ">{{ $labels34[$j] }}</th>
+                        @for ($i = 0; $i < 5; $i++)
+                            <td style="text-align: center; padding-right: 100px;">{{ number_format($numbers34[$j][$i]) }} ({{$percents34[$i][$j] }}%)</td>
+                        @endfor
+                    </tr>
+                @endfor
+            </tbody>
+        </table>
+        </div>
+
+
+    <stacked-column-with-data-label-percents-chart 
+
+        :series='@json($series34)'
+        :chart-width="1200"
+        :chart-height="600">
+    </stacked-column-with-data-label-percents-chart>
+
 
 
     @php
