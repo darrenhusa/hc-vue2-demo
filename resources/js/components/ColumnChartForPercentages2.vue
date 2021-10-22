@@ -108,7 +108,10 @@ export default {
         },
         series: seriesTemp,
           legend: {
-            enabled: false
+            enabled: true,
+            layout: 'horizontal',
+            align: 'center',
+            verticalAlign: 'top',
         },  
         credits: {
           enabled: false

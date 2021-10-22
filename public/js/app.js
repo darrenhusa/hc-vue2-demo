@@ -2696,7 +2696,10 @@ highcharts_modules_exporting__WEBPACK_IMPORTED_MODULE_1___default()((highcharts_
       },
       series: seriesTemp,
       legend: {
-        enabled: false
+        enabled: true,
+        layout: 'horizontal',
+        align: 'center',
+        verticalAlign: 'top'
       },
       credits: {
         enabled: false
@@ -4636,6 +4639,12 @@ highcharts_modules_exporting__WEBPACK_IMPORTED_MODULE_1___default()((highcharts_
         }
       },
       series: seriesTemp,
+      legend: {
+        enabled: true,
+        layout: 'horizontal',
+        align: 'center',
+        verticalAlign: 'top'
+      },
       credits: {
         enabled: false
       }
@@ -4751,6 +4760,12 @@ highcharts_modules_exporting__WEBPACK_IMPORTED_MODULE_1___default()((highcharts_
         }
       },
       series: seriesTemp,
+      legend: {
+        enabled: true,
+        layout: 'horizontal',
+        align: 'center',
+        verticalAlign: 'top'
+      },
       credits: {
         enabled: false
       }
@@ -4915,6 +4930,12 @@ highcharts_modules_exporting__WEBPACK_IMPORTED_MODULE_1___default()((highcharts_
         }
       },
       series: seriesTemp,
+      legend: {
+        enabled: true,
+        layout: 'horizontal',
+        align: 'center',
+        verticalAlign: 'top'
+      },
       credits: {
         enabled: false
       }
@@ -5047,6 +5068,12 @@ highcharts_modules_exporting__WEBPACK_IMPORTED_MODULE_1___default()((highcharts_
         }
       },
       series: seriesTemp,
+      legend: {
+        enabled: true,
+        layout: 'horizontal',
+        align: 'center',
+        verticalAlign: 'top'
+      },
       credits: {
         enabled: false
       }
@@ -5180,6 +5207,12 @@ highcharts_modules_exporting__WEBPACK_IMPORTED_MODULE_1___default()((highcharts_
         }
       },
       series: seriesTemp,
+      legend: {
+        enabled: true,
+        layout: 'horizontal',
+        align: 'center',
+        verticalAlign: 'top'
+      },
       credits: {
         enabled: false
       }
