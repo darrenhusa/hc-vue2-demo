@@ -45,25 +45,25 @@ thead th {
 @php
   
   $data = [
-    ["Accounting", [1, 1, 2, 0, 0]],
-    ["Biomedical Science", [4, 0, 0, 2, 1]],
-    ["Business Management", [3, 1, 5, 3, 0]],
-    ["Criminal Justice", [2, 3, 2, 3, 5]],
-    ["Digital & Studio Arts", [1, 2, 0, 2, 4]],
-    ["Elementary Education", [1, 2, 2, 3, 1]],
-    ["English & Media Communications", [1, 1, 3, 1, 0]],
-    ["Forensic Biotechnology (*)", [2, 1, 1, 1, 0]],
-    ["General Studies", [3, 4, 7, 4, 5]],
-    ["Health Science", [0, 0, 0, 1, 2]],
-    ["Human Services", [4, 4, 2, 1, 3]],
-    ["Integrated Studies", [1, 3, 3, 0, 0]],
-    ["Kinesiology", [0, 0, 0, 1, 3]],
-    ["Legal/Paralegal Studies (*)", [2, 3, 0, 0, 0]],
-    ["Not Applicable/Non-Degree-Seeking", [6, 3, 1, 0, 1]],
-    ["Psychology", [3, 1, 2, 2, 0]],
-    ["(*) Public Safety Management", [0, 1, 0, 0, 0]],
-    ["Theology/Religious Studies (*)", [2, 1, 0, 0, 0]],
-    ["Grand Total", [36, 31, 30, 24, 25]],
+    ["Accounting", [1, 2, 0, 0, 1]],
+    ["Biomedical Science", [0, 0, 2, 1, 0]],
+    ["Business Management", [1, 5, 3, 0, 3]],
+    ["Criminal Justice", [3, 2, 3, 5, 5]],
+    ["Digital & Studio Arts", [2, 0, 2, 4, 4]],
+    ["Elementary Education", [2, 2, 3, 1, 3]],
+    ["English & Media Communications", [1, 3, 1, 1, 0]],
+    ["Forensic Biotechnology (*)", [1, 1, 1, 0, 0]],
+    ["General Studies", [4, 7, 4, 4, 9]],
+    ["Health Science", [0, 0, 1, 2, 1]],
+    ["Human Services", [4, 2, 1, 3, 0]],
+    ["Integrated Studies", [3, 3, 0, 0, 0]],
+    ["Kinesiology", [0, 0, 1, 2, 1]],
+    ["Legal/Paralegal Studies (*)", [3, 0, 0, 0, 0]],
+    ["Not Applicable/Non-Degree-Seeking", [3, 1, 0, 1, 1]],
+    ["Psychology", [1, 2, 2, 1, 1]],
+    ["(*) Public Safety Management", [1, 0, 0, 0, 0]],
+    ["Theology/Religious Studies (*)", [1, 0, 0, 0, 0]],
+    ["Grand Total", [31, 30, 24, 25, 29]],
   ];
 
   foreach ($data as $val)
@@ -83,11 +83,11 @@ thead th {
     <thead>
         <tr>
             <th></th>
-            <th>Fall 2017</th>
             <th>Fall 2018</th>
             <th>Fall 2019</th>
             <th>Fall 2020</th>
             <th>Fall 2021</th>
+            <th>Fall 2022</th>
             <th>Sparklines</th>
         </tr>
     </thead>
