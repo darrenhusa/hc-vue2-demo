@@ -94,69 +94,69 @@ export default {
             {
                 name: 'Accounting',
                 parent: '1',
-                value: 16
+                value: 17
             }, 
             {
                 name: 'Biomedical Science',
                 parent: '1',
-                value: 16
+                value: 14
             }, 
             {
                 name: 'Business Management',
                 parent: '1',
-                value: 96
+                value: 109
             },
             {
                 name: 'Criminal Justice',
                 parent: '1',
-                value: 59
+                value: 63
             },
 
             {
                 name: 'Digital & Studio Arts',
                 parent: '1',
-                value: 25
+                value: 47
             },
             {
                 name: 'Education',
                 parent: '1',
-                value: 19
+                value: 23
             }, 
             {
                 name: 'English',
                 parent: '1',
-                value: 12
+                value: 13
             }, 
             {
                 name: 'Forensic Biotechnology',
                 parent: '1',
-                value: 1
+                value: 3
             },
             {
                 name: 'Forensic Science',
                 parent: '1',
-                value: 4
+                value: 5
             },
 
             {
                 name: 'General Studies',
                 parent: '1',
-                value: 42
+                value: 41
             },
             {
                 name: 'Health Science',
                 parent: '1',
-                value: 8
+                value: 7
             }, 
             {
                 name: 'Human Services',
                 parent: '1',
-                value: 19
+                value: 9
             }, 
             {
                 name: 'Kinesiology',
                 parent: '1',
-                value: 33
+                value: 54
             },
             {
                 name: 'Life Science',
@@ -166,7 +166,7 @@ export default {
             {
                 name: 'Medical Lab Science',
                 parent: '1',
-                value: 1
+                value: 3
             },
             {
                 name: 'Not Applicable/Non-Degree-Seeking',
@@ -176,14 +176,14 @@ export default {
             {
                 name: 'Psychology',
                 parent: '1',
-                value: 35
+                value: 36
             },
 
 
             {
                 name: 'BMFT/ORMN',
                 parent: '2',
-                value: 11
+                value: 10
             }, 
             {
                 name: 'Public Safety Management',
@@ -193,7 +193,7 @@ export default {
             {
                 name: 'Education',
                 parent: '3',
-                value: 14
+                value: 23
             },
             {
                 name: 'Management',
@@ -203,12 +203,12 @@ export default {
             {
                 name: 'Psychology',
                 parent: '3',
-                value: 16
+                value: 15
             },
             {
                 name: 'Public Safety Administration',
                 parent: '3',
-                value: 64
+                value: 45
             },
             ]
         }],
