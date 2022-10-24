@@ -41,8 +41,8 @@ $series1 = [
         @php
     
     $data3 = [
-             ['label' => 'Athlete', 'color' => '#217ca3', 'values' => [16, 271, 268, 258, 211]],
-             ['label' => 'NonAthlete', 'color' => '#8d230f', 'values' => [748, 640, 883, 1394, 374]]
+             ['label' => 'Athlete', 'color' => '#217ca3', 'values' => [271, 268, 225, 216, 414]],
+             ['label' => 'NonAthlete', 'color' => '#8d230f', 'values' => [640, 883, 1304, 352, 680]]
     ];
     $length3 = count($data3);
     $total3 = [];
@@ -56,8 +56,8 @@ $series1 = [
     $numbers3 = [$total3, $data3[0]['values'], $data3[1]['values']];
 
    $series3 = [
-        'title' => 'Number of Applications - TRAD Programs',
-        'categories' => ['Fall 2017', 'Fall 2018', 'Fall 2019', 'Fall 2020', 'Fall 2021'],
+        'title' => 'Number of Submitted Applications - TRAD Programs',
+        'categories' => ['Fall 2018', 'Fall 2019', 'Fall 2020', 'Fall 2021', 'Fall 2022'],
         'data' => $data3,
     ];
 
@@ -96,8 +96,8 @@ $series1 = [
     @php
     
     $data4 = [
-             ['label' => 'Athlete', 'color' => '#217ca3', 'values' => [10, 147, 205, 197, 165]],
-             ['label' => 'NonAthlete', 'color' => '#8d230f', 'values' => [303, 208, 395, 727, 171]]
+             ['label' => 'Athlete', 'color' => '#217ca3', 'values' => [147, 205, 171, 175, 319]],
+             ['label' => 'NonAthlete', 'color' => '#8d230f', 'values' => [208, 395, 687, 160, 266]]
     ];
     $length4 = count($data4);
 
@@ -111,7 +111,7 @@ $series1 = [
 
     $series4 = [
         'title' => 'Number of Accepted - TRAD Programs',
-        'categories' => ['Fall 2017', 'Fall 2018', 'Fall 2019', 'Fall 2020', 'Fall 2021'],
+        'categories' => ['Fall 2018', 'Fall 2019', 'Fall 2020', 'Fall 2021', 'Fall 2022'],
         'data' => $data4,
     ];
 
@@ -151,8 +151,8 @@ $series1 = [
     @php
     
     $data5 = [
-             ['label' => 'Athlete', 'color' => '#217ca3', 'values' => [6, 119, 132, 148, 129]],
-             ['label' => 'NonAthlete', 'color' => '#8d230f', 'values' => [239, 100, 158, 303, 96]]
+             ['label' => 'Athlete', 'color' => '#217ca3', 'values' => [119, 132, 129, 139, 239]],
+             ['label' => 'NonAthlete', 'color' => '#8d230f', 'values' => [100, 158, 281, 90, 90]]
     ];
 
     $length5 = count($data5);
@@ -167,7 +167,7 @@ $series1 = [
 
     $series5 = [
         'title' => 'Number of Admitted (Final Accepted) - TRAD Programs',
-        'categories' => ['Fall 2017', 'Fall 2018', 'Fall 2019', 'Fall 2020', 'Fall 2021'],
+        'categories' => ['Fall 2018', 'Fall 2019', 'Fall 2020', 'Fall 2021', 'Fall 2022'],
         'data' => $data5,
     ];
 
@@ -206,8 +206,8 @@ $series1 = [
     @php
     
     $data6 = [
-             ['label' => 'Athlete', 'color' => '#217ca3', 'values' => [4, 110, 113, 116, 109]],
-             ['label' => 'NonAthlete', 'color' => '#8d230f', 'values' => [186, 78, 125, 131, 69]]
+             ['label' => 'Athlete', 'color' => '#217ca3', 'values' => [110, 113, 101, 119, 175]],
+             ['label' => 'NonAthlete', 'color' => '#8d230f', 'values' => [78, 125, 111, 62, 62]]
     ];
 
     $length6 = count($data6);
@@ -222,7 +222,7 @@ $series1 = [
 
     $series6 = [
         'title' => 'Number of Registered - TRAD Programs',
-        'categories' => ['Fall 2017', 'Fall 2018', 'Fall 2019', 'Fall 2020', 'Fall 2021'],
+        'categories' => ['Fall 2018', 'Fall 2019', 'Fall 2020', 'Fall 2021', 'Fall 2022'],
         'data' => $data6,
     ];
 
@@ -261,8 +261,8 @@ $series1 = [
     @php
     
     $data7 = [
-             ['label' => 'Athlete', 'color' => '#217ca3', 'values' => [2, 103, 107, 108, 105]],
-             ['label' => 'NonAthlete', 'color' => '#8d230f', 'values' => [159, 63, 90, 86, 58]]
+             ['label' => 'Athlete', 'color' => '#217ca3', 'values' => [103, 107, 95, 116, 149]],
+             ['label' => 'NonAthlete', 'color' => '#8d230f', 'values' => [63, 90, 70, 52, 53]]
     ];
 
     $length7 = count($data7);
@@ -277,7 +277,7 @@ $series1 = [
 
     $series7 = [
         'title' => 'Number of Enrolled - TRAD Programs',
-        'categories' => ['Fall 2017', 'Fall 2018', 'Fall 2019', 'Fall 2020', 'Fall 2021'],
+        'categories' => ['Fall 2018', 'Fall 2019', 'Fall 2020', 'Fall 2021', 'Fall 2022'],
         'data' => $data7,
     ];
 
