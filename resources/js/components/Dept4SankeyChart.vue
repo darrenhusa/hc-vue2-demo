@@ -70,16 +70,16 @@ export default {
         keys: ['from', 'to', 'weight'],
         data: [
           //part 1
-          ['Education', 'Education2', 29],
-          ['Education', 'Changed to Outside Major2', 5],
-          ['Education', 'Earned Bachelors2', 1],
-          ['Education', 'Stop-out2', 4],
+          ['Education', 'Education2', 18],
+          ['Education', 'Changed Programs2', 2],
+          ['Education', 'Earned Bachelors2', 0],
+          ['Education', 'Stop-out2', 1],
           
           //part 2
-          ['Education2', 'Education3', 18],
-          ['Education2', 'Changed to Outside Major3', 5],
-          ['Education2', 'Earned Bachelors3', 5],
-          ['Education2', 'Stop-out3', 6],
+          ['Education2', 'Education3', 14],
+          ['Education2', 'Changed Programs3', 2],
+          ['Education2', 'Earned Bachelors3', 2],
+          ['Education2', 'Stop-out3', 3],
           
         ],
   nodes: [{
@@ -102,8 +102,8 @@ export default {
         },
         
         {
-            id: 'Changed to Outside Major2',
-            name: 'Changed to Outside Major',
+            id: 'Changed Programs2',
+            name: 'Changed Programs',
             color: '#e4d354'
         },
         {
@@ -124,8 +124,8 @@ export default {
         // },
         
         {
-            id: 'Changed to Outside Major3',
-            name: 'Changed to Outside Major',
+            id: 'Changed Programs3',
+            name: 'Changed Programs',
             color: '#e4d354'
         },
         {

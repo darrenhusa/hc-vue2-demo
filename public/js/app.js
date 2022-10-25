@@ -2959,12 +2959,12 @@ highcharts_modules_sankey__WEBPACK_IMPORTED_MODULE_2___default()((highcharts__WE
       series: [{
         keys: ['from', 'to', 'weight'],
         data: [//part 1
-        ['General Studies', 'General Studies2', 19], ['General Studies', 'Changed to Outside Major2', 3], ['General Studies', 'Earned Bachelors2', 0], ['General Studies', 'Stop-out2', 13], //part 2
-        ['General Studies2', 'General Studies3', 8], ['General Studies2', 'Changed to Outside Major3', 6], ['General Studies2', 'Earned Bachelors3', 1], ['General Studies2', 'Stop-out3', 7], ['Stop-out2', 'General Studies3', 2], //part 1
-        ['Human Services', 'Human Services2', 18], ['Human Services', 'General Studies2', 1], ['Human Services', 'Changed to Outside Major2', 1], ['Human Services', 'Earned Bachelors2', 1], ['Human Services', 'Stop-out2', 1], //part 2
-        ['Human Services2', 'Human Services3', 12], ['Human Services2', 'General Studies3', 1], ['Human Services2', 'Changed to Outside Major3', 3], ['Human Services2', 'Earned Bachelors3', 0], ['Human Services2', 'Stop-out3', 4], //part 1
-        ['Psychology', 'Psychology2', 23], ['Psychology', 'Changed to Outside Major2', 0], ['Psychology', 'Earned Bachelors2', 1], ['Psychology', 'Stop-out2', 8], //part 2
-        ['Psychology2', 'Psychology3', 16], ['Psychology2', 'Human Services3', 1], ['Psychology2', 'Changed to Outside Major3', 1], ['Psychology2', 'Earned Bachelors3', 3], ['Psychology2', 'Stop-out3', 2], ['Stop-out2', 'Psychology3', 1]],
+        ['General Studies', 'General Studies2', 17], ['General Studies', 'Changed Programs2', 8], ['General Studies', 'Earned Bachelors2', 2], ['General Studies', 'Stop-out2', 13], //part 2
+        ['General Studies2', 'General Studies3', 7], ['Stop-out2', 'General Studies3', 1], ['General Studies2', 'Changed Programs3', 11], ['General Studies2', 'Earned Bachelors3', 3], ['General Studies2', 'Stop-out3', 18], //part 1
+        ['Human Services', 'Human Services2', 11], ['Human Services', 'Changed Programs2', 3], ['Human Services', 'Earned Bachelors2', 1], ['Human Services', 'Stop-out2', 4], //part 2
+        ['Human Services2', 'Human Services3', 7], ['Human Services2', 'Changed Programs3', 3], ['Human Services2', 'Earned Bachelors3', 2], ['Human Services2', 'Stop-out3', 7], //part 1
+        ['Psychology', 'Psychology2', 27], ['Psychology', 'Changed Programs2', 5], ['Psychology', 'Earned Bachelors2', 1], ['Psychology', 'Stop-out2', 3], //part 2
+        ['Psychology2', 'Psychology3', 19], ['Stop-out2', 'Psychology3', 0], ['Psychology2', 'Changed Programs3', 5], ['Psychology2', 'Earned Bachelors3', 2], ['Psychology2', 'Stop-out3', 10]],
         nodes: [{
           id: 'General Studies',
           name: 'General Studies',
@@ -3003,8 +3003,8 @@ highcharts_modules_sankey__WEBPACK_IMPORTED_MODULE_2___default()((highcharts__WE
           name: 'Psychology',
           color: '#90ed7d'
         }, {
-          id: 'Changed to Outside Major2',
-          name: 'Changed to Outside Major',
+          id: 'Changed Programs2',
+          name: 'Changed Programs',
           color: '#e4d354'
         }, {
           id: 'Earned Bachelors2',
@@ -3015,8 +3015,8 @@ highcharts_modules_sankey__WEBPACK_IMPORTED_MODULE_2___default()((highcharts__WE
           name: 'Stop-out',
           color: '#f45b5b'
         }, {
-          id: 'Changed to Outside Major3',
-          name: 'Changed to Outside Major',
+          id: 'Changed Programs3',
+          name: 'Changed Programs',
           color: '#e4d354'
         }, {
           id: 'Earned Bachelors3',
@@ -3122,18 +3122,20 @@ highcharts_modules_sankey__WEBPACK_IMPORTED_MODULE_2___default()((highcharts__WE
       series: [{
         keys: ['from', 'to', 'weight'],
         data: [//part 1
-        ['Biomedical Science', 'Biomedical Science2', 22], ['Biomedical Science', 'Changed to Outside Major2', 4], ['Biomedical Science', 'Earned Bachelors2', 1], ['Biomedical Science', 'Stop-out2', 5], //part 2
-        ['Biomedical Science2', 'Biomedical Science3', 14], ['Biomedical Science2', 'Changed to Outside Major3', 3], ['Biomedical Science2', 'Earned Bachelors3', 2], ['Biomedical Science2', 'Stop-out3', 7], //part 1
-        ['Forensic Biotechnology', 'Forensic Biotechnology2', 2], ['Forensic Biotechnology', 'Changed to Outside Major2', 0], ['Forensic Biotechnology', 'Earned Bachelors2', 0], ['Forensic Biotechnology', 'Stop-out2', 2], //part 2
-        ['Forensic Biotechnology2', 'Forensic Biotechnology3', 1], ['Forensic Biotechnology2', 'Changed to Outside Major3', 0], ['Forensic Biotechnology2', 'Earned Bachelors3', 1], ['Forensic Biotechnology2', 'Stop-out3', 0], //part 1
-        ['Forensic Science', 'Forensic Science2', 3], ['Forensic Science', 'Changed to Outside Major2', 0], ['Forensic Science', 'Earned Bachelors2', 0], ['Forensic Science', 'Stop-out2', 5], //part 2
-        ['Forensic Science2', 'Forensic Science3', 1], ['Forensic Science2', 'Changed to Outside Major3', 1], ['Forensic Science2', 'Earned Bachelors3', 0], ['Forensic Science2', 'Stop-out3', 1], //part 1
-        ['Health Science', 'Health Science2', 5], ['Health Science', 'Changed to Outside Major2', 0], ['Health Science', 'Earned Bachelors2', 0], ['Health Science', 'Stop-out2', 2], //part 2
-        ['Health Science2', 'Health Science3', 2], ['Health Science2', 'Changed to Outside Major3', 0], ['Health Science2', 'Earned Bachelors3', 0], ['Health Science2', 'Stop-out3', 3], //part 1
-        ['Kinesiology', 'Kinesiology2', 24], ['Kinesiology', 'Changed to Outside Major2', 3], ['Kinesiology', 'Earned Bachelors2', 1], ['Kinesiology', 'Stop-out2', 3], //part 2
-        ['Kinesiology2', 'Kinesiology3', 16], ['Kinesiology2', 'Changed to Outside Major3', 4], ['Kinesiology2', 'Earned Bachelors3', 4], ['Kinesiology2', 'Stop-out3', 3], ['Stop-out2', 'Kinesiology3', 1], //part 1
-        ['Medical Lab Science', 'Medical Lab Science2', 0], ['Medical Lab Science', 'Changed to Outside Major2', 1], ['Medical Lab Science', 'Earned Bachelors2', 0], ['Medical Lab Science', 'Stop-out2', 0], //part 2
-        ['Medical Lab Science2', 'Medical Lab Science3', 0], ['Medical Lab Science2', 'Changed to Outside Major3', 0], ['Medical Lab Science2', 'Earned Bachelors3', 0], ['Medical Lab Science2', 'Stop-out3', 1]],
+        ['Biomedical Science', 'Biomedical Science2', 16], ['Biomedical Science', 'Changed Programs2', 3], ['Biomedical Science', 'Earned Bachelors2', 0], ['Biomedical Science', 'Stop-out2', 4], //part 2
+        ['Biomedical Science2', 'Biomedical Science3', 7], ['Biomedical Science2', 'Changed Programs3', 4], ['Biomedical Science2', 'Earned Bachelors3', 3], ['Biomedical Science2', 'Stop-out3', 9], //part 1
+        ['Forensic Biotechnology', 'Forensic Biotechnology2', 1], ['Forensic Biotechnology', 'Changed Programs2', 0], ['Forensic Biotechnology', 'Earned Bachelors2', 0], ['Forensic Biotechnology', 'Stop-out2', 0], //part 2
+        ['Forensic Biotechnology2', 'Forensic Biotechnology3', 1], ['Forensic Biotechnology2', 'Changed Programs3', 0], ['Forensic Biotechnology2', 'Earned Bachelors3', 0], ['Forensic Biotechnology2', 'Stop-out3', 0], //part 1
+        ['Forensic Science', 'Forensic Science2', 1], ['Forensic Science', 'Changed Programs2', 3], ['Forensic Science', 'Earned Bachelors2', 0], ['Forensic Science', 'Stop-out2', 0], //part 2
+        ['Forensic Science2', 'Forensic Science3', 1], ['Forensic Science2', 'Changed Programs3', 3], ['Forensic Science2', 'Earned Bachelors3', 0], ['Forensic Science2', 'Stop-out3', 0], //part 1  
+        ['Health Science', 'Health Science2', 4], ['Health Science', 'Changed Programs2', 0], ['Health Science', 'Earned Bachelors2', 0], ['Health Science', 'Stop-out2', 4], //part 2
+        ['Health Science2', 'Health Science3', 3], ['Health Science2', 'Changed Programs3', 1], ['Health Science2', 'Earned Bachelors3', 0], ['Health Science2', 'Stop-out3', 4], //part 1
+        ['Kinesiology', 'Kinesiology2', 25], ['Kinesiology', 'Changed Programs2', 1], ['Kinesiology', 'Earned Bachelors2', 1], ['Kinesiology', 'Stop-out2', 4], //part 2
+        ['Kinesiology2', 'Kinesiology3', 17], ['Stop-out2', 'Kinesiology3', 0], ['Kinesiology2', 'Changed Programs3', 2], ['Kinesiology2', 'Earned Bachelors3', 0], ['Kinesiology2', 'Stop-out3', 12], //part 1
+        ['Life Science', 'Life Science2', 0], ['Life Science', 'Changed Programs2', 0], ['Life Science', 'Earned Bachelors2', 0], ['Life Science', 'Stop-out2', 1], //part 2
+        ['Life Science2', 'Life Science3', 0], ['Stop-out2', 'Life Science3', 1], ['Life Science2', 'Changed Programs3', 0], ['Life Science2', 'Earned Bachelors3', 0], ['Life Science2', 'Stop-out3', 0], //part 1
+        ['Medical Lab Science', 'Medical Lab Science2', 1], ['Medical Lab Science', 'Changed Programs2', 0], ['Medical Lab Science', 'Earned Bachelors2', 0], ['Medical Lab Science', 'Stop-out2', 0], //part 2
+        ['Medical Lab Science2', 'Medical Lab Science3', 1], ['Medical Lab Science2', 'Changed Programs3', 0], ['Medical Lab Science2', 'Earned Bachelors3', 0], ['Medical Lab Science2', 'Stop-out3', 0]],
         nodes: [{
           id: 'Biomedical Science',
           name: 'Biomedical Science',
@@ -3155,6 +3157,10 @@ highcharts_modules_sankey__WEBPACK_IMPORTED_MODULE_2___default()((highcharts__WE
           id: 'Kinesiology',
           name: 'Kinesiology',
           color: '#8085e9'
+        }, {
+          id: 'Life Science',
+          name: 'Life Science',
+          color: ''
         }, {
           id: 'Medical Lab Science',
           name: 'Medical Lab Science',
@@ -3180,6 +3186,10 @@ highcharts_modules_sankey__WEBPACK_IMPORTED_MODULE_2___default()((highcharts__WE
           name: 'Kinesiology',
           color: '#8085e9'
         }, {
+          id: 'Life Science2',
+          name: 'Life Science',
+          color: ''
+        }, {
           id: 'Medical Lab Science2',
           name: 'Medical Lab Science',
           color: '#f15c80'
@@ -3204,12 +3214,16 @@ highcharts_modules_sankey__WEBPACK_IMPORTED_MODULE_2___default()((highcharts__WE
           name: 'Kinesiology',
           color: '#8085e9'
         }, {
+          id: 'Life Science3',
+          name: 'Life Science',
+          color: ''
+        }, {
           id: 'Medical Lab Science3',
           name: 'Medical Lab Science',
           color: '#f15c80'
         }, {
-          id: 'Changed to Outside Major2',
-          name: 'Changed to Outside Major',
+          id: 'Changed Programs2',
+          name: 'Changed Programs',
           color: '#e4d354'
         }, {
           id: 'Earned Bachelors2',
@@ -3220,8 +3234,8 @@ highcharts_modules_sankey__WEBPACK_IMPORTED_MODULE_2___default()((highcharts__WE
           name: 'Stop-out',
           color: '#f45b5b'
         }, {
-          id: 'Changed to Outside Major3',
-          name: 'Changed to Outside Major',
+          id: 'Changed Programs3',
+          name: 'Changed Programs',
           color: '#e4d354'
         }, {
           id: 'Earned Bachelors3',
@@ -3327,10 +3341,10 @@ highcharts_modules_sankey__WEBPACK_IMPORTED_MODULE_2___default()((highcharts__WE
       series: [{
         keys: ['from', 'to', 'weight'],
         data: [//part 1
-        ['Accounting', 'Accounting2', 12], ['Accounting', 'Changed to Outside Major2', 1], ['Accounting', 'Earned Bachelors2', 0], ['Accounting', 'Stop-out2', 1], //part 2
-        ['Accounting2', 'Accounting3', 9], ['Accounting2', 'Changed to Outside Major3', 1], ['Accounting2', 'Earned Bachelors3', 2], ['Accounting2', 'Stop-out3', 1], //part 1
-        ['Business Management', 'Business Management2', 74], ['Business Management', 'Changed to Outside Major2', 3], ['Business Management', 'Earned Bachelors2', 2], ['Business Management', 'Stop-out2', 16], //part 2
-        ['Business Management2', 'Business Management3', 41], ['Business Management2', 'Entered Graduate Program3', 2], ['Business Management2', 'Changed to Outside Major3', 4], ['Business Management2', 'Earned Bachelors3', 9], ['Business Management2', 'Stop-out3', 21], ['Stop-out2', 'Business Management3', 2]],
+        ['Accounting', 'Accounting2', 13], ['Accounting', 'Changed Programs2', 1], ['Accounting', 'Earned Bachelors2', 1], ['Accounting', 'Stop-out2', 1], //part 2
+        ['Accounting2', 'Accounting3', 10], ['Accounting2', 'Changed Programs3', 2], ['Accounting2', 'Earned Bachelors3', 1], ['Accounting2', 'Stop-out3', 3], //part 1
+        ['Business Management', 'Business Management2', 83], ['Business Management', 'Changed Programs2', 3], ['Business Management', 'Earned Bachelors2', 1], ['Business Management', 'Stop-out2', 11], //part 2
+        ['Business Management2', 'Business Management3', 46], ['Stop-out2', 'Business Management3', 0], ['Business Management2', 'Changed Programs3', 7], ['Business Management2', 'Earned Bachelors3', 6], ['Business Management2', 'Stop-out3', 39]],
         nodes: [{
           id: 'Accounting',
           name: 'Accounting',
@@ -3359,8 +3373,8 @@ highcharts_modules_sankey__WEBPACK_IMPORTED_MODULE_2___default()((highcharts__WE
           name: 'Business Management',
           color: '#434348'
         }, {
-          id: 'Changed to Outside Major2',
-          name: 'Changed to Outside Major',
+          id: 'Changed Programs2',
+          name: 'Changed Programs',
           color: '#e4d354'
         }, {
           id: 'Earned Bachelors2',
@@ -3371,12 +3385,8 @@ highcharts_modules_sankey__WEBPACK_IMPORTED_MODULE_2___default()((highcharts__WE
           name: 'Stop-out',
           color: '#f45b5b'
         }, {
-          id: 'Entered Graduate Program3',
-          name: 'Entered Graduate Program',
-          color: "#91e8e1"
-        }, {
-          id: 'Changed to Outside Major3',
-          name: 'Changed to Outside Major',
+          id: 'Changed Programs3',
+          name: 'Changed Programs',
           color: '#e4d354'
         }, {
           id: 'Earned Bachelors3',
@@ -3482,8 +3492,8 @@ highcharts_modules_sankey__WEBPACK_IMPORTED_MODULE_2___default()((highcharts__WE
       series: [{
         keys: ['from', 'to', 'weight'],
         data: [//part 1
-        ['Education', 'Education2', 29], ['Education', 'Changed to Outside Major2', 5], ['Education', 'Earned Bachelors2', 1], ['Education', 'Stop-out2', 4], //part 2
-        ['Education2', 'Education3', 18], ['Education2', 'Changed to Outside Major3', 5], ['Education2', 'Earned Bachelors3', 5], ['Education2', 'Stop-out3', 6]],
+        ['Education', 'Education2', 18], ['Education', 'Changed Programs2', 2], ['Education', 'Earned Bachelors2', 0], ['Education', 'Stop-out2', 1], //part 2
+        ['Education2', 'Education3', 14], ['Education2', 'Changed Programs3', 2], ['Education2', 'Earned Bachelors3', 2], ['Education2', 'Stop-out3', 3]],
         nodes: [{
           id: 'Education',
           name: 'Education',
@@ -3500,8 +3510,8 @@ highcharts_modules_sankey__WEBPACK_IMPORTED_MODULE_2___default()((highcharts__WE
           // colorIndex: 0
           color: '#7cb5ec'
         }, {
-          id: 'Changed to Outside Major2',
-          name: 'Changed to Outside Major',
+          id: 'Changed Programs2',
+          name: 'Changed Programs',
           color: '#e4d354'
         }, {
           id: 'Earned Bachelors2',
@@ -3517,8 +3527,8 @@ highcharts_modules_sankey__WEBPACK_IMPORTED_MODULE_2___default()((highcharts__WE
         //     color: "#91e8e1"
         // },
         {
-          id: 'Changed to Outside Major3',
-          name: 'Changed to Outside Major',
+          id: 'Changed Programs3',
+          name: 'Changed Programs',
           color: '#e4d354'
         }, {
           id: 'Earned Bachelors3',
@@ -3624,10 +3634,10 @@ highcharts_modules_sankey__WEBPACK_IMPORTED_MODULE_2___default()((highcharts__WE
       series: [{
         keys: ['from', 'to', 'weight'],
         data: [//part 1
-        ['Digital & Studio Arts', 'Digital & Studio Arts2', 9], ['Digital & Studio Arts', 'Changed to Outside Major2', 0], ['Digital & Studio Arts', 'Earned Bachelors2', 0], ['Digital & Studio Arts', 'Stop-out2', 12], //part 2
-        ['Digital & Studio Arts2', 'Digital & Studio Arts3', 5], ['Digital & Studio Arts2', 'Changed to Outside Major3', 0], ['Digital & Studio Arts2', 'Earned Bachelors3', 1], ['Digital & Studio Arts2', 'Stop-out3', 3], ['Stop-out2', 'Digital & Studio Arts3', 1], //part 1
-        ['English', 'English2', 14], ['English', 'Changed to Outside Major2', 1], ['English', 'Earned Bachelors2', 0], ['English', 'Stop-out2', 2], //part 2
-        ['English2', 'English3', 7], ['English2', 'Changed to Outside Major3', 0], ['English2', 'Earned Bachelors3', 2], ['English2', 'Stop-out3', 6], ['Stop-out2', 'English3', 1]],
+        ['Digital & Studio Arts', 'Digital & Studio Arts2', 23], ['Digital & Studio Arts', 'Changed Programs2', 0], ['Digital & Studio Arts', 'Earned Bachelors2', 1], ['Digital & Studio Arts', 'Stop-out2', 1], //part 2
+        ['Digital & Studio Arts2', 'Digital & Studio Arts3', 16], ['Stop-out2', 'Digital & Studio Arts3', 0], ['Digital & Studio Arts2', 'Changed Programs3', 1], ['Digital & Studio Arts2', 'Earned Bachelors3', 2], ['Digital & Studio Arts2', 'Stop-out3', 6], //part 1
+        ['English', 'English2', 11], ['English', 'Changed Programs2', 0], ['English', 'Earned Bachelors2', 0], ['English', 'Stop-out2', 2], //part 2
+        ['English2', 'English3', 6], ['Stop-out2', 'English3', 0], ['English2', 'Changed Programs3', 1], ['English2', 'Earned Bachelors3', 3], ['English2', 'Stop-out3', 3]],
         nodes: [{
           id: 'Digital & Studio Arts',
           name: 'Digital & Studio Arts',
@@ -3654,8 +3664,8 @@ highcharts_modules_sankey__WEBPACK_IMPORTED_MODULE_2___default()((highcharts__WE
           name: 'English',
           color: '#434348'
         }, {
-          id: 'Changed to Outside Major2',
-          name: 'Changed to Outside Major',
+          id: 'Changed Programs2',
+          name: 'Changed Programs',
           color: '#e4d354'
         }, {
           id: 'Earned Bachelors2',
@@ -3666,12 +3676,8 @@ highcharts_modules_sankey__WEBPACK_IMPORTED_MODULE_2___default()((highcharts__WE
           name: 'Stop-out',
           color: '#f45b5b'
         }, {
-          id: 'Entered Graduate Program3',
-          name: 'Entered Graduate Program',
-          color: "#91e8e1"
-        }, {
-          id: 'Changed to Outside Major3',
-          name: 'Changed to Outside Major',
+          id: 'Changed Programs3',
+          name: 'Changed Programs',
           color: '#e4d354'
         }, {
           id: 'Earned Bachelors3',
@@ -3777,8 +3783,8 @@ highcharts_modules_sankey__WEBPACK_IMPORTED_MODULE_2___default()((highcharts__WE
       series: [{
         keys: ['from', 'to', 'weight'],
         data: [//part 1
-        ['Criminal Justice', 'Criminal Justice2', 58], ['Criminal Justice', 'Changed to Outside Major2', 2], ['Criminal Justice', 'Earned Bachelors2', 0], ['Criminal Justice', 'Stop-out2', 15], //part 2
-        ['Criminal Justice2', 'Criminal Justice3', 33], ['Criminal Justice2', 'Entered Graduate Program3', 1], ['Criminal Justice2', 'Changed to Outside Major3', 2], ['Criminal Justice2', 'Earned Bachelors3', 13], ['Criminal Justice2', 'Stop-out3', 11]],
+        ['Criminal Justice', 'Criminal Justice2', 44], ['Criminal Justice', 'Changed Programs2', 2], ['Criminal Justice', 'Earned Bachelors2', 0], ['Criminal Justice', 'Stop-out2', 12], //part 2
+        ['Criminal Justice2', 'Criminal Justice3', 28], ['Stop-out2', 'Criminal Justice3', 1], ['Criminal Justice2', 'Changed Programs', 1], ['Criminal Justice2', 'Earned Bachelors3', 7], ['Criminal Justice2', 'Stop-out3', 21]],
         nodes: [{
           id: 'Criminal Justice',
           name: 'Criminal Justice',
@@ -3795,8 +3801,8 @@ highcharts_modules_sankey__WEBPACK_IMPORTED_MODULE_2___default()((highcharts__WE
           // colorIndex: 0
           color: '#7cb5ec'
         }, {
-          id: 'Changed to Outside Major2',
-          name: 'Changed to Outside Major',
+          id: 'Changed Programs2',
+          name: 'Changed Programs',
           color: '#e4d354'
         }, {
           id: 'Earned Bachelors2',
@@ -3807,12 +3813,8 @@ highcharts_modules_sankey__WEBPACK_IMPORTED_MODULE_2___default()((highcharts__WE
           name: 'Stop-out',
           color: '#f45b5b'
         }, {
-          id: 'Entered Graduate Program3',
-          name: 'Entered Graduate Program',
-          color: "#91e8e1"
-        }, {
-          id: 'Changed to Outside Major3',
-          name: 'Changed to Outside Major',
+          id: 'Changed Programs3',
+          name: 'Changed Programs',
           color: '#e4d354'
         }, {
           id: 'Earned Bachelors3',
@@ -3822,24 +3824,12 @@ highcharts_modules_sankey__WEBPACK_IMPORTED_MODULE_2___default()((highcharts__WE
           id: 'Stop-out3',
           name: 'Stop-out',
           color: '#f45b5b'
-        }, // {
+        } // {
         //     id: 'Entered Graduate Program3',
         //     name: 'Entered Graduate Program',
         //     colorIndex: 8
         // },
-        {
-          id: 'Changed to Outside Major3',
-          name: 'Changed to Outside Major',
-          color: '#434348'
-        }, {
-          id: 'Earned Bachelors3',
-          name: 'Earned Bachelors',
-          color: '#f7a35c'
-        }, {
-          id: 'Stop-out3',
-          name: 'Stop-out',
-          color: '#8085e9'
-        }],
+        ],
         type: 'sankey',
         name: this.name
       }],

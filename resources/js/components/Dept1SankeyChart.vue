@@ -70,45 +70,42 @@ export default {
         keys: ['from', 'to', 'weight'],
         data: [
           //part 1
-          ['General Studies', 'General Studies2', 19],
-          ['General Studies', 'Changed to Outside Major2', 3],
-          ['General Studies', 'Earned Bachelors2', 0],
+          ['General Studies', 'General Studies2', 17],
+          ['General Studies', 'Changed Programs2', 8],
+          ['General Studies', 'Earned Bachelors2', 2],
           ['General Studies', 'Stop-out2', 13],
           
           //part 2
-          ['General Studies2', 'General Studies3', 8],
-          ['General Studies2', 'Changed to Outside Major3', 6],
-          ['General Studies2', 'Earned Bachelors3', 1],
-          ['General Studies2', 'Stop-out3', 7],
-          ['Stop-out2', 'General Studies3', 2],
+          ['General Studies2', 'General Studies3', 7],
+          ['Stop-out2', 'General Studies3', 1],
+          ['General Studies2', 'Changed Programs3', 11],
+          ['General Studies2', 'Earned Bachelors3', 3],
+          ['General Studies2', 'Stop-out3', 18],
           
           //part 1
-          ['Human Services', 'Human Services2', 18],
-          ['Human Services', 'General Studies2', 1],
-          ['Human Services', 'Changed to Outside Major2', 1],
+          ['Human Services', 'Human Services2', 11],
+          ['Human Services', 'Changed Programs2', 3],
           ['Human Services', 'Earned Bachelors2', 1],
-          ['Human Services', 'Stop-out2', 1],
+          ['Human Services', 'Stop-out2', 4],
           
           //part 2
-          ['Human Services2', 'Human Services3', 12],
-          ['Human Services2', 'General Studies3', 1],
-          ['Human Services2', 'Changed to Outside Major3', 3],
-          ['Human Services2', 'Earned Bachelors3', 0],
-          ['Human Services2', 'Stop-out3', 4],
+          ['Human Services2', 'Human Services3', 7],
+          ['Human Services2', 'Changed Programs3', 3],
+          ['Human Services2', 'Earned Bachelors3', 2],
+          ['Human Services2', 'Stop-out3', 7],
           
           //part 1
-          ['Psychology', 'Psychology2', 23],
-          ['Psychology', 'Changed to Outside Major2', 0],
+          ['Psychology', 'Psychology2', 27],
+          ['Psychology', 'Changed Programs2', 5],
           ['Psychology', 'Earned Bachelors2', 1],
-          ['Psychology', 'Stop-out2', 8],
+          ['Psychology', 'Stop-out2', 3],
 
           //part 2
-          ['Psychology2', 'Psychology3', 16],
-          ['Psychology2', 'Human Services3', 1],
-          ['Psychology2', 'Changed to Outside Major3', 1],
-          ['Psychology2', 'Earned Bachelors3', 3],
-          ['Psychology2', 'Stop-out3', 2],
-          ['Stop-out2', 'Psychology3', 1],
+          ['Psychology2', 'Psychology3', 19],
+          ['Stop-out2', 'Psychology3', 0],
+          ['Psychology2', 'Changed Programs3', 5],
+          ['Psychology2', 'Earned Bachelors3', 2],
+          ['Psychology2', 'Stop-out3', 10],
 
         ],
   nodes: [{
@@ -157,8 +154,8 @@ export default {
         },
         
         {
-            id: 'Changed to Outside Major2',
-            name: 'Changed to Outside Major',
+            id: 'Changed Programs2',
+            name: 'Changed Programs',
             color: '#e4d354'
         },
         {
@@ -173,8 +170,8 @@ export default {
         },
 
         {
-            id: 'Changed to Outside Major3',
-            name: 'Changed to Outside Major',
+            id: 'Changed Programs3',
+            name: 'Changed Programs',
             color: '#e4d354'
         },
         {

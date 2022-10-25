@@ -13,7 +13,7 @@
     <div id="app">
 
         <h2>Behavioral & Social Sciences</h2>
-        <h3>Fall 2020 to Spring 2021 to Fall 2021 TRAD Retention in Majors</h3>
+        <h3>Fall 2021 to Spring 2022 to Fall 2022 TRAD Retention in Majors</h3>
         <!-- <div class="flex justify-between pt-4">
             <span>At Start of<br />Fall 2020</span>
             <span>At Start of<br />Spring 2021</span>
@@ -22,7 +22,7 @@
         <dept1-sankey-chart></dept1-sankey-chart>
         
         <h2>Biomedical and Health Sciences</h2>
-        <h3>Fall 2020 to Spring 2021 to Fall 2021 TRAD Retention in Majors</h3>
+        <h3>Fall 2021 to Spring 2022 to Fall 2022 TRAD Retention in Majors</h3>
         <!-- <div class="flex justify-between pt-4">
             <span>At Start of<br />Fall 2020</span>
             <span>At Start of<br />Spring 2021</span>
@@ -32,7 +32,7 @@
     
 
         <h2>Business Management</h2>
-        <h3>Fall 2020 to Spring 2021 to Fall 2021 TRAD Retention in Majors</h3>
+        <h3>Fall 2021 to Spring 2022 to Fall 2022 TRAD Retention in Majors</h3>
         <!-- <div class="flex justify-between pt-4">
             <span>At Start of<br />Fall 2020</span>
             <span>At Start of<br />Spring 2021</span>
@@ -41,7 +41,7 @@
         <dept3-sankey-chart></dept3-sankey-chart>
 
         <h2>Education</h2>
-        <h3>Fall 2020 to Spring 2021 to Fall 2021 TRAD Retention in Majors</h3>
+        <h3>Fall 2021 to Spring 2022 to Fall 2022 TRAD Retention in Majors</h3>
         <!-- <div class="flex justify-between pt-4">
             <span>At Start of<br />Fall 2020</span>
             <span>At Start of<br />Spring 2021</span>
@@ -50,7 +50,7 @@
         <dept4-sankey-chart></dept4-sankey-chart>
     
         <h2>Humanities</h2>
-        <h3>Fall 2020 to Spring 2021 to Fall 2021 TRAD Retention in Majors</h3>
+        <h3>Fall 2021 to Spring 2022 to Fall 2022 TRAD Retention in Majors</h3>
         <!-- <div class="flex justify-between pt-4">
             <span>At Start of<br />Fall 2020</span>
             <span>At Start of<br />Spring 2021</span>
@@ -59,7 +59,7 @@
         <dept5-sankey-chart></dept5-sankey-chart>
 
         <h2>Public Safety and Criminal Justice</h2>
-        <h3>Fall 2020 to Spring 2021 to Fall 2021 TRAD Retention in Majors</h3>
+        <h3>Fall 2021 to Spring 2022 to Fall 2022 TRAD Retention in Majors</h3>
         <!-- <div class="flex justify-between pt-4">
             <span>At Start of<br />Fall 2020</span>
             <span>At Start of<br />Spring 2021</span>

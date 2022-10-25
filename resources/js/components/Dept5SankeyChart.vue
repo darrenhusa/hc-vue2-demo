@@ -70,30 +70,30 @@ export default {
         keys: ['from', 'to', 'weight'],
         data: [
           //part 1
-          ['Digital & Studio Arts', 'Digital & Studio Arts2', 9],
-          ['Digital & Studio Arts', 'Changed to Outside Major2', 0],
-          ['Digital & Studio Arts', 'Earned Bachelors2', 0],
-          ['Digital & Studio Arts', 'Stop-out2', 12],
+          ['Digital & Studio Arts', 'Digital & Studio Arts2', 23],
+          ['Digital & Studio Arts', 'Changed Programs2', 0],
+          ['Digital & Studio Arts', 'Earned Bachelors2', 1],
+          ['Digital & Studio Arts', 'Stop-out2', 1],
           
           //part 2
-          ['Digital & Studio Arts2', 'Digital & Studio Arts3', 5],
-          ['Digital & Studio Arts2', 'Changed to Outside Major3', 0],
-          ['Digital & Studio Arts2', 'Earned Bachelors3', 1],
-          ['Digital & Studio Arts2', 'Stop-out3', 3],
-          ['Stop-out2', 'Digital & Studio Arts3', 1],
+          ['Digital & Studio Arts2', 'Digital & Studio Arts3', 16],
+          ['Stop-out2', 'Digital & Studio Arts3', 0],
+          ['Digital & Studio Arts2', 'Changed Programs3', 1],
+          ['Digital & Studio Arts2', 'Earned Bachelors3', 2],
+          ['Digital & Studio Arts2', 'Stop-out3', 6],
           
           //part 1
-          ['English', 'English2', 14],
-          ['English', 'Changed to Outside Major2', 1],
+          ['English', 'English2', 11],
+          ['English', 'Changed Programs2', 0],
           ['English', 'Earned Bachelors2', 0],
           ['English', 'Stop-out2', 2],
           
           //part 2
-          ['English2', 'English3', 7],
-          ['English2', 'Changed to Outside Major3', 0],
-          ['English2', 'Earned Bachelors3', 2],
-          ['English2', 'Stop-out3', 6],
-          ['Stop-out2', 'English3', 1],
+          ['English2', 'English3', 6],
+          ['Stop-out2', 'English3', 0],
+          ['English2', 'Changed Programs3', 1],
+          ['English2', 'Earned Bachelors3', 3],
+          ['English2', 'Stop-out3', 3],
           
         ],
   nodes: [{
@@ -129,8 +129,8 @@ export default {
         }, 
         
         {
-            id: 'Changed to Outside Major2',
-            name: 'Changed to Outside Major',
+            id: 'Changed Programs2',
+            name: 'Changed Programs',
             color: '#e4d354'
         },
         {
@@ -143,16 +143,10 @@ export default {
             name: 'Stop-out',
             color: '#f45b5b'
         },
-
-        {
-            id: 'Entered Graduate Program3',
-            name: 'Entered Graduate Program',
-            color: "#91e8e1"
-        },
         
         {
-            id: 'Changed to Outside Major3',
-            name: 'Changed to Outside Major',
+            id: 'Changed Programs3',
+            name: 'Changed Programs',
             color: '#e4d354'
         },
         {

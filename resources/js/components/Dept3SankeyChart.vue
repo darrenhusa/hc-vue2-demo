@@ -70,30 +70,29 @@ export default {
         keys: ['from', 'to', 'weight'],
         data: [
           //part 1
-          ['Accounting', 'Accounting2', 12],
-          ['Accounting', 'Changed to Outside Major2', 1],
-          ['Accounting', 'Earned Bachelors2', 0],
+          ['Accounting', 'Accounting2', 13],
+          ['Accounting', 'Changed Programs2', 1],
+          ['Accounting', 'Earned Bachelors2', 1],
           ['Accounting', 'Stop-out2', 1],
           
           //part 2
-          ['Accounting2', 'Accounting3', 9],
-          ['Accounting2', 'Changed to Outside Major3', 1],
-          ['Accounting2', 'Earned Bachelors3', 2],
-          ['Accounting2', 'Stop-out3', 1],
+          ['Accounting2', 'Accounting3', 10],
+          ['Accounting2', 'Changed Programs3', 2],
+          ['Accounting2', 'Earned Bachelors3', 1],
+          ['Accounting2', 'Stop-out3', 3],
           
           //part 1
-          ['Business Management', 'Business Management2', 74],
-          ['Business Management', 'Changed to Outside Major2', 3],
-          ['Business Management', 'Earned Bachelors2', 2],
-          ['Business Management', 'Stop-out2', 16],
+          ['Business Management', 'Business Management2', 83],
+          ['Business Management', 'Changed Programs2', 3],
+          ['Business Management', 'Earned Bachelors2', 1],
+          ['Business Management', 'Stop-out2', 11],
           
           //part 2
-          ['Business Management2', 'Business Management3', 41],
-          ['Business Management2', 'Entered Graduate Program3', 2],
-          ['Business Management2', 'Changed to Outside Major3', 4],
-          ['Business Management2', 'Earned Bachelors3', 9],
-          ['Business Management2', 'Stop-out3', 21],
-          ['Stop-out2', 'Business Management3', 2],
+          ['Business Management2', 'Business Management3', 46],
+          ['Stop-out2', 'Business Management3', 0],
+          ['Business Management2', 'Changed Programs3', 7],
+          ['Business Management2', 'Earned Bachelors3', 6],
+          ['Business Management2', 'Stop-out3', 39],
           
         ],
   nodes: [{
@@ -131,8 +130,8 @@ export default {
         }, 
         
         {
-            id: 'Changed to Outside Major2',
-            name: 'Changed to Outside Major',
+            id: 'Changed Programs2',
+            name: 'Changed Programs',
             color: '#e4d354'
         },
         {
@@ -145,16 +144,10 @@ export default {
             name: 'Stop-out',
             color: '#f45b5b'
         },
-
-        {
-            id: 'Entered Graduate Program3',
-            name: 'Entered Graduate Program',
-            color: "#91e8e1"
-        },
         
         {
-            id: 'Changed to Outside Major3',
-            name: 'Changed to Outside Major',
+            id: 'Changed Programs3',
+            name: 'Changed Programs',
             color: '#e4d354'
         },
         {

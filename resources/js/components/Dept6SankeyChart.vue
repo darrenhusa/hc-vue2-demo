@@ -70,17 +70,17 @@ export default {
         keys: ['from', 'to', 'weight'],
         data: [
           //part 1
-          ['Criminal Justice', 'Criminal Justice2', 58],
-          ['Criminal Justice', 'Changed to Outside Major2', 2],
+          ['Criminal Justice', 'Criminal Justice2', 44],
+          ['Criminal Justice', 'Changed Programs2', 2],
           ['Criminal Justice', 'Earned Bachelors2', 0],
-          ['Criminal Justice', 'Stop-out2', 15],
+          ['Criminal Justice', 'Stop-out2', 12],
           
           //part 2
-          ['Criminal Justice2', 'Criminal Justice3', 33],
-          ['Criminal Justice2', 'Entered Graduate Program3', 1],
-          ['Criminal Justice2', 'Changed to Outside Major3', 2],
-          ['Criminal Justice2', 'Earned Bachelors3', 13],
-          ['Criminal Justice2', 'Stop-out3', 11],
+          ['Criminal Justice2', 'Criminal Justice3', 28],
+          ['Stop-out2', 'Criminal Justice3', 1],
+          ['Criminal Justice2', 'Changed Programs', 1],
+          ['Criminal Justice2', 'Earned Bachelors3', 7],
+          ['Criminal Justice2', 'Stop-out3', 21],
           
         ],
   nodes: [{
@@ -103,8 +103,8 @@ export default {
         },
         
         {
-            id: 'Changed to Outside Major2',
-            name: 'Changed to Outside Major',
+            id: 'Changed Programs2',
+            name: 'Changed Programs',
             color: '#e4d354'
         },
         {
@@ -119,14 +119,8 @@ export default {
         },
 
         {
-            id: 'Entered Graduate Program3',
-            name: 'Entered Graduate Program',
-            color: "#91e8e1"
-        },
-
-        {
-            id: 'Changed to Outside Major3',
-            name: 'Changed to Outside Major',
+            id: 'Changed Programs3',
+            name: 'Changed Programs',
             color: '#e4d354'
         },
         {
@@ -145,22 +139,6 @@ export default {
         //     name: 'Entered Graduate Program',
         //     colorIndex: 8
         // },
-        
-        {
-            id: 'Changed to Outside Major3',
-            name: 'Changed to Outside Major',
-            color: '#434348'
-        },
-        {
-            id: 'Earned Bachelors3',
-            name: 'Earned Bachelors',
-            color: '#f7a35c'
-        },
-        {
-            id: 'Stop-out3',
-            name: 'Stop-out',
-            color: '#8085e9'
-        },
 
       ],
         type: 'sankey',
