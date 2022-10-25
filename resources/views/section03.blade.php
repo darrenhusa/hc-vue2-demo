@@ -63,11 +63,11 @@
     @php
     
     $data33 = [
-             ['label' => 'MATH 103', 'color' => '#217ca3', 'values' => [255, 297, 285, 285, 222]],
-             ['label' => 'MATH 097', 'color' => '#8d230f', 'values' => [225, 171, 180, 198, 135]],
-             ['label' => 'MATH 095', 'color' => '#50CB93', 'values' => [78, 93, 105, 141, 99]],
-             ['label' => 'GENL 095', 'color' => 'purple', 'values' => [16, 31, 0, 0, 0]],
-             ['label' => '(EWPC)/EMCO 096', 'color' => 'lightblue', 'values' => [111, 213, 240, 204, 93]],
+             ['label' => 'MATH 103', 'color' => '#217ca3', 'values' => [297, 285, 285, 345, 225]],
+             ['label' => 'MATH 097', 'color' => '#8d230f', 'values' => [171, 180, 198, 213, 207]],
+             ['label' => 'MATH 095', 'color' => '#50CB93', 'values' => [93, 105, 141, 153, 144]],
+             ['label' => 'GENL 095', 'color' => 'purple', 'values' => [31, 0, 0, 0, 0]],
+             ['label' => '(EWPC)/EMCO 096', 'color' => 'lightblue', 'values' => [213, 240, 204, 90, 87]],
     ];
 
     $length33 = count($data33);
@@ -94,7 +94,7 @@
     $series33 = [
         'title' => 'Credit Hours in',
         'subtitle' => 'Developmental Courses',
-        'categories' => ['2017-2018', '2018-2019', '2019-2020', '2020-2021', '2021-2022'],
+        'categories' => ['2018-2019', '2019-2020', '2020-2021', '2021-2022', '2022-2023'],
         'data' => $data33,
     ];
 
@@ -110,8 +110,8 @@
     @php
     
     $data34 = [
-             ['label' => 'Cr Hrs in Dev', 'color' => '#217ca3', 'values' => [685, 805, 810, 816, 549]],
-             ['label' => 'Cr Hrs in TRAD (Non-Dev)', 'color' => '#8d230f', 'values' => [11780, 9950, 10578, 10777, 7419]],
+             ['label' => 'Cr Hrs in Dev', 'color' => '#217ca3', 'values' => [805, 810, 816, 801, 663]],
+             ['label' => 'Cr Hrs in TRAD (Non-Dev)', 'color' => '#8d230f', 'values' => [9950, 10578, 10777, 10088, 6471]],
     ];
 
     $length34 = count($data34);
@@ -156,7 +156,7 @@
     $series34 = [
         'title' => 'Credit Hours in Developmental Courses vs Credit Hours in TRAD (Non-Dev) Courses',
         'subtitle' => '',
-        'categories' => ['2017-2018', '2018-2019', '2019-2020', '2020-2021', '2021-2022'],
+        'categories' => ['2018-2019', '2019-2020', '2020-2021', '2021-2022', '2022-2023'],
         'data' => $data34,
     ];
 
@@ -206,8 +206,8 @@
     @php
     
     $data35 = [
-             ['label' => 'Full-time Instructor', 'color' => '#217ca3', 'values' => [49.8, 55.1, 45.0, 45.4, 46.6]],
-             ['label' => 'Adjunct Instructor', 'color' => '#8d230f', 'values' => [50.2, 44.9, 55.0, 54.6, 53.4]],
+             ['label' => 'Full-time Instructor', 'color' => '#217ca3', 'values' => [55.1, 45.0, 45.4, 46.1, 45.2]],
+             ['label' => 'Adjunct Instructor', 'color' => '#8d230f', 'values' => [44.9, 55.0, 54.6, 53.9, 54.8]],
     ];
 
     $series35 = [
@@ -217,7 +217,7 @@
         'y_axis_visible' => false,
         'y_axis' => 'Percentage (%)',
         'y_axis_max' => 100,
-        'categories' => ['2017-2018', '2018-2019', '2019-2020', '2020-2021', '2021-2022'],
+        'categories' => ['2018-2019', '2019-2020', '2020-2021', '2021-2022', '2022-2023'],
         'data' => $data35,
     ];
 
@@ -239,8 +239,8 @@
     @php
     
     $data36 = [
-             ['label' => 'Full-time Instructor', 'color' => '#217ca3', 'values' => [60.0, 73.0, 53.9, 50.7, 49.6]],
-             ['label' => 'Adjunct Instructor', 'color' => '#8d230f', 'values' => [40.0, 27.0, 46.1, 49.3, 50.4]],
+             ['label' => 'Full-time Instructor', 'color' => '#217ca3', 'values' => [73.0, 53.9, 50.7, 49.0, 42.5]],
+             ['label' => 'Adjunct Instructor', 'color' => '#8d230f', 'values' => [27.0, 46.1, 49.3, 51.0, 57.5]],
     ];
 
     $series36 = [
@@ -250,7 +250,7 @@
         'y_axis_visible' => false,
         'y_axis' => 'Percentage (%)',
         'y_axis_max' => 100,
-        'categories' => ['2017-2018', '2018-2019', '2019-2020', '2020-2021', '2021-2022'],
+        'categories' => ['2018-2019', '2019-2020', '2020-2021', '2021-2022', '2022-2023'],
         'data' => $data36,
     ];
 
@@ -273,10 +273,10 @@
     @php
     
     $data37 = [
-             ['label' => 'Traditional Undergraduate', 'color' => '#217ca3', 'values' => [12465, 10755, 11388, 11593, 7968]],
-             ['label' => 'Traditional-Intersession', 'color' => '#8d230f', 'values' => [63, 39, 39, 195, 0]],
-             ['label' => 'Degree Completion', 'color' => '#50CB93', 'values' => [2652, 2457, 2349, 2226, 870]],
-             ['label' => 'Graduate', 'color' => 'purple', 'values' => [3783, 3145, 2689, 2576, 636]],
+             ['label' => 'Traditional Undergraduate', 'color' => '#217ca3', 'values' => [10755, 11388, 11593, 10889, 7134]],
+             ['label' => 'Traditional-Intersession', 'color' => '#8d230f', 'values' => [39, 39, 195, 129, 9]],
+             ['label' => 'Degree Completion', 'color' => '#50CB93', 'values' => [2457, 2349, 2226, 2169, 834]],
+             ['label' => 'Graduate', 'color' => 'purple', 'values' => [3145, 2689, 2576, 1833, 760]],
     ];
     $length37 = count($data37);
     $total37 = [];
@@ -300,7 +300,7 @@
 
    $series37 = [
         'title' => 'Credit Hour Production',
-        'categories' => ['2017-2018', '2018-2019', '2019-2020', '2020-2021', '2021-2022'],
+        'categories' => ['2018-2019', '2019-2020', '2020-2021', '2021-2022', '2022-2023'],
         'data' => $data37,
     ];
 
