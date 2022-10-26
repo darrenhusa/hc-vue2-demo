@@ -19,13 +19,23 @@
 $data20 = [['label' => 'F1 to F2', 'color' => '#4f81bd', 'showDataLabels' => false,  'values' => [88.0, 73.7, 75.7, 68.5, 86.2]],
          ['label' => 'F1 to SO', 'color' => '#be4a48', 'showDataLabels' => false, 'values' => [54.0, 45.8, 56.3, 41.8, 56.9]],
          ['label' => 'SO to JR', 'color' => '#92d050',  'showDataLabels' => false, 'values' => [61.0, 77.2, 72.1, 75.3, 63.3]],
-         ['label' => 'JR to SR', 'color' => '#7030a0', 'showDataLabels' => false, 'values' => [75.0, 76.8, 84.0, 83.8]],
+         ['label' => 'JR to SR', 'color' => '#7030a0', 'showDataLabels' => false, 'values' => [75.0, 76.8, 84.0, 80.0, 83.8]],
 ];
 
     $length20 = count($data20);
     
     $labels20 = [$data20[0]['label'], $data20[1]['label'], $data20[2]['label'], $data20[3]['label']];
     $numbers20 = [$data20[0]['values'], $data20[1]['values'], $data20[2]['values'], $data20[3]['values']];
+
+    $f1_f2_avg = array_sum($data20[0]['values'])/5.0;
+    $f1_so_avg = array_sum($data20[1]['values'])/5.0;
+    $so_jr_avg = array_sum($data20[2]['values'])/5.0;
+    $jr_sr_avg = array_sum($data20[3]['values'])/5.0;
+
+    echo $f1_f2_avg . "\n";
+    echo $f1_so_avg . "\n";
+    echo $so_jr_avg . "\n";
+    echo $jr_sr_avg . "\n";
 
 $series20 = [
     'title' => 'Retention Rates',

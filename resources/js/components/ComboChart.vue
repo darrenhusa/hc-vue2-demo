@@ -111,7 +111,7 @@ export default {
             series: [{
                 type: 'column',
                 // name: 'results',
-                data: [79.9, 51.4, 69.0, 75.0],
+                data: [78.4, 51.0, 69.8, 80.0],
                 dataLabels: {
                     enabled: true,
                     inside: true,
