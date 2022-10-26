@@ -16,10 +16,10 @@
 // for figure 20   
 // colors taken from Excel chart via rgb lookup.
 // colors converted to hex using https://www.rgbtohex.net/
-$data20 = [['label' => 'F1 to F2', 'color' => '#4f81bd', 'showDataLabels' => false,  'values' => [83.5, 88.0, 73.7, 75.7, 68.5]],
-         ['label' => 'F1 to SO', 'color' => '#be4a48', 'showDataLabels' => false, 'values' => [50.5, 54.0, 45.8, 56.3, 41.8]],
-         ['label' => 'SO to JR', 'color' => '#92d050',  'showDataLabels' => false, 'values' => [62.3, 61.0, 77.2, 72.1, 75.3]],
-         ['label' => 'JR to SR', 'color' => '#7030a0', 'showDataLabels' => false, 'values' => [85.9, 75.0, 76.8, 84.0, 80.0]],
+$data20 = [['label' => 'F1 to F2', 'color' => '#4f81bd', 'showDataLabels' => false,  'values' => [88.0, 73.7, 75.7, 68.5, 86.2]],
+         ['label' => 'F1 to SO', 'color' => '#be4a48', 'showDataLabels' => false, 'values' => [54.0, 45.8, 56.3, 41.8, 56.9]],
+         ['label' => 'SO to JR', 'color' => '#92d050',  'showDataLabels' => false, 'values' => [61.0, 77.2, 72.1, 75.3, 63.3]],
+         ['label' => 'JR to SR', 'color' => '#7030a0', 'showDataLabels' => false, 'values' => [75.0, 76.8, 84.0, 83.8]],
 ];
 
     $length20 = count($data20);
@@ -33,7 +33,7 @@ $series20 = [
     'y_axis_min' => 40,
     'y_axis_max' => 100,
     'y_axis_tickinterval' => 10,
-    'categories' => ['Fall 2016', 'Fall 2017', 'Fall 2018', 'Fall 2019', 'Fall 2020'],
+    'categories' => ['Fall 2017', 'Fall 2018', 'Fall 2019', 'Fall 2020', 'Fall 2021'],
     'data' => $data20,
 ];
 @endphp
@@ -78,8 +78,8 @@ $series20 = [
 @php
     
     $data29 = [
-             ['label' => 'Full-time', 'color' => '#217ca3', 'values' => [82.9, 88.4, 75.7, 75.8, 70.2]],
-             ['label' => 'Part-time', 'color' => '#8d230f', 'values' => [25.0, 50.0, 0.0, 66.7, 12.5]],
+             ['label' => 'Full-time', 'color' => '#217ca3', 'values' => [88.4, 75.7, 75.8, 70.2, 90.2]],
+             ['label' => 'Part-time', 'color' => '#8d230f', 'values' => [50.0, 0.0, 66.7, 12.5, 33.3]],
     ];
 
     $series29 = [
@@ -87,8 +87,8 @@ $series20 = [
         'subtitle' => "Retention of First-time, First-semester TRAD Freshman (F1)",
         'x_axis' => '',
         'y_axis' => 'Percentage (%)',
-        'categories' => ['Fall 2016-Spring 2017', 'Fall 2017-Spring 2018', 'Fall 2018-Spring 2019', 
-                         'Fall 2019-Spring 2020', 'Fall 2020-Spring 2021'],
+        'categories' => ['Fall 2017-Spring 2018', 'Fall 2018-Spring 2019', 
+                         'Fall 2019-Spring 2020', 'Fall 2020-Spring 2021', 'Fall 2021-Spring 2022'],
         'data' => $data29,
     ];
 
@@ -111,8 +111,8 @@ $series20 = [
     @php
     
     $data30 = [
-             ['label' => 'Full-time', 'color' => '#217ca3', 'values' => [50.5, 53.7, 48.5, 57.6, 42.7]],
-             ['label' => 'Part-time', 'color' => '#8d230f', 'values' => [50.0, 0.0, 0.0, 0.0, 25.0]],
+             ['label' => 'Full-time', 'color' => '#217ca3', 'values' => [53.7, 48.5, 57.6, 42.7, 58.8]],
+             ['label' => 'Part-time', 'color' => '#8d230f', 'values' => [0.0, 0.0, 0.0, 25.0, 33.3]],
     ];
 
     $series30 = [
@@ -121,8 +121,8 @@ $series20 = [
         'x_axis' => '',
         'y_axis' => 'Percentage (%)',
         'y_axis_max' => 100,
-        'categories' => ['Fall 2016-Fall 2017', 'Fall 2017-Fall 2018', 'Fall 2018-Fall 2019', 
-                         'Fall 2019-Fall 2020', 'Fall 2020-Fall 2021'],
+        'categories' => ['Fall 2017-Fall 2018', 'Fall 2018-Fall 2019', 
+                         'Fall 2019-Fall 2020', 'Fall 2020-Fall 2021', 'Fall 2021-Fall 2022'],
         'data' => $data30,
     ];
 
