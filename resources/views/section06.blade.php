@@ -35,14 +35,14 @@
     @php
     
     $data40 = [
-             ['label' => '', 'color' => '#217ca3', 'values' => [4132707, 4279589, 4411153, 4474425, 5464282]],
+             ['label' => '', 'color' => '#217ca3', 'values' => [4279589, 4411153, 4474425, 5464282, 4897211]],
     ];
 
     $series40 = [
         'title' => 'Endowment (at the end of the FY)',
         'subtitle' => '',
         'y_axis' => 'U.S. Dollars ($)',
-        'categories' => ['FY 2016-17', 'FY 2017-18', 'FY 2018-19', 'FY 2019-20', 'FY 2020-21'],
+        'categories' => ['FY 2017-18', 'FY 2018-19', 'FY 2019-20', 'FY 2020-21', 'FY 2021-22'],
         'data' => $data40,
     ];
 
