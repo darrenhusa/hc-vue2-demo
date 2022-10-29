@@ -11,13 +11,13 @@
 @php
     
     $data39 = [
-             ['label' => '', 'color' => '#217ca3', 'values' => [220, 121, 153, 173, 167]],
+             ['label' => '', 'color' => '#217ca3', 'values' => [121, 153, 173, 167, 150]],
     ];
 
     $series39 = [
         'title' => 'Credit Hours Produced',
         'subtitle' => 'Per Full-time and Part-time Permanent Positions',
-        'categories' => ['2016-2017', '2017-2018', '2018-2019', '2019-2020', '2020-2021'],
+        'categories' => ['2017-2018', '2018-2019', '2019-2020', '2020-2021', '2020-2021'],
         'data' => $data39,
     ];
 
