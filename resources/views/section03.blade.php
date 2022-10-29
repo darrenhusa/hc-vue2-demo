@@ -11,14 +11,14 @@
 @php
     
     $data31 = [
-             ['label' => '', 'color' => '#217ca3', 'values' => [2.75, 2.65, 2.76, 2.67, 2.79]],
+             ['label' => '', 'color' => '#217ca3', 'values' => [2.66, 2.76, 2.66, 2.74, 2.61]],
     ];
 
     $series31 = [
         'title' => 'Average High School GPA',
         'subtitle' => 'of First-time, Full-time Freshman',
         'y_axis_max' => 4.0,
-        'categories' => ['Fall 2017', 'Fall 2018', 'Fall 2019', 'Fall 2020', 'Fall 2021'],
+        'categories' => ['Fall 2018', 'Fall 2019', 'Fall 2020', 'Fall 2021', 'Fall 2022'],
         'data' => $data31,
     ];
 
@@ -36,10 +36,10 @@
     @php
     
     $data32 = [
-             ['label' => '3.0 and above', 'color' => '#217ca3', 'values' => [35.2, 33.0, 35.6, 31.8, 46.5]],
-             ['label' => '2.5 to 2.99', 'color' => '#8d230f', 'values' => [26.4, 25.2, 29.7, 17.8, 18.6]],
-             ['label' => '2.0 to 2.49', 'color' => '#50CB93', 'values' => [28.6, 20.4, 17.8, 31.0, 20.9]],
-             ['label' => 'Less than 2.0', 'color' => 'purple', 'values' => [9.9, 21.4, 16.9, 19.4, 14.0]],
+             ['label' => '3.0 and above', 'color' => '#217ca3', 'values' => [17.4, 21.0, 21.0, 19.5, 21.0]],
+             ['label' => '2.5 to 2.99', 'color' => '#8d230f', 'values' => [20.3, 26.6, 18.0, 15.6, 19.5]],
+             ['label' => '2.0 to 2.49', 'color' => '#50CB93', 'values' => [16.3, 16.3, 29.5, 14.0, 24.0]],
+             ['label' => 'Less than 2.0', 'color' => 'purple', 'values' => [18.9, 18.0, 23.4, 14.4, 25.2]],
     ];
 
     $series32 = [
@@ -47,7 +47,7 @@
         'subtitle' => "by HS GPA Ranges",
         'x_axis' => '',
         'y_axis' => '',
-        'categories' => ['Fall 2017', 'Fall 2018', 'Fall 2019', 'Fall 2020', 'Fall 2021'],
+        'categories' => ['Fall 2018', 'Fall 2019', 'Fall 2020', 'Fall 2021', 'Fall 2022'],
         'data' => $data32,
     ];
 
