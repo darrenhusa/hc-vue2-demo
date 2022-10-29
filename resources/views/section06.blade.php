@@ -17,7 +17,7 @@
     $series39 = [
         'title' => 'Credit Hours Produced',
         'subtitle' => 'Per Full-time and Part-time Permanent Positions',
-        'categories' => ['2017-2018', '2018-2019', '2019-2020', '2020-2021', '2020-2021'],
+        'categories' => ['2017-2018', '2018-2019', '2019-2020', '2020-2021', '2021-2022'],
         'data' => $data39,
     ];
 
